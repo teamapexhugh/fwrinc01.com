@@ -1,0 +1,2698 @@
+
+<!DOCTYPE html>
+
+<!-- This code was generated using AnimaApp.com. 
+This code is a high-fidelity prototype.
+Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
+23/10/2025 06:21:24 -->
+
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400");
+
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/61937676c1b2ee0850725a54/fonts/helvetica-bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/656791b77f52524f6a44afda/fonts/helvetica-regular.otf') format("opentype");
+}
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/68f862709bde98cdb15bcde7.68f862719bde98cdb15bcdea.NIUss9M.hch.png");
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --backgrounddefault: #ffffff;
+  --backgroundmuted: #f8f8f8;
+  --backgroundmuted-2: #eeeeee;
+  --backgroundprimary: #0e1011;
+  --black: #000000;
+  --borderdefault: #e8e8e8;
+  --icondefault: #0e1011;
+  --iconinverse: #ffffff;
+  --keppel: #37999d;
+  --purple-mountains-majesty: #9b83b0;
+  --textdefault: #0e1011;
+  --textinverse: #ffffff;
+  --textinverse-muted: #ffffff99;
+  --textmuted: #06272c99;
+  --woodsmoke: #0e101199;
+ 
+  --font-size-18px: 18px;
+  --font-size-28px: 28px;
+  --font-size-48px: 48px;
+  --font-size-64px: 64px;
+  --font-size-80px: 80px;
+  --font-size-l: 20px;
+  --font-size-m: 6.9px;
+  --font-size-xl: 22px;
+  --font-size-xxl: 26px;
+  --font-size-xxxl: 30px;
+  --font-size-xxxxl: 32px;
+  --font-size-xxxxxl: 40px;
+ 
+  --font-family-anton_sc: "Anton SC", Helvetica;
+  --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
+  --font-family-helvetica-bold: "Helvetica-Bold", Helvetica;
+  --font-family-helvetica-regular: "Helvetica-Regular", Helvetica;
+  --font-family-inter: "Inter", Helvetica;
+}
+.heading-altsmall {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-80px);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.heading-alth1 {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-64px);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.heading-alth2 {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-48px);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.heading-alth3 {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.heading-alth4 {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.heading-alth5 {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.textxlarge {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-28px);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.textmedium {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.textdefault {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.textsmall {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-18px);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.textmeta {
+  font-family: var(--font-family-gambetta-mediumitalic);
+  font-size: var(--font-size-xxxl);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.componentsbutton {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.helvetica-bold-white-24-8px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 24.8px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.gambetta-mediumitalic-medium-woodsmoke-20px {
+  color: var(--woodsmoke);
+  font-family: var(--font-family-gambetta-mediumitalic);
+  font-size: var(--font-size-l);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.helvetica-regular-normal-white-11px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-helvetica-regular);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-240px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 240px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.gambetta-mediumitalic-medium-woodsmoke-32px {
+  color: var(--woodsmoke);
+  font-family: var(--font-family-gambetta-mediumitalic);
+  font-size: var(--font-size-xxxxl);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.antonsc-normal-woodsmoke-320px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 320px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-192px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 192px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-woodsmoke-96px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+}
+
+
+.button-text {
+  background-color: transparent;
+  position: relative;
+}
+
+.grid {
+  background-color: transparent;
+  position: relative;
+}
+
+.line {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+
+.nav {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.studio {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+}
+
+.vector {
+  background-color: transparent;
+  position: absolute;
+}
+/* screen - about */
+
+.about {
+  align-items: flex-start;
+  background-color: var(--backgrounddefault);
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  top: 0px;
+}
+
+.about .header-vRTBB9 {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 500px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  left: 0px;
+  padding: 64px 96px 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.about .logo-7Uxjw5 {
+  height: 36px;
+  width: 75px;
+}
+
+.about .grid-7Uxjw5 {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 48px;
+  position: relative;
+}
+
+.about .projects-m4OkuX {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .services-m4OkuX {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .studio-m4OkuX {
+  color: var(--backgroundprimary);
+  line-height: 22px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .journal-m4OkuX {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .button-text-7Uxjw5 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+.about .button-text-VAKlx2 {
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: -1.00px;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-VAKlx2 {
+  background-color: var(--backgroundprimary);
+}
+
+.about .frame-366-vRTBB9 {
+  background-color: transparent;
+  height: 93px;
+  position: relative;
+  width: 261px;
+  z-index: 4;
+}
+
+.about .seciton-hero-vRTBB9 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.about .grid-xiPr9t {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 160px 96px 96px;
+  position: relative;
+  width: 100%;
+}
+
+.about .about-fwr-ksZGd4 {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 320px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .supplying-premium-te-ksZGd4 {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 62.4px;
+  position: relative;
+  text-align: left;
+  width: 1400px;
+}
+
+.about .image-wrapper-xiPr9t {
+  background-color: transparent;
+  height: 1080px;
+  position: relative;
+  width: 1920px;
+}
+
+.about .section-team-vRTBB9 {
+  align-self: stretch;
+  background-color: transparent;
+  height: 3708px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.about .section-awards-vRTBB9 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.about .grid-ibY2t1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 96px;
+  padding: 96px;
+  position: relative;
+  width: 100%;
+}
+
+.about .grid-s9PGx1 {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.about .what-we-achieved-xQKerE {
+  background-color: transparent;
+  color: var(--woodsmoke);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .x02-xQKerE {
+  background-color: transparent;
+  color: var(--woodsmoke);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .grid-paxxnB {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.about .awards-SpOt7w {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 320px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .were-a-studio-with-d-SpOt7w {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.0px;
+  position: relative;
+  text-align: left;
+  width: 1400px;
+}
+
+.about .grid-aspcES {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.about .grid-hqTmDz {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  gap: 16px;
+  height: 1080px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.about .grid-RVR5bv {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: -87.14px;
+  margin-top: -87.14px;
+  position: relative;
+}
+
+.about .award-uM66yO {
+  background-color: #4a61e2;
+}
+
+.about .frame-318-M5oDJz {
+  display: inline-flex;
+  margin-right: -1.77px;
+}
+
+.about .logo-wwoNoK {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-lJa4w2 {
+  height: 100%;
+  left: -2300.07%;
+  top: -14365.99%;
+  width: 23.01%;
+}
+
+.about .vector-OY7G5Q {
+  height: 99.11%;
+  left: -2326.11%;
+  top: -14365.10%;
+  width: 22.80%;
+}
+
+.about .vector-xJYxkC {
+  height: 98.21%;
+  left: -2352.67%;
+  top: -14365.10%;
+  width: 24.76%;
+}
+
+.about .vector-hYCELA {
+  height: 98.21%;
+  left: -2377.06%;
+  top: -14365.10%;
+  width: 24.05%;
+}
+
+.about .frame-319-wwoNoK {
+  display: inline-flex;
+  gap: 6.888888359069824px;
+}
+
+.about .frame-320-ob1V6M {
+  display: inline-flex;
+  gap: 14.171428680419922px;
+}
+
+.about .brand-2023-wthXg7 {
+  background-color: transparent;
+  color: #acb5f7;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 42.5px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+  width: 240.91429138183594px;
+}
+
+.about .frame-319-M5oDJz {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.77777099609375px;
+}
+
+.about .frame-319-lDUWzV {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-lKd0x2 {
+  display: inline-flex;
+}
+
+.about .certificate-L37xMq {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-helvetica-regular);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.about .lorem-ipsum-dolor-si-lKd0x2 {
+  color: #acb5f7;
+}
+
+.about .award-k2BETr {
+  background-color: #3c7c71;
+}
+
+.about .frame-318-WxOPRp {
+  display: inline-flex;
+}
+
+.about .logo-q891sN {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-psMRRQ {
+  height: 100.00%;
+  left: 76.99%;
+  top: 0px;
+  width: 23.01%;
+}
+
+.about .vector-fniTbh {
+  height: 99.11%;
+  left: 50.95%;
+  top: 0px;
+  width: 22.80%;
+}
+
+.about .vector-nfdLl4 {
+  height: 98.21%;
+  left: 24.39%;
+  top: 0px;
+  width: 24.76%;
+}
+
+.about .vector-SDmk9y {
+  height: 98.21%;
+  left: 0px;
+  top: 0px;
+  width: 24.05%;
+}
+
+.about .frame-320-q891sN {
+  display: inline-flex;
+  gap: 14.171428680419922px;
+}
+
+.about .brand-2024-dSyIfX {
+  background-color: transparent;
+  color: #6bb4a8;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+  width: fit-content;
+}
+
+.about .frame-319-WxOPRp {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.7777862548828px;
+}
+
+.about .frame-319-g9dhZ7 {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-cahWtX {
+  display: inline-flex;
+}
+
+.about .lorem-ipsum-dolor-si-cahWtX {
+  color: #6bb5a8;
+}
+
+.about .award-QPrBNz {
+  background-color: #9cd3d6;
+}
+
+.about .frame-318-YeXPWP {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.about .logo-TfN7QW {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-VSWE6B {
+  height: 100.00%;
+  left: 76.99%;
+  top: 0px;
+  width: 23.01%;
+}
+
+.about .vector-MgdfgA {
+  height: 99.11%;
+  left: 50.95%;
+  top: 0px;
+  width: 22.80%;
+}
+
+.about .vector-7FQB0O {
+  height: 98.21%;
+  left: 24.39%;
+  top: 0px;
+  width: 24.76%;
+}
+
+.about .vector-qx6Uci {
+  height: 98.21%;
+  left: 0px;
+  top: 0px;
+  width: 24.05%;
+}
+
+.about .frame-319-TfN7QW {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-bnIgKE {
+  align-self: stretch;
+  display: flex;
+  gap: 14.171428680419922px;
+  width: 100%;
+}
+
+.about .frame-319-YeXPWP {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.7777862548828px;
+}
+
+.about .frame-319-MBv4BK {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-Kn1e4k {
+  display: inline-flex;
+}
+
+.about .lorem-ipsum-dolor-si-Kn1e4k {
+  color: var(--keppel);
+}
+
+.about .grid-SbcY34 {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: -87.14px;
+  margin-top: -87.14px;
+  position: relative;
+}
+
+.about .award-FcF6xY {
+  background-color: #de7c41;
+}
+
+.about .frame-318-5KNJq3 {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.about .logo-YyInO7 {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-kRMKUP {
+  height: 100%;
+  left: -2748.79%;
+  top: -14365.99%;
+  width: 23.01%;
+}
+
+.about .vector-G3oSyM {
+  height: 99.11%;
+  left: -2774.83%;
+  top: -14365.10%;
+  width: 22.80%;
+}
+
+.about .vector-WgmFFB {
+  height: 98.21%;
+  left: -2801.39%;
+  top: -14365.10%;
+  width: 24.76%;
+}
+
+.about .vector-zzbRx4 {
+  height: 98.21%;
+  left: -2825.78%;
+  top: -14365.10%;
+  width: 24.05%;
+}
+
+.about .frame-319-YyInO7 {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-nVjtbx {
+  align-self: stretch;
+  display: flex;
+  gap: 14.171428680419922px;
+  width: 100%;
+}
+
+.about .site-of-the-month-pC3Tc8 {
+  color: #a34f1c;
+}
+
+.about .frame-319-5KNJq3 {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.7777862548828px;
+}
+
+.about .frame-319-IYkR23 {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-LCSsxj {
+  display: inline-flex;
+}
+
+.about .lorem-ipsum-dolor-si-LCSsxj {
+  color: #a44f1c;
+}
+
+.about .award-XvzCFY {
+  background-color: #f55733;
+}
+
+.about .frame-318-xFH4LZ {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.about .logo-DxTzk9 {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-nPxUKw {
+  height: 100.00%;
+  left: 76.99%;
+  top: 0px;
+  width: 23.01%;
+}
+
+.about .vector-rfSM6A {
+  height: 99.11%;
+  left: 50.95%;
+  top: 0px;
+  width: 22.80%;
+}
+
+.about .vector-gzVJyb {
+  height: 98.21%;
+  left: 24.39%;
+  top: 0px;
+  width: 24.76%;
+}
+
+.about .vector-XBRF3J {
+  height: 98.21%;
+  left: 0px;
+  top: 0px;
+  width: 24.05%;
+}
+
+.about .frame-319-DxTzk9 {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-eJmuVK {
+  align-self: stretch;
+  display: flex;
+  gap: 14.171428680419922px;
+  width: 100%;
+}
+
+.about .site-of-the-month-ekY4zp {
+  color: #cb2c13;
+}
+
+.about .frame-319-xFH4LZ {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.7777862548828px;
+}
+
+.about .frame-319-Ypgjeq {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-kxB0U9 {
+  display: inline-flex;
+}
+
+.about .lorem-ipsum-dolor-si-kxB0U9 {
+  color: #cb2c13;
+}
+
+.about .award-gajCRz {
+  background-color: #e53e48;
+}
+
+.about .frame-318-AHlIUI {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.about .logo-ThoHsu {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-dflA9X {
+  height: 100.00%;
+  left: 76.99%;
+  top: 0px;
+  width: 23.01%;
+}
+
+.about .vector-6Q0lxj {
+  height: 99.11%;
+  left: 50.95%;
+  top: 0px;
+  width: 22.80%;
+}
+
+.about .vector-xySuvT {
+  height: 98.21%;
+  left: 24.39%;
+  top: 0px;
+  width: 24.76%;
+}
+
+.about .vector-rMc9Tj {
+  height: 98.21%;
+  left: 0px;
+  top: 0px;
+  width: 24.05%;
+}
+
+.about .frame-319-ThoHsu {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-AIHzAt {
+  align-self: stretch;
+  display: flex;
+  gap: 14.171428680419922px;
+  width: 100%;
+}
+
+.about .website-of-the-day-XaIOMU {
+  align-self: stretch;
+  background-color: transparent;
+  color: #9e141d;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+}
+
+.about .frame-319-AHlIUI {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.7777862548828px;
+}
+
+.about .frame-319-NGhrKI {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-Uex0L7 {
+  display: inline-flex;
+}
+
+.about .lorem-ipsum-dolor-si-Uex0L7 {
+  color: #9e141d;
+}
+
+.about .grid-SQOnmL {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: -87.14px;
+  margin-top: -87.14px;
+  position: relative;
+}
+
+.about .award-OcJMz0 {
+  background-color: #5c4782;
+}
+
+.about .frame-318-FJqggk {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.about .logo-iTsASi {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-xwtMXH {
+  height: 100%;
+  left: -3197.51%;
+  top: -14365.99%;
+  width: 23.01%;
+}
+
+.about .vector-mO9cCy {
+  height: 99.11%;
+  left: -3223.55%;
+  top: -14365.10%;
+  width: 22.80%;
+}
+
+.about .vector-Wwx4Xa {
+  height: 98.21%;
+  left: -3250.11%;
+  top: -14365.10%;
+  width: 24.76%;
+}
+
+.about .vector-wYbnak {
+  height: 98.21%;
+  left: -3274.50%;
+  top: -14365.10%;
+  width: 24.05%;
+}
+
+.about .frame-319-iTsASi {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-55CR9I {
+  align-self: stretch;
+  display: flex;
+  gap: 14.171428680419922px;
+  width: 100%;
+}
+
+.about .website-of-the-year-5OyWRT {
+  color: var(--purple-mountains-majesty);
+}
+
+.about .frame-319-FJqggk {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.7777862548828px;
+}
+
+.about .frame-319-qtQKIC {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-tzmuQk {
+  display: inline-flex;
+}
+
+.about .lorem-ipsum-dolor-si-tzmuQk {
+  color: var(--purple-mountains-majesty);
+}
+
+.about .award-bJqwVq {
+  background-color: #070707;
+}
+
+.about .frame-318-xxmkvu {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.about .logo-bgwKfm {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-xh32xh {
+  height: 100.00%;
+  left: 76.99%;
+  top: 0px;
+  width: 23.01%;
+}
+
+.about .vector-CAezrQ {
+  height: 99.11%;
+  left: 50.95%;
+  top: 0px;
+  width: 22.80%;
+}
+
+.about .vector-S78sKc {
+  height: 98.21%;
+  left: 24.39%;
+  top: 0px;
+  width: 24.76%;
+}
+
+.about .vector-13yM6g {
+  height: 98.21%;
+  left: 0px;
+  top: 0px;
+  width: 24.05%;
+}
+
+.about .frame-319-bgwKfm {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-GxLkJP {
+  align-self: stretch;
+  display: flex;
+  gap: 14.171428680419922px;
+  width: 100%;
+}
+
+.about .website-of-the-year-RzoxlN {
+  color: #868686;
+}
+
+.about .frame-319-xxmkvu {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.7777862548828px;
+}
+
+.about .frame-319-SyexQT {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-mSiQKj {
+  display: inline-flex;
+}
+
+.about .lorem-ipsum-dolor-si-mSiQKj {
+  color: var(--purple-mountains-majesty);
+}
+
+.about .award-IDVwmC {
+  background-color: #9cd3d6;
+}
+
+.about .frame-318-eTn4G8 {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.about .logo-TDQbQ6 {
+  height: 35.42857360839844px;
+  width: 73.80952453613281px;
+}
+
+.about .vector-tLAsGR {
+  height: 100.00%;
+  left: 76.99%;
+  top: 0px;
+  width: 23.01%;
+}
+
+.about .vector-XOJmec {
+  height: 99.11%;
+  left: 50.95%;
+  top: 0px;
+  width: 22.80%;
+}
+
+.about .vector-iX6pXf {
+  height: 98.21%;
+  left: 24.39%;
+  top: 0px;
+  width: 24.76%;
+}
+
+.about .vector-X2HpxQ {
+  height: 98.21%;
+  left: 0px;
+  top: 0px;
+  width: 24.05%;
+}
+
+.about .frame-319-TDQbQ6 {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-1HKmKP {
+  align-self: stretch;
+  display: flex;
+  gap: 14.171428680419922px;
+  width: 100%;
+}
+
+.about .frame-319-eTn4G8 {
+  display: flex;
+  gap: 27.555553436279297px;
+  width: 137.7777862548828px;
+}
+
+.about .frame-319-J8Mi22 {
+  align-self: stretch;
+  display: flex;
+  gap: 6.888888359069824px;
+  width: 100%;
+}
+
+.about .frame-320-nD2ara {
+  display: inline-flex;
+}
+
+.about .lorem-ipsum-dolor-si-nD2ara {
+  color: var(--keppel);
+}
+
+.about .grid-AxTmsP {
+  align-items: flex-start;
+  background-color: var(--backgroundmuted);
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+  padding: 96px;
+  position: relative;
+  width: 960px;
+}
+
+.about .grid-RBsMpn {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.about .branding-awards-IhaGVx {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 105.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: fit-content;
+}
+
+.about .grid-IhaGVx {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.about .grid-eKb77c {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .brand-excellence-awards-C0Ge5x {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-eKb77c {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-zQ6xO5 {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .iconic-identity-awards-SutkSQ {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-zQ6xO5 {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-ayp6WY {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .visionary-brand-honors-CvsB4U {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-ayp6WY {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-AQ4ODi {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .golden-mark-awards-G41CyB {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-AQ4ODi {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-wi2e8v {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .brand-innovation-awards-YkYoPk {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .x2022-YkYoPk {
+  background-color: transparent;
+  color: var(--woodsmoke);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-wi2e8v {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-Lg5Cnx {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .signature-branding-awards-MXalpU {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .x2021-MXalpU {
+  background-color: transparent;
+  color: var(--woodsmoke);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .grid-KgF0bi {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.about .website-awards-RKelKe {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 105.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: fit-content;
+}
+
+.about .grid-RKelKe {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.about .grid-DC2pN3 {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .digital-masterpiece-awards-S1GGEx {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-DC2pN3 {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-Jw4DwP {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .web-excellence-awards-3v4wAg {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-Jw4DwP {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-bEUjm5 {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .pixel-perfection-honors-CO7NaP {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-bEUjm5 {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-odQFVJ {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .innovation-in-web-design-awards-3A39eU {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-odQFVJ {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-iU79h0 {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .best-in-user-experience-awards-LFsSKC {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-iU79h0 {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-QtuZ8a {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .interactive-design-awards-tGL3tO {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .grid-agdMn5 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.about .uiux-awards-cZKiAz {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 105.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: fit-content;
+}
+
+.about .grid-cZKiAz {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.about .grid-htr3Mi {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .user-experience-excellence-awards-Dn3Iqq {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-htr3Mi {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-ksUj4B {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .intuitive-interface-awards-aYFHxB {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-ksUj4B {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-DKDhF2 {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .seamless-design-honors-S3xoP0 {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-DKDhF2 {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-qLWO9Y {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .ux-innovation-awards-kF4cbP {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-qLWO9Y {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-1DIdWS {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .flawless-interaction-awards-Pi4CTx {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-1DIdWS {
+  background-color: var(--borderdefault);
+}
+
+.about .grid-5aTJqK {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.about .human-centered-design-awards-tnkOVA {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41.6px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .footer-vRTBB9 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--backgroundprimary);
+  display: flex;
+  flex-direction: column;
+  height: 1080px;
+  justify-content: space-between;
+  padding: 96px 96px 64px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.about .grid-1ETIZM {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 128px;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.about .k-aj-o-r3Zn1L {
+  background-color: transparent;
+  flex: 1;
+  letter-spacing: 0.00px;
+  line-height: 240px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .grid-38QLqU {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 96px;
+  position: relative;
+  width: 100%;
+}
+
+.about .grid-CfCofZ {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 96px;
+  position: relative;
+  width: 100%;
+}
+
+.about .grid-xTYFEy {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 32px;
+  position: relative;
+}
+
+.about .pages-tiVKNG {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .home-teDo1g {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .service-teDo1g {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  position: relative;
+  text-align: left;
+}
+
+.about .studio-teDo1g {
+  align-self: stretch;
+  color: var(--backgrounddefault);
+  line-height: 33.8px;
+}
+
+.about .contact-teDo1g {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  position: relative;
+  text-align: left;
+}
+
+.about .grid-Hevb4y {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 32px;
+  position: relative;
+}
+
+.about .cms-DhrtYd {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .work-FYOxf6 {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .work-single-FYOxf6 {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  position: relative;
+  text-align: left;
+}
+
+.about .blog-FYOxf6 {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  position: relative;
+  text-align: left;
+}
+
+.about .blog-single-FYOxf6 {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  position: relative;
+  text-align: left;
+}
+
+.about .grid-PskExg {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 32px;
+  position: relative;
+}
+
+.about .utility-pages-ub6Bcu {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .licensing-ZgjKYy {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .grid-Pe9tEt {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 32px;
+  position: relative;
+}
+
+.about .socials-kRqFxS {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .instagram-pnNXXu {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.about .behance-pnNXXu {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  position: relative;
+  text-align: left;
+}
+
+.about .dribbble-pnNXXu {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.8px;
+  position: relative;
+  text-align: left;
+}
+
+.about .grid-Q13Z3h {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.about .button-text-neA8xB {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+.about .button-text-Yktb13 {
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: -1.00px;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-Yktb13 {
+  background-color: var(--backgrounddefault);
+}
+
+.about .button-text-D4DVil {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+.about .button-text-PFWwbA {
+  color: var(--backgrounddefault);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: -1.00px;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .line-PFWwbA {
+  background-color: var(--backgrounddefault);
+}
+
+.about .award {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 407.4285888671875px;
+  justify-content: space-between;
+  margin-right: -0.67px;
+  padding: 35.42857360839844px;
+  position: relative;
+  width: 310px;
+}
+
+.about .branding-of-the-year {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--keppel);
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+}
+
+.about .certificate {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 12.1px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .frame-318 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 27.555553436279297px;
+  position: relative;
+}
+
+.about .frame-319 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.about .frame-320 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.about .general-categories {
+  background-color: transparent;
+  height: 97.22%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 98.23%;
+}
+
+.about .kajo-studio {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 27.3px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .logo {
+  background-color: transparent;
+  position: relative;
+}
+
+.about .lorem-ipsum-dolor-si {
+  align-self: stretch;
+  background-color: transparent;
+  font-family: var(--font-family-helvetica-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.00px;
+  line-height: 9.6px;
+  position: relative;
+  text-align: left;
+}
+
+.about .site-of-the-month {
+  align-self: stretch;
+  background-color: transparent;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+}
+
+.about .website-of-the-year {
+  align-self: stretch;
+  background-color: transparent;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+}
+
+.about .x2023 {
+  background-color: transparent;
+  color: var(--woodsmoke);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .x2024 {
+  background-color: transparent;
+  color: var(--woodsmoke);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="about"><div class="about screen " data-id="4249:1083"><a href="home"><header class="header-vRTBB9" data-id="4264:448"><div class="logo-7Uxjw5 logo" data-id="I4264:448;4797:1301"></div><div class="grid-7Uxjw5" data-id="I4264:448;4264:358"><a href="work" onclick="window.event.stopPropagation()"><div class="projects-m4OkuX componentsbutton" data-id="I4264:448;4264:361">Products</div></a><a href="service" onclick="window.event.stopPropagation()"><div class="services-m4OkuX componentsbutton" data-id="I4264:448;4264:363">Services</div></a><div class="studio-m4OkuX studio componentsbutton" data-id="I4264:448;4264:365">About</div><a href="contact" onclick="window.event.stopPropagation()"><div class="journal-m4OkuX componentsbutton" data-id="I4264:448;4264:367">Contact</div></a></div><div class="button-text-7Uxjw5 button-text" data-id="I4264:448;5267:2825"><div class="button-text-VAKlx2 button-text componentsbutton" data-id="I4264:448;5267:2825;2830:1267">Let’s Talk</div><div class="line-VAKlx2 line" data-id="I4264:448;5267:2825;2830:1268"></div></div></header></a><img class="frame-366-vRTBB9" data-id="9164:1306" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/frame-366.svg" alt="Frame 366"><div class="seciton-hero-vRTBB9" data-id="4264:457"><div class="grid-xiPr9t" data-id="4249:1085"><h1 class="about-fwr-ksZGd4 antonsc-normal-woodsmoke-320px" data-id="4289:502">ABOUT FWR</h1><p class="supplying-premium-te-ksZGd4 heading-alth2" data-id="4249:1096">&#34;Supplying premium teas and custom blends to elevate brands across Southeast Asia.&#34;</p></div><img class="image-wrapper-xiPr9t" data-id="4249:1187" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/image-wrapper-6@1.5x.png" alt="Image Wrapper"></div><img class="section-team-vRTBB9" data-id="4249:1277" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/section-team.png" alt="Section Team"><div class="section-awards-vRTBB9" data-id="4262:290"><div class="grid-ibY2t1" data-id="4259:792"><div class="grid-s9PGx1" data-id="4259:794"><div class="what-we-achieved-xQKerE textmeta" data-id="4259:795">(What we achieved)</div><div class="x02-xQKerE textmeta" data-id="4259:796">(02)</div></div><div class="grid-paxxnB" data-id="4259:797"><div class="awards-SpOt7w antonsc-normal-woodsmoke-320px" data-id="4289:514">AWARDS</div><p class="were-a-studio-with-d-SpOt7w heading-altsmall" data-id="4259:879">We’re a studio with diverse roots<br>that want to help companies.</p></div></div><div class="grid-aspcES" data-id="4259:765"><div class="grid-hqTmDz" data-id="4259:766"><div class="grid-RVR5bv" data-id="4259:767"><article class="award-uM66yO award" data-id="5209:2283"><div class="frame-318-M5oDJz frame-318" data-id="I5209:2283;5117:1599"><div class="logo-wwoNoK logo" data-id="I5209:2283;5117:1659"><div class="general-categories" data-id="I5209:2283;5117:1659;5135:2034"><img class="vector-lJa4w2 vector" data-id="I5209:2283;5117:1659;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-OY7G5Q vector" data-id="I5209:2283;5117:1659;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-xJYxkC vector" data-id="I5209:2283;5117:1659;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-hYCELA vector" data-id="I5209:2283;5117:1659;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"></div></div><div class="frame-319-wwoNoK frame-319" data-id="I5209:2283;5117:1603"><div class="frame-320-ob1V6M frame-320" data-id="I5209:2283;5117:1604"><div class="brand-2023-wthXg7" data-id="I5209:2283;5117:1605">Brand<br>2023</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2283;5117:1772">Kajo Studio.</div></div></div></div><div class="frame-319-M5oDJz frame-319" data-id="I5209:2283;5117:1608"><div class="frame-319-lDUWzV frame-319" data-id="I5209:2283;5117:1609"><div class="frame-320-lKd0x2 frame-320" data-id="I5209:2283;5117:1610"><div class="certificate-L37xMq certificate" data-id="I5209:2283;5117:1611">Certificate</div></div><p class="lorem-ipsum-dolor-si-lKd0x2 lorem-ipsum-dolor-si" data-id="I5209:2283;5117:1612">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article><article class="award-k2BETr award" data-id="5209:2335"><div class="frame-318-WxOPRp frame-318" data-id="I5209:2335;5117:1614"><div class="logo-q891sN logo" data-id="I5209:2335;5117:1667"><div class="general-categories" data-id="I5209:2335;5117:1667;5135:2034"><img class="vector-psMRRQ vector" data-id="I5209:2335;5117:1667;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-8.svg" alt="Vector"><img class="vector-fniTbh vector" data-id="I5209:2335;5117:1667;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-9.svg" alt="Vector"><img class="vector-nfdLl4 vector" data-id="I5209:2335;5117:1667;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-10.svg" alt="Vector"><img class="vector-SDmk9y vector" data-id="I5209:2335;5117:1667;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-11.svg" alt="Vector"></div></div><div class="frame-320-q891sN frame-320" data-id="I5209:2335;5117:1619"><div class="brand-2024-dSyIfX" data-id="I5209:2335;5117:1620">Brand<br>2024</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2335;5117:1621">Kajo Studio.</div></div></div><div class="frame-319-WxOPRp frame-319" data-id="I5209:2335;5117:1623"><div class="frame-319-g9dhZ7 frame-319" data-id="I5209:2335;5117:1624"><div class="frame-320-cahWtX frame-320" data-id="I5209:2335;5117:1625"><div class="certificate helvetica-regular-normal-white-11px" data-id="I5209:2335;5117:1626">Certificate</div></div><p class="lorem-ipsum-dolor-si-cahWtX lorem-ipsum-dolor-si" data-id="I5209:2335;5117:1627">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article><article class="award-QPrBNz award" data-id="5209:2352"><div class="frame-318-YeXPWP frame-318" data-id="I5209:2352;5117:1715"><div class="logo-TfN7QW logo" data-id="I5209:2352;5117:1716"><div class="general-categories" data-id="I5209:2352;5117:1716;5135:2034"><img class="vector-VSWE6B vector" data-id="I5209:2352;5117:1716;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-8.svg" alt="Vector"><img class="vector-MgdfgA vector" data-id="I5209:2352;5117:1716;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-9.svg" alt="Vector"><img class="vector-7FQB0O vector" data-id="I5209:2352;5117:1716;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-10.svg" alt="Vector"><img class="vector-qx6Uci vector" data-id="I5209:2352;5117:1716;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-11.svg" alt="Vector"></div></div><div class="frame-319-TfN7QW frame-319" data-id="I5209:2352;5117:1717"><div class="frame-320-bnIgKE frame-320" data-id="I5209:2352;5117:1718"><div class="branding-of-the-year" data-id="I5209:2352;5117:1719">Branding of the Year.</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2352;5117:1720">Kajo Studio.</div></div></div></div><div class="frame-319-YeXPWP frame-319" data-id="I5209:2352;5117:1722"><div class="frame-319-MBv4BK frame-319" data-id="I5209:2352;5117:1723"><div class="frame-320-Kn1e4k frame-320" data-id="I5209:2352;5117:1724"><div class="certificate helvetica-regular-normal-white-11px" data-id="I5209:2352;5117:1725">Certificate</div></div><p class="lorem-ipsum-dolor-si-Kn1e4k lorem-ipsum-dolor-si" data-id="I5209:2352;5117:1726">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article></div><div class="grid-SbcY34" data-id="5209:2400"><article class="award-FcF6xY award" data-id="5209:2401"><div class="frame-318-5KNJq3 frame-318" data-id="I5209:2401;5117:1754"><div class="logo-YyInO7 logo" data-id="I5209:2401;5117:1755"><div class="general-categories" data-id="I5209:2401;5117:1755;5135:2034"><img class="vector-kRMKUP vector" data-id="I5209:2401;5117:1755;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-G3oSyM vector" data-id="I5209:2401;5117:1755;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-WgmFFB vector" data-id="I5209:2401;5117:1755;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-zzbRx4 vector" data-id="I5209:2401;5117:1755;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"></div></div><div class="frame-319-YyInO7 frame-319" data-id="I5209:2401;5117:1756"><div class="frame-320-nVjtbx frame-320" data-id="I5209:2401;5117:1757"><div class="site-of-the-month-pC3Tc8 site-of-the-month" data-id="I5209:2401;5117:1758">Site of the Month.</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2401;5117:1759">Kajo Studio.</div></div></div></div><div class="frame-319-5KNJq3 frame-319" data-id="I5209:2401;5117:1761"><div class="frame-319-IYkR23 frame-319" data-id="I5209:2401;5117:1762"><div class="frame-320-LCSsxj frame-320" data-id="I5209:2401;5117:1763"><div class="certificate helvetica-regular-normal-white-11px" data-id="I5209:2401;5117:1764">Certificate</div></div><p class="lorem-ipsum-dolor-si-LCSsxj lorem-ipsum-dolor-si" data-id="I5209:2401;5117:1765">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article><article class="award-XvzCFY award" data-id="5209:2402"><div class="frame-318-xFH4LZ frame-318" data-id="I5209:2402;5117:1629"><div class="logo-DxTzk9 logo" data-id="I5209:2402;5117:1675"><div class="general-categories" data-id="I5209:2402;5117:1675;5135:2034"><img class="vector-nPxUKw vector" data-id="I5209:2402;5117:1675;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-8.svg" alt="Vector"><img class="vector-rfSM6A vector" data-id="I5209:2402;5117:1675;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-9.svg" alt="Vector"><img class="vector-gzVJyb vector" data-id="I5209:2402;5117:1675;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-10.svg" alt="Vector"><img class="vector-XBRF3J vector" data-id="I5209:2402;5117:1675;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-11.svg" alt="Vector"></div></div><div class="frame-319-DxTzk9 frame-319" data-id="I5209:2402;5117:1633"><div class="frame-320-eJmuVK frame-320" data-id="I5209:2402;5117:1634"><div class="site-of-the-month-ekY4zp site-of-the-month" data-id="I5209:2402;5117:1635">Site of the Month.</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2402;5117:1636">Kajo Studio.</div></div></div></div><div class="frame-319-xFH4LZ frame-319" data-id="I5209:2402;5117:1638"><div class="frame-319-Ypgjeq frame-319" data-id="I5209:2402;5117:1639"><div class="frame-320-kxB0U9 frame-320" data-id="I5209:2402;5117:1640"><div class="certificate helvetica-regular-normal-white-11px" data-id="I5209:2402;5117:1641">Certificate</div></div><p class="lorem-ipsum-dolor-si-kxB0U9 lorem-ipsum-dolor-si" data-id="I5209:2402;5117:1642">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article><article class="award-gajCRz award" data-id="5209:2403"><div class="frame-318-AHlIUI frame-318" data-id="I5209:2403;5117:1696"><div class="logo-ThoHsu logo" data-id="I5209:2403;5117:1697"><div class="general-categories" data-id="I5209:2403;5117:1697;5135:2034"><img class="vector-dflA9X vector" data-id="I5209:2403;5117:1697;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-8.svg" alt="Vector"><img class="vector-6Q0lxj vector" data-id="I5209:2403;5117:1697;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-9.svg" alt="Vector"><img class="vector-xySuvT vector" data-id="I5209:2403;5117:1697;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-10.svg" alt="Vector"><img class="vector-rMc9Tj vector" data-id="I5209:2403;5117:1697;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-11.svg" alt="Vector"></div></div><div class="frame-319-ThoHsu frame-319" data-id="I5209:2403;5117:1698"><div class="frame-320-AIHzAt frame-320" data-id="I5209:2403;5117:1699"><div class="website-of-the-day-XaIOMU" data-id="I5209:2403;5117:1700">Website of the Day.</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2403;5117:1701">Kajo Studio.</div></div></div></div><div class="frame-319-AHlIUI frame-319" data-id="I5209:2403;5117:1703"><div class="frame-319-NGhrKI frame-319" data-id="I5209:2403;5117:1704"><div class="frame-320-Uex0L7 frame-320" data-id="I5209:2403;5117:1705"><div class="certificate helvetica-regular-normal-white-11px" data-id="I5209:2403;5117:1706">Certificate</div></div><p class="lorem-ipsum-dolor-si-Uex0L7 lorem-ipsum-dolor-si" data-id="I5209:2403;5117:1707">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article></div><div class="grid-SQOnmL" data-id="5209:2451"><article class="award-OcJMz0 award" data-id="5209:2452"><div class="frame-318-FJqggk frame-318" data-id="I5209:2452;5117:1644"><div class="logo-iTsASi logo" data-id="I5209:2452;5117:1683"><div class="general-categories" data-id="I5209:2452;5117:1683;5135:2034"><img class="vector-xwtMXH vector" data-id="I5209:2452;5117:1683;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-mO9cCy vector" data-id="I5209:2452;5117:1683;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-Wwx4Xa vector" data-id="I5209:2452;5117:1683;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"><img class="vector-wYbnak vector" data-id="I5209:2452;5117:1683;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-4@2x.png" alt="Vector"></div></div><div class="frame-319-iTsASi frame-319" data-id="I5209:2452;5117:1648"><div class="frame-320-55CR9I frame-320" data-id="I5209:2452;5117:1649"><div class="website-of-the-year-5OyWRT website-of-the-year" data-id="I5209:2452;5117:1650">Website of the Year.</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2452;5117:1651">Kajo Studio.</div></div></div></div><div class="frame-319-FJqggk frame-319" data-id="I5209:2452;5117:1653"><div class="frame-319-qtQKIC frame-319" data-id="I5209:2452;5117:1654"><div class="frame-320-tzmuQk frame-320" data-id="I5209:2452;5117:1655"><div class="certificate helvetica-regular-normal-white-11px" data-id="I5209:2452;5117:1656">Certificate</div></div><p class="lorem-ipsum-dolor-si-tzmuQk lorem-ipsum-dolor-si" data-id="I5209:2452;5117:1657">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article><article class="award-bJqwVq award" data-id="5209:2453"><div class="frame-318-xxmkvu frame-318" data-id="I5209:2453;5117:1734"><div class="logo-bgwKfm logo" data-id="I5209:2453;5117:1735"><div class="general-categories" data-id="I5209:2453;5117:1735;5135:2034"><img class="vector-xh32xh vector" data-id="I5209:2453;5117:1735;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-8.svg" alt="Vector"><img class="vector-CAezrQ vector" data-id="I5209:2453;5117:1735;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-9.svg" alt="Vector"><img class="vector-S78sKc vector" data-id="I5209:2453;5117:1735;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-10.svg" alt="Vector"><img class="vector-13yM6g vector" data-id="I5209:2453;5117:1735;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-11.svg" alt="Vector"></div></div><div class="frame-319-bgwKfm frame-319" data-id="I5209:2453;5117:1736"><div class="frame-320-GxLkJP frame-320" data-id="I5209:2453;5117:1737"><div class="website-of-the-year-RzoxlN website-of-the-year" data-id="I5209:2453;5117:1738">Website of the Year.</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2453;5117:1739">Kajo Studio.</div></div></div></div><div class="frame-319-xxmkvu frame-319" data-id="I5209:2453;5117:1741"><div class="frame-319-SyexQT frame-319" data-id="I5209:2453;5117:1742"><div class="frame-320-mSiQKj frame-320" data-id="I5209:2453;5117:1743"><div class="certificate helvetica-regular-normal-white-11px" data-id="I5209:2453;5117:1744">Certificate</div></div><p class="lorem-ipsum-dolor-si-mSiQKj lorem-ipsum-dolor-si" data-id="I5209:2453;5117:1745">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article><article class="award-IDVwmC award" data-id="5209:2454"><div class="frame-318-eTn4G8 frame-318" data-id="I5209:2454;5117:1715"><div class="logo-TDQbQ6 logo" data-id="I5209:2454;5117:1716"><div class="general-categories" data-id="I5209:2454;5117:1716;5135:2034"><img class="vector-tLAsGR vector" data-id="I5209:2454;5117:1716;5135:2035" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-8.svg" alt="Vector"><img class="vector-XOJmec vector" data-id="I5209:2454;5117:1716;5135:2036" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-9.svg" alt="Vector"><img class="vector-iX6pXf vector" data-id="I5209:2454;5117:1716;5135:2037" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-10.svg" alt="Vector"><img class="vector-X2HpxQ vector" data-id="I5209:2454;5117:1716;5135:2038" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/vector-11.svg" alt="Vector"></div></div><div class="frame-319-TDQbQ6 frame-319" data-id="I5209:2454;5117:1717"><div class="frame-320-1HKmKP frame-320" data-id="I5209:2454;5117:1718"><div class="branding-of-the-year" data-id="I5209:2454;5117:1719">Branding of the Year.</div><div class="kajo-studio helvetica-bold-white-24-8px" data-id="I5209:2454;5117:1720">Kajo Studio.</div></div></div></div><div class="frame-319-eTn4G8 frame-319" data-id="I5209:2454;5117:1722"><div class="frame-319-J8Mi22 frame-319" data-id="I5209:2454;5117:1723"><div class="frame-320-nD2ara frame-320" data-id="I5209:2454;5117:1724"><div class="certificate helvetica-regular-normal-white-11px" data-id="I5209:2454;5117:1725">Certificate</div></div><p class="lorem-ipsum-dolor-si-nD2ara lorem-ipsum-dolor-si" data-id="I5209:2454;5117:1726">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p></div></div></article></div></div><div class="grid-AxTmsP" data-id="4259:782"><div class="grid-RBsMpn" data-id="4259:816"><div class="branding-awards-IhaGVx antonsc-normal-woodsmoke-96px" data-id="4259:881">BRANDING<br>AWARDS</div><div class="grid-IhaGVx" data-id="4259:821"><div class="grid-eKb77c" data-id="4259:823"><div class="brand-excellence-awards-C0Ge5x heading-alth4" data-id="4259:824">Brand Excellence Awards</div><div class="x2024 textmeta" data-id="4259:825">(2024)</div></div><div class="line-eKb77c line" data-id="4259:826"></div><div class="grid-zQ6xO5" data-id="4259:827"><div class="iconic-identity-awards-SutkSQ heading-alth4" data-id="4259:828">Iconic Identity Awards</div><div class="x2024 textmeta" data-id="4259:829">(2024)</div></div><div class="line-zQ6xO5 line" data-id="4259:830"></div><div class="grid-ayp6WY" data-id="4259:831"><div class="visionary-brand-honors-CvsB4U heading-alth4" data-id="4259:832">Visionary Brand Honors</div><div class="x2023 textmeta" data-id="4259:833">(2023)</div></div><div class="line-ayp6WY line" data-id="4259:834"></div><div class="grid-AQ4ODi" data-id="4259:835"><div class="golden-mark-awards-G41CyB heading-alth4" data-id="4259:836">Golden Mark Awards</div><div class="x2023 textmeta" data-id="4259:837">(2023)</div></div><div class="line-AQ4ODi line" data-id="4259:838"></div><div class="grid-wi2e8v" data-id="4259:839"><div class="brand-innovation-awards-YkYoPk heading-alth4" data-id="4259:840">Brand Innovation Awards</div><div class="x2022-YkYoPk textmeta" data-id="4259:841">(2022)</div></div><div class="line-wi2e8v line" data-id="4259:858"></div><div class="grid-Lg5Cnx" data-id="4259:846"><div class="signature-branding-awards-MXalpU heading-alth4" data-id="4259:847">Signature Branding Awards</div><div class="x2021-MXalpU textmeta" data-id="4259:848">(2021)</div></div></div></div><div class="grid-KgF0bi" data-id="4289:516"><div class="website-awards-RKelKe antonsc-normal-woodsmoke-96px" data-id="4289:517">WEBSITE<br>AWARDS</div><div class="grid-RKelKe" data-id="4289:518"><div class="grid-DC2pN3" data-id="4289:519"><div class="digital-masterpiece-awards-S1GGEx heading-alth4" data-id="4289:520">Digital Masterpiece Awards</div><div class="x2023 textmeta" data-id="4289:521">(2023)</div></div><div class="line-DC2pN3 line" data-id="4289:522"></div><div class="grid-Jw4DwP" data-id="4289:523"><div class="web-excellence-awards-3v4wAg heading-alth4" data-id="4289:524">Web Excellence Awards</div><div class="x2023 textmeta" data-id="4289:525">(2023)</div></div><div class="line-Jw4DwP line" data-id="4289:526"></div><div class="grid-bEUjm5" data-id="4289:527"><div class="pixel-perfection-honors-CO7NaP heading-alth4" data-id="4289:528">Pixel Perfection Honors</div><div class="x2023 textmeta" data-id="4289:529">(2023)</div></div><div class="line-bEUjm5 line" data-id="4289:530"></div><div class="grid-odQFVJ" data-id="4289:531"><p class="innovation-in-web-design-awards-3A39eU heading-alth4" data-id="4289:532">Innovation in Web Design Awards</p><div class="x2023 textmeta" data-id="4289:533">(2023)</div></div><div class="line-odQFVJ line" data-id="4289:534"></div><div class="grid-iU79h0" data-id="4289:535"><p class="best-in-user-experience-awards-LFsSKC heading-alth4" data-id="4289:536">Best in User Experience Awards</p><div class="x2023 textmeta" data-id="4289:537">(2023)</div></div><div class="line-iU79h0 line" data-id="4289:538"></div><div class="grid-QtuZ8a" data-id="4289:539"><div class="interactive-design-awards-tGL3tO heading-alth4" data-id="4289:540">Interactive Design Awards</div><div class="x2023 textmeta" data-id="4289:541">(2023)</div></div></div></div><div class="grid-agdMn5" data-id="5209:2582"><div class="uiux-awards-cZKiAz antonsc-normal-woodsmoke-96px" data-id="5209:2583">UI/UX<br>AWARDS</div><div class="grid-cZKiAz" data-id="5209:2584"><div class="grid-htr3Mi" data-id="5209:2585"><div class="user-experience-excellence-awards-Dn3Iqq heading-alth4" data-id="5209:2586">User Experience Excellence Awards</div><div class="x2023 textmeta" data-id="5209:2587">(2023)</div></div><div class="line-htr3Mi line" data-id="5209:2588"></div><div class="grid-ksUj4B" data-id="5209:2589"><div class="intuitive-interface-awards-aYFHxB heading-alth4" data-id="5209:2590">Intuitive Interface Awards</div><div class="x2023 textmeta" data-id="5209:2591">(2023)</div></div><div class="line-ksUj4B line" data-id="5209:2592"></div><div class="grid-DKDhF2" data-id="5209:2593"><div class="seamless-design-honors-S3xoP0 heading-alth4" data-id="5209:2594">Seamless Design Honors</div><div class="x2023 textmeta" data-id="5209:2595">(2023)</div></div><div class="line-DKDhF2 line" data-id="5209:2596"></div><div class="grid-qLWO9Y" data-id="5209:2597"><div class="ux-innovation-awards-kF4cbP heading-alth4" data-id="5209:2598">UX Innovation Awards</div><div class="x2023 textmeta" data-id="5209:2599">(2023)</div></div><div class="line-qLWO9Y line" data-id="5209:2600"></div><div class="grid-1DIdWS" data-id="5209:2601"><div class="flawless-interaction-awards-Pi4CTx heading-alth4" data-id="5209:2602">Flawless Interaction Awards</div><div class="x2023 textmeta" data-id="5209:2603">(2023)</div></div><div class="line-1DIdWS line" data-id="5209:2604"></div><div class="grid-5aTJqK" data-id="5209:2605"><div class="human-centered-design-awards-tnkOVA heading-alth4" data-id="5209:2606">Human-Centered Design Awards</div><div class="x2023 textmeta" data-id="5209:2607">(2023)</div></div></div></div></div></div></div><footer class="footer-vRTBB9" data-id="4259:712"><div class="grid-1ETIZM" data-id="I4259:712;4259:1590"><div class="k-aj-o-r3Zn1L antonsc-normal-white-240px" data-id="I4259:712;4259:1739">FWR<br>INC©</div></div><div class="grid-38QLqU" data-id="I4259:712;4259:1663"><div class="grid-CfCofZ" data-id="I4259:712;4259:298"><div class="grid-xTYFEy" data-id="I4259:712;4259:302"><div class="pages-tiVKNG textmeta" data-id="I4259:712;4259:303">(Pages)</div><div class="nav" data-id="I4259:712;4259:304"><a href="home"><div class="home-teDo1g heading-alth5" data-id="I4259:712;4259:305">Home</div></a><a href="service"><div class="service-teDo1g heading-alth5" data-id="I4259:712;4259:307">Service</div></a><div class="studio-teDo1g studio heading-alth5" data-id="I4259:712;4259:306">Studio</div><div class="contact-teDo1g heading-alth5" data-id="I4259:712;4259:310">Contact</div></div></div><div class="grid-Hevb4y" data-id="I4259:712;4259:311"><div class="cms-DhrtYd textmeta" data-id="I4259:712;4259:343">(CMS)</div><div class="nav" data-id="I4259:712;4259:313"><div class="work-FYOxf6 heading-alth5" data-id="I4259:712;4259:314">Work</div><div class="work-single-FYOxf6 heading-alth5" data-id="I4259:712;4259:315">Work Single</div><div class="blog-FYOxf6 heading-alth5" data-id="I4259:712;4259:316">Blog</div><div class="blog-single-FYOxf6 heading-alth5" data-id="I4259:712;4259:317">Blog Single</div></div></div><div class="grid-PskExg" data-id="I4259:712;4259:1989"><div class="utility-pages-ub6Bcu textmeta" data-id="I4259:712;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4259:712;4259:1991"><div class="licensing-ZgjKYy heading-alth5" data-id="I4259:712;4259:1993">Licensing</div></div></div><div class="grid-Pe9tEt" data-id="I4259:712;4259:1870"><div class="socials-kRqFxS textmeta" data-id="I4259:712;4259:1871">(Socials)</div><div class="nav" data-id="I4259:712;4259:1872"><div class="instagram-pnNXXu heading-alth5" data-id="I4259:712;4259:1873">Instagram</div><div class="behance-pnNXXu heading-alth5" data-id="I4259:712;4259:1874">Behance</div><div class="dribbble-pnNXXu heading-alth5" data-id="I4259:712;4259:1875">Dribbble</div></div></div></div><div class="grid-Q13Z3h" data-id="I4259:712;5267:3373"><article class="button-text-neA8xB button-text" data-id="I4259:712;5267:3374"><div class="button-text-Yktb13 button-text componentsbutton" data-id="I4259:712;5267:3374;2955:6381">By Gola Templates</div><div class="line-Yktb13 line" data-id="I4259:712;5267:3374;2955:6382"></div></article><article class="button-text-D4DVil button-text" data-id="I4259:712;5267:3375"><div class="button-text-PFWwbA button-text componentsbutton" data-id="I4259:712;5267:3375;2955:6381">Back to Top</div><div class="line-PFWwbA line" data-id="I4259:712;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
