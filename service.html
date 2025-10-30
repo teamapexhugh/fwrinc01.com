@@ -4,12 +4,12 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-23/10/2025 05:42:14 -->
+30/10/2025 06:10:10 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Anton+SC:400|Inter:400,600");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700,600|Anton+SC:400");
 
 
 @font-face {
@@ -216,11 +216,13 @@ input:focus {
 }
 :root { 
   --backgrounddefault: #ffffff;
+  --backgroundinverse-muted: #181a1b;
   --backgroundmuted: #f8f8f8;
   --backgroundmuted-2: #eeeeee;
   --backgroundprimary: #0e1011;
   --black: #000000;
   --borderdefault: #e8e8e8;
+  --borderinverse: #ffffff33;
   --icondefault: #0e1011;
   --iconinverse: #ffffff;
   --keppel: #37999d;
@@ -232,17 +234,18 @@ input:focus {
   --woodsmoke: #0e101199;
  
   --font-size-18px: 18px;
+  --font-size-24px: 24px;
   --font-size-28px: 28px;
-  --font-size-48px: 48px;
+  --font-size-32px: 32px;
   --font-size-64px: 64px;
   --font-size-80px: 80px;
-  --font-size-l: 20px;
-  --font-size-m: 6.9px;
-  --font-size-xl: 22px;
-  --font-size-xxl: 26px;
-  --font-size-xxxl: 30px;
-  --font-size-xxxxl: 32px;
-  --font-size-xxxxxl: 40px;
+  --font-size-l: 26px;
+  --font-size-m: 22px;
+  --font-size-s: 20px;
+  --font-size-xl: 30px;
+  --font-size-xs: 6.9px;
+  --font-size-xxl: 40px;
+  --font-size-xxxl: 48px;
  
   --font-family-anton_sc: "Anton SC", Helvetica;
   --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
@@ -268,7 +271,7 @@ input:focus {
 
 .heading-alth2 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-48px);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -276,7 +279,7 @@ input:focus {
 
 .heading-alth3 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -1px;
@@ -284,7 +287,7 @@ input:focus {
 
 .heading-alth4 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-32px);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -292,7 +295,7 @@ input:focus {
 
 .heading-alth5 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
@@ -306,9 +309,17 @@ input:focus {
   letter-spacing: 0px;
 }
 
+.textlarge {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-24px);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
 .textmedium {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -316,7 +327,7 @@ input:focus {
 
 .textdefault {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-s);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -332,7 +343,7 @@ input:focus {
 
 .textmeta {
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-xl);
   font-style: italic;
   font-weight: 500;
   letter-spacing: 0px;
@@ -340,10 +351,18 @@ input:focus {
 
 .componentsbutton {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
+}
+
+.antonsc-normal-woodsmoke-128px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .helvetica-bold-white-24-8px {
@@ -357,7 +376,7 @@ input:focus {
 .gambetta-mediumitalic-medium-woodsmoke-20px {
   color: var(--woodsmoke);
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-s);
   font-style: italic;
   font-weight: 500;
 }
@@ -370,10 +389,10 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-240px {
+.antonsc-normal-white-128px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: 240px;
+  font-size: 128px;
   font-style: normal;
   font-weight: 400;
 }
@@ -381,17 +400,9 @@ input:focus {
 .gambetta-mediumitalic-medium-woodsmoke-32px {
   color: var(--woodsmoke);
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xxxxl);
+  font-size: 32px;
   font-style: italic;
   font-weight: 500;
-}
-
-.antonsc-normal-woodsmoke-320px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 320px;
-  font-style: normal;
-  font-weight: 400;
 }
 
 .antonsc-normal-white-192px {
@@ -402,12 +413,12 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-woodsmoke-96px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 96px;
+.inter-semi-bold-white-48px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 :root {
@@ -455,6 +466,13 @@ input:focus {
   background-color: transparent;
   position: absolute;
 }
+
+.material-symbolsarrow-forward-rounded {
+  background-color: transparent;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
 /* screen - service */
 
 .service {
@@ -469,216 +487,22 @@ input:focus {
   top: 0px;
 }
 
-.service .frame-366-R3SQrl {
-  background-color: transparent;
-  cursor: pointer;
-  height: 93px;
-  overflow: hidden;
-  position: relative;
-  width: 261px;
-  z-index: 6;
-}
-
-.service .fwrinc-logo-2-SUJjxq {
-  background-color: transparent;
-  height: 31px;
-  left: 34px;
-  overflow: hidden;
-  position: relative;
-  top: 33px;
-  width: 193px;
-}
-
-.service .vector-jx8ZaA {
-  height: 79.82%;
-  left: 4.61%;
-  top: 11.07%;
-  width: 9.87%;
-}
-
-.service .vector-v0DW5F {
-  height: 9.69%;
-  left: 15.30%;
-  top: 81.20%;
-  width: 0px;
-}
-
-.service .vector-GpZdgo {
-  height: 80.61%;
-  left: 17.27%;
-  top: 10.85%;
-  width: 20.06%;
-}
-
-.service .vector-z9evsi {
-  height: 9.69%;
-  left: 37.97%;
-  top: 81.20%;
-  width: 0px;
-}
-
-.service .vector-HxkVOc {
-  height: 79.81%;
-  left: 43.01%;
-  top: 11.07%;
-  width: 11.41%;
-}
-
-.service .vector-cvwTEB {
-  height: 79.82%;
-  left: 57.62%;
-  top: 11.07%;
-  width: 0px;
-}
-
-.service .vector-MqhWCh {
-  height: 79.82%;
-  left: 62.97%;
-  top: 11.07%;
-  width: 11.65%;
-}
-
-.service .vector-IO5Lgg {
-  height: 82.55%;
-  left: 78.16%;
-  top: 9.70%;
-  width: 12.53%;
-}
-
-.service .vector-uf1HBM {
-  height: 27.82%;
-  left: 92.05%;
-  top: 9.14%;
-  width: 4.86%;
-}
-
-.service .frame-363-R3SQrl {
-  background-color: transparent;
-  cursor: pointer;
-  height: 46px;
-  position: relative;
-  width: 285px;
-  z-index: 5;
-}
-
-.service .header-R3SQrl {
-  align-items: center;
-  background-color: transparent;
-  border-radius: 500px;
-  display: flex;
-  justify-content: space-between;
-  left: 0px;
-  padding: 64px 96px 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: 4;
-}
-
-.service .logo-sbBmAk {
-  background-color: transparent;
-  cursor: pointer;
-  height: 36px;
-  position: relative;
-  width: 75px;
-}
-
-.service .grid-sbBmAk {
-  align-items: center;
-  align-self: stretch;
-  background-color: transparent;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 48px;
-  position: relative;
-}
-
-.service .projects-w3ir8M {
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.service .services-w3ir8M {
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.service .studio-w3ir8M {
-  color: var(--backgroundprimary);
-  cursor: pointer;
-  line-height: 22px;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.service .journal-w3ir8M {
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.service .button-text-sbBmAk {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: center;
-}
-
-.service .button-text-Y1t7rL {
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  margin-top: -1.00px;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.service .line-Y1t7rL {
-  background-color: var(--backgroundprimary);
-}
-
 .service .section-hero-R3SQrl {
   align-items: flex-start;
   align-self: stretch;
   background-color: transparent;
   display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
+  height: 508px;
   padding: 160px 96px 96px;
   position: relative;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
 }
 
 .service .service-hWxk0B {
   letter-spacing: 0.00px;
-  line-height: 320px;
+  line-height: 128px;
   margin-top: -1.00px;
 }
 
@@ -687,7 +511,7 @@ input:focus {
   color: var(--backgroundprimary);
   font-style: normal;
   font-weight: 600;
-  line-height: 96.0px;
+  line-height: 62.4px;
   position: relative;
   text-align: left;
   width: 1400px;
@@ -702,7 +526,7 @@ input:focus {
   flex-direction: column;
   position: relative;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .service .grid-KHXajG {
@@ -745,11 +569,6 @@ input:focus {
 
 .service .brand-strategy-v2rUEl {
   background-color: transparent;
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 128px;
-  font-style: normal;
-  font-weight: 400;
   letter-spacing: 0.00px;
   line-height: 128px;
   margin-top: -1.00px;
@@ -889,6 +708,8 @@ input:focus {
 }
 
 .service .tea-bag-oem-services-WUB0J7 {
+  color: var(--backgroundprimary);
+  font-style: normal;
   font-weight: 600;
   line-height: 56.0px;
 }
@@ -943,7 +764,7 @@ input:focus {
   flex-direction: column;
   position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .service .grid-47L1Sh {
@@ -1005,16 +826,13 @@ input:focus {
 }
 
 .service .tea-bag-oem-services-j1Ordz {
-  font-family: var(--font-family-anton_sc);
-  font-size: 240px;
-  font-weight: 400;
   letter-spacing: 0.00px;
-  line-height: 240px;
+  line-height: 128px;
 }
 
 .service .flat-rectangular-tea-j1Ordz {
   font-weight: 600;
-  line-height: 96.0px;
+  line-height: 62.4px;
   width: 1400px;
 }
 
@@ -1155,7 +973,7 @@ input:focus {
   padding: 96px 96px 64px;
   position: relative;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .service .grid-LxLbEU {
@@ -1174,7 +992,7 @@ input:focus {
   background-color: transparent;
   flex: 1;
   letter-spacing: 0.00px;
-  line-height: 240px;
+  line-height: 128px;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
@@ -1482,6 +1300,107 @@ input:focus {
   background-color: var(--backgrounddefault);
 }
 
+.service .header-R3SQrl {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 500px;
+  display: flex;
+  justify-content: space-between;
+  left: 0px;
+  padding: 64px 96px 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.service .logo-sbBmAk {
+  background-color: transparent;
+  height: 36px;
+  position: relative;
+  width: 75px;
+}
+
+.service .grid-sbBmAk {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 48px;
+  position: relative;
+}
+
+.service .projects-w3ir8M {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.service .services-w3ir8M {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.service .studio-w3ir8M {
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  line-height: 22px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.service .journal-w3ir8M {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.service .button-text-sbBmAk {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+.service .button-text-Y1t7rL {
+  color: var(--backgroundprimary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: -1.00px;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.service .line-Y1t7rL {
+  background-color: var(--backgroundprimary);
+}
+
 .service .border {
   align-self: stretch;
   background-color: var(--borderdefault);
@@ -1498,13 +1417,6 @@ input:focus {
   text-align: left;
 }
 
-.service .material-symbolsarrow-forward-rounded {
-  background-color: transparent;
-  height: 32px;
-  position: relative;
-  width: 32px;
-}
-
 .service .service-1 {
   align-self: stretch;
   background-color: transparent;
@@ -1515,10 +1427,8 @@ input:focus {
 .service .tea-bag-oem-services {
   align-self: stretch;
   background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
 }
-</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="service"><div class="service screen " data-id="4232:1672"><a href="home"><div class="frame-366-R3SQrl" data-id="9164:1318"><div class="fwrinc-logo-2-SUJjxq" data-id="9164:1319"><img class="vector-jx8ZaA vector" data-id="9164:1320" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-27.svg" alt="Vector"><img class="vector-v0DW5F vector" data-id="9164:1321" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-28.svg" alt="Vector"><img class="vector-GpZdgo vector" data-id="9164:1322" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-29.svg" alt="Vector"><img class="vector-z9evsi vector" data-id="9164:1323" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-28.svg" alt="Vector"><img class="vector-HxkVOc vector" data-id="9164:1324" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-31.svg" alt="Vector"><img class="vector-cvwTEB vector" data-id="9164:1325" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-32.svg" alt="Vector"><img class="vector-MqhWCh vector" data-id="9164:1326" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-33.svg" alt="Vector"><img class="vector-IO5Lgg vector" data-id="9164:1327" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-34.svg" alt="Vector"><img class="vector-uf1HBM vector" data-id="9164:1328" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-35.svg" alt="Vector"></div></div></a><a href="home"><div class="frame-363-R3SQrl" data-id="9153:1200"></div></a><header class="header-R3SQrl" data-id="4264:390"><a href="home"><div class="logo-sbBmAk" data-id="I4264:390;4797:1301"></div></a><div class="grid-sbBmAk" data-id="I4264:390;4264:358"><a href="work"><div class="projects-w3ir8M componentsbutton" data-id="I4264:390;4264:361">Products</div></a><div class="services-w3ir8M componentsbutton" data-id="I4264:390;4264:363">Services</div><a href="about"><div class="studio-w3ir8M studio componentsbutton" data-id="I4264:390;4264:365">About</div></a><a href="contact"><div class="journal-w3ir8M componentsbutton" data-id="I4264:390;4264:367">Contact</div></a></div><div class="button-text-sbBmAk button-text" data-id="I4264:390;5267:2825"><div class="button-text-Y1t7rL button-text componentsbutton" data-id="I4264:390;5267:2825;2830:1267">Let’s Talk</div><div class="line-Y1t7rL line" data-id="I4264:390;5267:2825;2830:1268"></div></div></header><div class="section-hero-R3SQrl" data-id="4232:1729"><h1 class="service-hWxk0B service-1 antonsc-normal-woodsmoke-320px" data-id="4289:506">SERVICE</h1><p class="explore-our-tailored-hWxk0B heading-altsmall" data-id="4232:1744">Explore our tailored services designed to elevate your brand.</p></div><div class="section-service-R3SQrl" data-id="4249:689"><div class="grid-KHXajG" data-id="4267:973"><img class="image-wrapper-SVhLTb" data-id="4267:974" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-6@3x.png" alt="Image Wrapper"><img class="image-wrapper-8L7uOZ" data-id="4267:976" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-7@2x.png" alt="Image Wrapper"></div><div class="grid-Hw8zg0" data-id="4232:1746"><div class="brand-strategy-v2rUEl" data-id="4232:1748">BRAND<br>STRATEGY</div><div class="grid-v2rUEl" data-id="4232:1749"><div class="grid-x81XH6" data-id="4232:1750"><p class="we-create-compelling-4v3mYN heading-alth2" data-id="4232:1762">We create compelling brand identities that resonate with your audience, helping you establish a strong presence and foster meaningful connections.</p></div><div class="grid-nPIS4c" data-id="4565:361"><div class="grid-hSNdJ2" data-id="4565:362"><p class="tea-raw-material-supply-wholesale-FK96yr heading-alth3" data-id="4565:363">Tea Raw Material Supply &amp; Wholesale</p><p class="imported-raw-tea-mat-FK96yr textdefault" data-id="4565:364">● Imported raw tea materials wholesale.<br>● Specialized manufacturing and wholesale supply of tea for chain beverage stores, <br>&nbsp;&nbsp;&nbsp;&nbsp; breakfast shops, cafés, and hotels.<br>● Tea wholesale for bubble tea shops.<br>● Tea bags designed for tea extraction machines.<br>● Customized packaging services.<br>● Pyramid (triangular) tea bags.<br>● Matcha powder.</p></div><div class="border" data-id="4565:365"></div><div class="grid-wxJSGj" data-id="4565:366"><div class="customized-tea-blending-qRioQd heading-alth3" data-id="4565:367">Customized Tea Blending</div><p class="as-the-tea-beverage-qRioQd textdefault" data-id="4565:368">As the tea beverage market continues to innovate, our company can develop customized tea products according to your needs—from product research and development, raw material sourcing, and production, to packaging.<br> We tailor unique tea blends with distinctive flavors, aromas, and textures that highlight your brand’s individuality and strengthen your product’s competitiveness.</p></div><div class="border" data-id="4565:369"></div><div class="grid-CaprMi" data-id="4565:370"><div class="tea-bag-oem-services-WUB0J7 tea-bag-oem-services heading-alth3" data-id="4565:371">Tea Bag OEM Services</div><p class="flat-rectangular-tea-WUB0J7 flat-rectangular-tea textdefault" data-id="4565:372">Flat rectangular tea bags and pyramid (triangular) tea bags.</p></div><div class="border" data-id="4565:373"></div><div class="grid-FxTOxU" data-id="4565:374"><div class="customized-private-label-packaging-aV8thE heading-alth3" data-id="4565:375">Customized Private Label Packaging</div><p class="we-provide-customize-aV8thE textdefault" data-id="4565:376">We provide customized packaging formats and labeling solutions based on each brand’s specific requirements.</p></div></div></div></div></div><div class="section-testimonials-R3SQrl" data-id="4267:756"><div class="grid-47L1Sh" data-id="4259:285"><div class="grid-YHFfxS" data-id="4259:287"><div class="testimonials-Q6DL6Q gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:288">(Testimonials)</div><div class="x01-Q6DL6Q gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:289">(01)</div></div><div class="grid-nfGIug" data-id="4259:290"><div class="tea-bag-oem-services-j1Ordz tea-bag-oem-services" data-id="4259:291">TEA BAG OEM SERVICES</div><p class="flat-rectangular-tea-j1Ordz flat-rectangular-tea heading-altsmall" data-id="4259:292">Flat rectangular tea bags and pyramid (triangular) tea bags.</p></div></div><div class="grid-tnUSJW" data-id="4259:264"><div class="image-wrapper-KvTaAi" data-id="4259:266"><img class="image-o2mr4b" data-id="5246:2651" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/image-10.png" alt="Image"><div class="arrows-o2mr4b" data-id="4259:268"><div class="frame-1-YVoI1x" data-id="4259:269"><img class="material-symbolsarrow-forward-rounded" data-id="4259:270" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/material-symbols-arrow-forward-rounded.svg" alt="material-symbols:arrow-forward-rounded"></div><div class="frame-2-YVoI1x" data-id="4259:271"><img class="material-symbolsarrow-forward-rounded" data-id="4259:272" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/material-symbols-arrow-forward-rounded-1.svg" alt="material-symbols:arrow-forward-rounded"></div></div></div><div class="grid-KvTaAi" data-id="4259:273"><img class="image-rlNyz6" data-id="4259:275" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/--6.svg" alt="image"><div class="grid-rlNyz6" data-id="4259:276"><div class="utosia-yIqwCE gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:277">(Utosia)</div><p class="exceptional-branding-yIqwCE heading-alth1" data-id="4259:278">Exceptional Branding That Elevated Our Identity.</p><p class="their-strategic-appr-yIqwCE textxlarge" data-id="4259:280">Their strategic approach completely transformed our brand. We’ve seen a huge increase in recognition and client engagement</p></div></div></div></div><footer class="footer-R3SQrl" data-id="4259:689"><div class="grid-LxLbEU" data-id="I4259:689;4259:1590"><div class="k-aj-o-aa2QqN antonsc-normal-white-240px" data-id="I4259:689;4259:1739">FWR<br>INC©</div></div><div class="grid-IlGQxL" data-id="I4259:689;4259:1663"><div class="grid-6nxIIY" data-id="I4259:689;4259:298"><div class="grid-Noe4XO" data-id="I4259:689;4259:302"><div class="pages-ZUf0Tx textmeta" data-id="I4259:689;4259:303">(Pages)</div><div class="nav" data-id="I4259:689;4259:304"><a href="home"><div class="home-PV12ea heading-alth5" data-id="I4259:689;4259:305">Home</div></a><div class="service-PV12ea service-1 heading-alth5" data-id="I4259:689;4259:307">Service</div><div class="studio-PV12ea studio heading-alth5" data-id="I4259:689;4259:306">Studio</div><div class="contact-PV12ea heading-alth5" data-id="I4259:689;4259:310">Contact</div></div></div><div class="grid-hMHFaa" data-id="I4259:689;4259:311"><div class="cms-iIDeUM textmeta" data-id="I4259:689;4259:343">(CMS)</div><div class="nav" data-id="I4259:689;4259:313"><div class="work-esFAT1 heading-alth5" data-id="I4259:689;4259:314">Work</div><div class="work-single-esFAT1 heading-alth5" data-id="I4259:689;4259:315">Work Single</div><div class="blog-esFAT1 heading-alth5" data-id="I4259:689;4259:316">Blog</div><div class="blog-single-esFAT1 heading-alth5" data-id="I4259:689;4259:317">Blog Single</div></div></div><div class="grid-wxTZz2" data-id="I4259:689;4259:1989"><div class="utility-pages-H1jvxy textmeta" data-id="I4259:689;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4259:689;4259:1991"><div class="licensing-Nyp0rU heading-alth5" data-id="I4259:689;4259:1993">Licensing</div></div></div><div class="grid-kVSmga" data-id="I4259:689;4259:1870"><div class="socials-JptxVN textmeta" data-id="I4259:689;4259:1871">(Socials)</div><div class="nav" data-id="I4259:689;4259:1872"><div class="instagram-v22Qx3 heading-alth5" data-id="I4259:689;4259:1873">Instagram</div><div class="behance-v22Qx3 heading-alth5" data-id="I4259:689;4259:1874">Behance</div><div class="dribbble-v22Qx3 heading-alth5" data-id="I4259:689;4259:1875">Dribbble</div></div></div></div><div class="grid-X1q4CN" data-id="I4259:689;5267:3373"><article class="button-text-ltxZ2N button-text" data-id="I4259:689;5267:3374"><div class="button-text-4DAsfg button-text componentsbutton" data-id="I4259:689;5267:3374;2955:6381">By Gola Templates</div><div class="line-4DAsfg line" data-id="I4259:689;5267:3374;2955:6382"></div></article><article class="button-text-EL0TTC button-text" data-id="I4259:689;5267:3375"><div class="button-text-1vtPwI button-text componentsbutton" data-id="I4259:689;5267:3375;2955:6381">Back to Top</div><div class="line-1vtPwI line" data-id="I4259:689;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="service"><div class="service screen " data-id="4232:1672"><div class="section-hero-R3SQrl" data-id="4232:1729"><h1 class="service-hWxk0B service-1 antonsc-normal-woodsmoke-128px" data-id="4289:506">SERVICE</h1><p class="explore-our-tailored-hWxk0B heading-alth2" data-id="4232:1744">&#34;Explore our tailored services designed to elevate your brand.&#34;</p></div><div class="section-service-R3SQrl" data-id="4249:689"><div class="grid-KHXajG" data-id="4267:973"><img class="image-wrapper-SVhLTb" data-id="4267:974" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f9d95e53777c04255d8532/img/image-wrapper@3x.png" alt="Image Wrapper"><img class="image-wrapper-8L7uOZ" data-id="4267:976" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f9d95e53777c04255d8532/img/image-wrapper-1@2x.png" alt="Image Wrapper"></div><div class="grid-Hw8zg0" data-id="4232:1746"><div class="brand-strategy-v2rUEl antonsc-normal-woodsmoke-128px" data-id="4232:1748">BRAND<br>STRATEGY</div><div class="grid-v2rUEl" data-id="4232:1749"><div class="grid-x81XH6" data-id="4232:1750"><p class="we-create-compelling-4v3mYN heading-alth2" data-id="4232:1762">We create compelling brand identities that resonate with your audience, helping you establish a strong presence and foster meaningful connections.</p></div><div class="grid-nPIS4c" data-id="4565:361"><div class="grid-hSNdJ2" data-id="4565:362"><p class="tea-raw-material-supply-wholesale-FK96yr heading-alth3" data-id="4565:363">Tea Raw Material Supply &amp; Wholesale</p><p class="imported-raw-tea-mat-FK96yr textdefault" data-id="4565:364">● Imported raw tea materials wholesale.<br>● Specialized manufacturing and wholesale supply of tea for chain beverage stores, <br>&nbsp;&nbsp;&nbsp;&nbsp; breakfast shops, cafés, and hotels.<br>● Tea wholesale for bubble tea shops.<br>● Tea bags designed for tea extraction machines.<br>● Customized packaging services.<br>● Pyramid (triangular) tea bags.<br>● Matcha powder.</p></div><div class="border" data-id="4565:365"></div><div class="grid-wxJSGj" data-id="4565:366"><div class="customized-tea-blending-qRioQd heading-alth3" data-id="4565:367">Customized Tea Blending</div><p class="as-the-tea-beverage-qRioQd textdefault" data-id="4565:368">As the tea beverage market continues to innovate, our company can develop customized tea products according to your needs—from product research and development, raw material sourcing, and production, to packaging.<br> We tailor unique tea blends with distinctive flavors, aromas, and textures that highlight your brand’s individuality and strengthen your product’s competitiveness.</p></div><div class="border" data-id="4565:369"></div><div class="grid-CaprMi" data-id="4565:370"><div class="tea-bag-oem-services-WUB0J7 tea-bag-oem-services heading-alth3" data-id="4565:371">Tea Bag OEM Services</div><p class="flat-rectangular-tea-WUB0J7 flat-rectangular-tea textdefault" data-id="4565:372">Flat rectangular tea bags and pyramid (triangular) tea bags.</p></div><div class="border" data-id="4565:373"></div><div class="grid-FxTOxU" data-id="4565:374"><div class="customized-private-label-packaging-aV8thE heading-alth3" data-id="4565:375">Customized Private Label Packaging</div><p class="we-provide-customize-aV8thE textdefault" data-id="4565:376">We provide customized packaging formats and labeling solutions based on each brand’s specific requirements.</p></div></div></div></div></div><div class="section-testimonials-R3SQrl" data-id="4267:756"><div class="grid-47L1Sh" data-id="4259:285"><div class="grid-YHFfxS" data-id="4259:287"><div class="testimonials-Q6DL6Q gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:288">(Testimonials)</div><div class="x01-Q6DL6Q gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:289">(01)</div></div><div class="grid-nfGIug" data-id="4259:290"><div class="tea-bag-oem-services-j1Ordz tea-bag-oem-services antonsc-normal-woodsmoke-128px" data-id="4259:291">TEA BAG OEM SERVICES</div><p class="flat-rectangular-tea-j1Ordz flat-rectangular-tea heading-alth2" data-id="4259:292">Flat rectangular tea bags and pyramid (triangular) tea bags.</p></div></div><div class="grid-tnUSJW" data-id="4259:264"><div class="image-wrapper-KvTaAi" data-id="4259:266"><img class="image-o2mr4b" data-id="5246:2651" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/image-10.png" alt="Image"><div class="arrows-o2mr4b" data-id="4259:268"><div class="frame-1-YVoI1x" data-id="4259:269"><img class="material-symbolsarrow-forward-rounded" data-id="4259:270" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/material-symbols-arrow-forward-rounded.svg" alt="material-symbols:arrow-forward-rounded"></div><div class="frame-2-YVoI1x" data-id="4259:271"><img class="material-symbolsarrow-forward-rounded" data-id="4259:272" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/material-symbols-arrow-forward-rounded-1.svg" alt="material-symbols:arrow-forward-rounded"></div></div></div><div class="grid-KvTaAi" data-id="4259:273"><img class="image-rlNyz6" data-id="4259:275" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/--6.svg" alt="image"><div class="grid-rlNyz6" data-id="4259:276"><div class="utosia-yIqwCE gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:277">(Utosia)</div><p class="exceptional-branding-yIqwCE heading-alth1" data-id="4259:278">Exceptional Branding That Elevated Our Identity.</p><p class="their-strategic-appr-yIqwCE textxlarge" data-id="4259:280">Their strategic approach completely transformed our brand. We’ve seen a huge increase in recognition and client engagement</p></div></div></div></div><footer class="footer-R3SQrl" data-id="4259:689"><div class="grid-LxLbEU" data-id="I4259:689;4259:1590"><div class="k-aj-o-aa2QqN antonsc-normal-white-128px" data-id="I4259:689;4259:1739">FWR<br>INC©</div></div><div class="grid-IlGQxL" data-id="I4259:689;4259:1663"><div class="grid-6nxIIY" data-id="I4259:689;4259:298"><div class="grid-Noe4XO" data-id="I4259:689;4259:302"><div class="pages-ZUf0Tx textmeta" data-id="I4259:689;4259:303">(Pages)</div><div class="nav" data-id="I4259:689;4259:304"><a href="index"><div class="home-PV12ea heading-alth5" data-id="I4259:689;4259:305">Home</div></a><div class="service-PV12ea service-1 heading-alth5" data-id="I4259:689;4259:307">Service</div><div class="studio-PV12ea studio heading-alth5" data-id="I4259:689;4259:306">Studio</div><div class="contact-PV12ea heading-alth5" data-id="I4259:689;4259:310">Contact</div></div></div><div class="grid-hMHFaa" data-id="I4259:689;4259:311"><div class="cms-iIDeUM textmeta" data-id="I4259:689;4259:343">(CMS)</div><div class="nav" data-id="I4259:689;4259:313"><div class="work-esFAT1 heading-alth5" data-id="I4259:689;4259:314">Work</div><div class="work-single-esFAT1 heading-alth5" data-id="I4259:689;4259:315">Work Single</div><div class="blog-esFAT1 heading-alth5" data-id="I4259:689;4259:316">Blog</div><div class="blog-single-esFAT1 heading-alth5" data-id="I4259:689;4259:317">Blog Single</div></div></div><div class="grid-wxTZz2" data-id="I4259:689;4259:1989"><div class="utility-pages-H1jvxy textmeta" data-id="I4259:689;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4259:689;4259:1991"><div class="licensing-Nyp0rU heading-alth5" data-id="I4259:689;4259:1993">Licensing</div></div></div><div class="grid-kVSmga" data-id="I4259:689;4259:1870"><div class="socials-JptxVN textmeta" data-id="I4259:689;4259:1871">(Socials)</div><div class="nav" data-id="I4259:689;4259:1872"><div class="instagram-v22Qx3 heading-alth5" data-id="I4259:689;4259:1873">Instagram</div><div class="behance-v22Qx3 heading-alth5" data-id="I4259:689;4259:1874">Behance</div><div class="dribbble-v22Qx3 heading-alth5" data-id="I4259:689;4259:1875">Dribbble</div></div></div></div><div class="grid-X1q4CN" data-id="I4259:689;5267:3373"><article class="button-text-ltxZ2N button-text" data-id="I4259:689;5267:3374"><div class="button-text-4DAsfg button-text componentsbutton" data-id="I4259:689;5267:3374;2955:6381">By Gola Templates</div><div class="line-4DAsfg line" data-id="I4259:689;5267:3374;2955:6382"></div></article><article class="button-text-EL0TTC button-text" data-id="I4259:689;5267:3375"><div class="button-text-1vtPwI button-text componentsbutton" data-id="I4259:689;5267:3375;2955:6381">Back to Top</div><div class="line-1vtPwI line" data-id="I4259:689;5267:3375;2955:6382"></div></article></div></div></footer><header class="header-R3SQrl" data-id="4264:390"><div class="logo-sbBmAk" data-id="I4264:390;4797:1301"></div><div class="grid-sbBmAk" data-id="I4264:390;4264:358"><a href="products"><div class="projects-w3ir8M componentsbutton" data-id="I4264:390;4264:361">Products</div></a><div class="services-w3ir8M componentsbutton" data-id="I4264:390;4264:363">Services</div><a href="about"><div class="studio-w3ir8M studio componentsbutton" data-id="I4264:390;4264:365">About</div></a><a href="contact"><div class="journal-w3ir8M componentsbutton" data-id="I4264:390;4264:367">Contact</div></a></div><div class="button-text-sbBmAk button-text" data-id="I4264:390;5267:2825"><div class="button-text-Y1t7rL button-text componentsbutton" data-id="I4264:390;5267:2825;2830:1267">Let’s Talk</div><div class="line-Y1t7rL line" data-id="I4264:390;5267:2825;2830:1268"></div></div></header></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
