@@ -4,12 +4,12 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-23/10/2025 05:42:14 -->
+31/10/2025 17:35:57 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Anton+SC:400|Inter:400,600");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400");
 
 
 @font-face {
@@ -216,11 +216,13 @@ input:focus {
 }
 :root { 
   --backgrounddefault: #ffffff;
+  --backgroundinverse-muted: #181a1b;
   --backgroundmuted: #f8f8f8;
   --backgroundmuted-2: #eeeeee;
   --backgroundprimary: #0e1011;
   --black: #000000;
   --borderdefault: #e8e8e8;
+  --borderinverse: #ffffff33;
   --icondefault: #0e1011;
   --iconinverse: #ffffff;
   --keppel: #37999d;
@@ -232,17 +234,18 @@ input:focus {
   --woodsmoke: #0e101199;
  
   --font-size-18px: 18px;
+  --font-size-24px: 24px;
   --font-size-28px: 28px;
-  --font-size-48px: 48px;
+  --font-size-32px: 32px;
   --font-size-64px: 64px;
   --font-size-80px: 80px;
-  --font-size-l: 20px;
-  --font-size-m: 6.9px;
-  --font-size-xl: 22px;
-  --font-size-xxl: 26px;
-  --font-size-xxxl: 30px;
-  --font-size-xxxxl: 32px;
-  --font-size-xxxxxl: 40px;
+  --font-size-l: 26px;
+  --font-size-m: 22px;
+  --font-size-s: 20px;
+  --font-size-xl: 30px;
+  --font-size-xs: 6.9px;
+  --font-size-xxl: 40px;
+  --font-size-xxxl: 48px;
  
   --font-family-anton_sc: "Anton SC", Helvetica;
   --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
@@ -268,7 +271,7 @@ input:focus {
 
 .heading-alth2 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-48px);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -276,7 +279,7 @@ input:focus {
 
 .heading-alth3 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -1px;
@@ -284,7 +287,7 @@ input:focus {
 
 .heading-alth4 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-32px);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -292,7 +295,7 @@ input:focus {
 
 .heading-alth5 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
@@ -306,9 +309,17 @@ input:focus {
   letter-spacing: 0px;
 }
 
+.textlarge {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-24px);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
 .textmedium {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -316,7 +327,7 @@ input:focus {
 
 .textdefault {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-s);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -332,7 +343,7 @@ input:focus {
 
 .textmeta {
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-xl);
   font-style: italic;
   font-weight: 500;
   letter-spacing: 0px;
@@ -340,7 +351,7 @@ input:focus {
 
 .componentsbutton {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
@@ -357,7 +368,7 @@ input:focus {
 .gambetta-mediumitalic-medium-woodsmoke-20px {
   color: var(--woodsmoke);
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-s);
   font-style: italic;
   font-weight: 500;
 }
@@ -370,10 +381,26 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-240px {
+.antonsc-normal-woodsmoke-96px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-woodsmoke-128px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-128px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: 240px;
+  font-size: 128px;
   font-style: normal;
   font-weight: 400;
 }
@@ -381,29 +408,21 @@ input:focus {
 .gambetta-mediumitalic-medium-woodsmoke-32px {
   color: var(--woodsmoke);
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xxxxl);
+  font-size: 32px;
   font-style: italic;
   font-weight: 500;
 }
 
-.antonsc-normal-woodsmoke-320px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 320px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.antonsc-normal-white-192px {
+.inter-semi-bold-white-40px {
   color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 192px;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxl);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
 
-.antonsc-normal-woodsmoke-96px {
-  color: var(--backgroundprimary);
+.antonsc-normal-white-96px {
+  color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
   font-size: 96px;
   font-style: normal;
@@ -455,6 +474,13 @@ input:focus {
   background-color: transparent;
   position: absolute;
 }
+
+.material-symbolsarrow-forward-rounded {
+  background-color: transparent;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
 /* screen - contact */
 
 .contact {
@@ -467,105 +493,6 @@ input:focus {
   overflow-x: hidden;
   position: relative;
   top: 0px;
-}
-
-.contact .header-small-DhmS6L {
-  align-items: center;
-  background-color: transparent;
-  border-radius: 500px;
-  display: flex;
-  justify-content: space-between;
-  padding: 64px 96px 0px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 960px;
-  z-index: 2;
-}
-
-.contact .grid-QVm11C {
-  align-items: center;
-  align-self: stretch;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 12px;
-}
-
-.contact .grid-pZhGYb {
-  align-items: center;
-  align-self: stretch;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 32px;
-}
-
-.contact .projects-YD15Zw {
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.contact .services-YD15Zw {
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.contact .studio-YD15Zw {
-  color: var(--backgroundprimary);
-  cursor: pointer;
-  line-height: 22px;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.contact .journal-YD15Zw {
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.contact .button-text-QVm11C {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: center;
-}
-
-.contact .button-text-sn0M2H {
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  margin-top: -1.00px;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.contact .line-sn0M2H {
-  background-color: var(--backgroundprimary);
 }
 
 .contact .section-contact-DhmS6L {
@@ -599,87 +526,15 @@ input:focus {
   width: 1698px;
 }
 
-.contact .frame-368-j8iwek {
+.contact .fwrlogo-w-1-j8iwek {
+  aspect-ratio: 5.052381;
   background-color: transparent;
-  cursor: pointer;
-  height: 31px;
-  left: 50px;
+  height: 55px;
+  left: 79px;
+  object-fit: cover;
   position: absolute;
-  top: 51px;
-  width: 193px;
-}
-
-.contact .fwrinc-logo-2-RY440H {
-  background-color: transparent;
-  height: 31px;
-  left: 0px;
-  overflow: hidden;
-  position: relative;
-  top: 0px;
-  width: 193px;
-}
-
-.contact .vector-7SiiVz {
-  height: 79.82%;
-  left: 4.61%;
-  top: 11.07%;
-  width: 9.87%;
-}
-
-.contact .vector-NtxiIe {
-  height: 9.69%;
-  left: 15.30%;
-  top: 81.20%;
-  width: 0px;
-}
-
-.contact .vector-5NBmbI {
-  height: 80.61%;
-  left: 17.27%;
-  top: 10.85%;
-  width: 20.06%;
-}
-
-.contact .vector-JxHU7A {
-  height: 9.69%;
-  left: 37.97%;
-  top: 81.20%;
-  width: 0px;
-}
-
-.contact .vector-Mn7dSt {
-  height: 79.81%;
-  left: 43.01%;
-  top: 11.07%;
-  width: 11.41%;
-}
-
-.contact .vector-cI3k9I {
-  height: 79.82%;
-  left: 57.62%;
-  top: 11.07%;
-  width: 0px;
-}
-
-.contact .vector-ICoPLQ {
-  height: 79.82%;
-  left: 62.97%;
-  top: 11.07%;
-  width: 11.65%;
-}
-
-.contact .vector-QxmW7B {
-  height: 82.55%;
-  left: 78.16%;
-  top: 9.70%;
-  width: 12.53%;
-}
-
-.contact .vector-SOMD4D {
-  height: 27.82%;
-  left: 92.05%;
-  top: 9.14%;
-  width: 4.86%;
+  top: 49px;
+  width: 278px;
 }
 
 .contact .grid-7pe4YA {
@@ -703,13 +558,8 @@ input:focus {
 
 .contact .contact-us-DS34qz {
   background-color: transparent;
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 160px;
-  font-style: normal;
-  font-weight: 400;
   letter-spacing: 0.00px;
-  line-height: 160px;
+  line-height: 105.6px;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
@@ -835,6 +685,108 @@ input:focus {
   width: fit-content;
 }
 
+.contact .header-small-7pe4YA {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 500px;
+  display: flex;
+  height: 95px;
+  justify-content: space-between;
+  padding: 64px 96px 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 960px;
+}
+
+.contact .grid-Eh26hs {
+  align-items: center;
+  align-self: stretch;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 12px;
+}
+
+.contact .grid-yhHBx0 {
+  align-items: center;
+  align-self: stretch;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 32px;
+}
+
+.contact .projects-Iy1HUK {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .services-Iy1HUK {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .studio-Iy1HUK {
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  line-height: 22px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .journal-Iy1HUK {
+  background-color: transparent;
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .button-text-Eh26hs {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+.contact .button-text-BhocYb {
+  color: var(--backgroundprimary);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: -1.00px;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .line-BhocYb {
+  background-color: var(--backgroundprimary);
+}
+
 .contact .footer-DhmS6L {
   align-items: flex-start;
   align-self: stretch;
@@ -863,7 +815,7 @@ input:focus {
   background-color: transparent;
   flex: 1;
   letter-spacing: 0.00px;
-  line-height: 240px;
+  line-height: 128px;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
@@ -1187,4 +1139,4 @@ input:focus {
   white-space: nowrap;
   width: fit-content;
 }
-</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="contact"><div class="contact screen " data-id="4403:308"><div class="header-small-DhmS6L" data-id="4557:645"><div class="grid-QVm11C grid" data-id="I4557:645;4275:587"><div class="grid-pZhGYb grid" data-id="I4557:645;4275:588"><div class="projects-YD15Zw componentsbutton" data-id="I4557:645;4275:589">Products</div><a href="service"><div class="services-YD15Zw componentsbutton" data-id="I4557:645;4275:590">Services</div></a><a href="about"><div class="studio-YD15Zw studio componentsbutton" data-id="I4557:645;4275:591">About</div></a><div class="journal-YD15Zw componentsbutton" data-id="I4557:645;4275:592">Contact</div></div></div><div class="button-text-QVm11C button-text" data-id="I4557:645;5267:2707"><div class="button-text-sn0M2H button-text componentsbutton" data-id="I4557:645;5267:2707;2830:1267">Let’s Talk</div><div class="line-sn0M2H line" data-id="I4557:645;5267:2707;2830:1268"></div></div></div><div class="section-contact-DhmS6L" data-id="4403:593"><div class="image-wrapper-7pe4YA" data-id="4403:594"><img class="image-j8iwek" data-id="5103:1556" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/image-1.png" alt="Image"><a href="home"><div class="frame-368-j8iwek" data-id="9164:1437"><div class="fwrinc-logo-2-RY440H" data-id="9164:1438"><img class="vector-7SiiVz vector" data-id="9164:1439" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-18.svg" alt="Vector"><img class="vector-NtxiIe vector" data-id="9164:1440" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-19.svg" alt="Vector"><img class="vector-5NBmbI vector" data-id="9164:1441" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-20.svg" alt="Vector"><img class="vector-JxHU7A vector" data-id="9164:1442" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-19.svg" alt="Vector"><img class="vector-Mn7dSt vector" data-id="9164:1443" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-22.svg" alt="Vector"><img class="vector-cI3k9I vector" data-id="9164:1444" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-23.svg" alt="Vector"><img class="vector-ICoPLQ vector" data-id="9164:1445" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-24.svg" alt="Vector"><img class="vector-QxmW7B vector" data-id="9164:1446" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-25.svg" alt="Vector"><img class="vector-SOMD4D vector" data-id="9164:1447" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/vector-26.svg" alt="Vector"></div></div></a></div><div class="grid-7pe4YA grid" data-id="4403:596"><div class="grid-x7IySR grid" data-id="4403:597"><div class="contact-us-DS34qz" data-id="4403:598">CONTACT US</div><div class="grid-DS34qz grid" data-id="4403:599"><div class="grid-ZxrutY grid" data-id="4403:711"><div class="grid-JkYzLW grid" data-id="4403:723"><div class="grid-ZoSIgS grid" data-id="4403:715"><div class="name-Qd2JMI gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4403:716">(Name)</div><div class="input-Qd2JMI input" data-id="4403:717"><div class="your-name textsmall" data-id="I4403:717;2856:5741">First Name</div></div></div><div class="grid-DdhVJ7 grid" data-id="4403:724"><div class="email-9lx7x8 gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4403:725">(Email)</div><div class="input-9lx7x8 input" data-id="4403:726"><div class="your-name textsmall" data-id="I4403:726;2856:5741">Email Address</div></div></div></div><div class="grid-RUMPUG grid" data-id="4403:714"><div class="input-EvaOIh input" data-id="4403:706"><div class="your-name textsmall" data-id="I4403:706;2856:5741">Your Message</div></div></div></div><div class="button-ZxrutY" data-id="4403:731"><div class="button-8Ut03l componentsbutton" data-id="I4403:731;2830:1221">Send Message</div></div></div></div></div></div><footer class="footer-DhmS6L" data-id="4403:532"><div class="grid-mwR7bx grid" data-id="I4403:532;4259:1590"><h1 class="k-aj-o-jFrZcZ antonsc-normal-white-240px" data-id="I4403:532;4259:1739">FWR<br>INC©</h1></div><div class="grid-15Q2zj grid" data-id="I4403:532;4259:1663"><div class="grid-hM1CG5 grid" data-id="I4403:532;4259:298"><div class="grid-ex7uzh grid" data-id="I4403:532;4259:302"><div class="pages-LbpvNV textmeta" data-id="I4403:532;4259:303">(Pages)</div><div class="nav" data-id="I4403:532;4259:304"><a href="home"><div class="home-DytWh2 heading-alth5" data-id="I4403:532;4259:305">Home</div></a><div class="service-DytWh2 heading-alth5" data-id="I4403:532;4259:307">Service</div><div class="studio-DytWh2 studio heading-alth5" data-id="I4403:532;4259:306">Studio</div><div class="contact-DytWh2 heading-alth5" data-id="I4403:532;4259:310">Contact</div></div></div><div class="grid-ixc5Me grid" data-id="I4403:532;4259:311"><div class="cms-aN5Rxy textmeta" data-id="I4403:532;4259:343">(CMS)</div><div class="nav" data-id="I4403:532;4259:313"><div class="work-4xJOId heading-alth5" data-id="I4403:532;4259:314">Work</div><div class="work-single-4xJOId heading-alth5" data-id="I4403:532;4259:315">Work Single</div><div class="blog-4xJOId heading-alth5" data-id="I4403:532;4259:316">Blog</div><div class="blog-single-4xJOId heading-alth5" data-id="I4403:532;4259:317">Blog Single</div></div></div><div class="grid-973pEY grid" data-id="I4403:532;4259:1989"><div class="utility-pages-hFii7R textmeta" data-id="I4403:532;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4403:532;4259:1991"><div class="licensing-NbH3LN heading-alth5" data-id="I4403:532;4259:1993">Licensing</div></div></div><div class="grid-k1fAFE grid" data-id="I4403:532;4259:1870"><div class="socials-3j6O6y textmeta" data-id="I4403:532;4259:1871">(Socials)</div><div class="nav" data-id="I4403:532;4259:1872"><div class="instagram-tCkCSc heading-alth5" data-id="I4403:532;4259:1873">Instagram</div><div class="behance-tCkCSc heading-alth5" data-id="I4403:532;4259:1874">Behance</div><div class="dribbble-tCkCSc heading-alth5" data-id="I4403:532;4259:1875">Dribbble</div></div></div></div><div class="grid-mZFI9U grid" data-id="I4403:532;5267:3373"><article class="button-text-SU24fl button-text" data-id="I4403:532;5267:3374"><div class="button-text-94P8jI button-text componentsbutton" data-id="I4403:532;5267:3374;2955:6381">By Gola Templates</div><div class="line-94P8jI line" data-id="I4403:532;5267:3374;2955:6382"></div></article><article class="button-text-B4Iwty button-text" data-id="I4403:532;5267:3375"><div class="button-text-jGY5KZ button-text componentsbutton" data-id="I4403:532;5267:3375;2955:6381">Back to Top</div><div class="line-jGY5KZ line" data-id="I4403:532;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="contact"><div class="contact screen " data-id="4403:308"><div class="section-contact-DhmS6L" data-id="4403:593"><div class="image-wrapper-7pe4YA" data-id="4403:594"><img class="image-j8iwek" data-id="5103:1556" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/image-1.png" alt="Image"><img class="fwrlogo-w-1-j8iwek" data-id="9266:19476" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 1"></div><div class="grid-7pe4YA grid" data-id="4403:596"><div class="grid-x7IySR grid" data-id="4403:597"><div class="contact-us-DS34qz antonsc-normal-woodsmoke-96px" data-id="4403:598">CONTACT US</div><div class="grid-DS34qz grid" data-id="4403:599"><div class="grid-ZxrutY grid" data-id="4403:711"><div class="grid-JkYzLW grid" data-id="4403:723"><div class="grid-ZoSIgS grid" data-id="4403:715"><div class="name-Qd2JMI gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4403:716">(Name)</div><div class="input-Qd2JMI input" data-id="4403:717"><div class="your-name textsmall" data-id="I4403:717;2856:5741">First Name</div></div></div><div class="grid-DdhVJ7 grid" data-id="4403:724"><div class="email-9lx7x8 gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4403:725">(Email)</div><div class="input-9lx7x8 input" data-id="4403:726"><div class="your-name textsmall" data-id="I4403:726;2856:5741">Email Address</div></div></div></div><div class="grid-RUMPUG grid" data-id="4403:714"><div class="input-EvaOIh input" data-id="4403:706"><div class="your-name textsmall" data-id="I4403:706;2856:5741">Your Message</div></div></div></div><div class="button-ZxrutY" data-id="4403:731"><div class="button-8Ut03l componentsbutton" data-id="I4403:731;2830:1221">Send Message</div></div></div></div></div><div class="header-small-7pe4YA" data-id="9263:909"><div class="grid-Eh26hs grid" data-id="I9263:909;4275:587"><div class="grid-yhHBx0 grid" data-id="I9263:909;4275:588"><a href="products"><div class="projects-Iy1HUK componentsbutton" data-id="I9263:909;4275:589">Products</div></a><a href="service"><div class="services-Iy1HUK componentsbutton" data-id="I9263:909;4275:590">Services</div></a><a href="about"><div class="studio-Iy1HUK studio componentsbutton" data-id="I9263:909;4275:591">About</div></a><a href="contact"><div class="journal-Iy1HUK componentsbutton" data-id="I9263:909;4275:592">Contact</div></a></div></div><div class="button-text-Eh26hs button-text" data-id="I9263:909;5267:2707"><a href="index-zh"><div class="button-text-BhocYb button-text componentsbutton" data-id="I9263:909;5267:2707;2830:1267">EN / ZH</div></a><div class="line-BhocYb line" data-id="I9263:909;5267:2707;2830:1268"></div></div></div></div><footer class="footer-DhmS6L" data-id="4403:532"><div class="grid-mwR7bx grid" data-id="I4403:532;4259:1590"><h1 class="k-aj-o-jFrZcZ antonsc-normal-white-128px" data-id="I4403:532;4259:1739">FWR<br>INC©</h1></div><div class="grid-15Q2zj grid" data-id="I4403:532;4259:1663"><div class="grid-hM1CG5 grid" data-id="I4403:532;4259:298"><div class="grid-ex7uzh grid" data-id="I4403:532;4259:302"><div class="pages-LbpvNV textmeta" data-id="I4403:532;4259:303">(Pages)</div><div class="nav" data-id="I4403:532;4259:304"><a href="index"><div class="home-DytWh2 heading-alth5" data-id="I4403:532;4259:305">Home</div></a><div class="service-DytWh2 heading-alth5" data-id="I4403:532;4259:307">Service</div><div class="studio-DytWh2 studio heading-alth5" data-id="I4403:532;4259:306">Studio</div><div class="contact-DytWh2 heading-alth5" data-id="I4403:532;4259:310">Contact</div></div></div><div class="grid-ixc5Me grid" data-id="I4403:532;4259:311"><div class="cms-aN5Rxy textmeta" data-id="I4403:532;4259:343">(CMS)</div><div class="nav" data-id="I4403:532;4259:313"><div class="work-4xJOId heading-alth5" data-id="I4403:532;4259:314">Work</div><div class="work-single-4xJOId heading-alth5" data-id="I4403:532;4259:315">Work Single</div><div class="blog-4xJOId heading-alth5" data-id="I4403:532;4259:316">Blog</div><div class="blog-single-4xJOId heading-alth5" data-id="I4403:532;4259:317">Blog Single</div></div></div><div class="grid-973pEY grid" data-id="I4403:532;4259:1989"><div class="utility-pages-hFii7R textmeta" data-id="I4403:532;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4403:532;4259:1991"><div class="licensing-NbH3LN heading-alth5" data-id="I4403:532;4259:1993">Licensing</div></div></div><div class="grid-k1fAFE grid" data-id="I4403:532;4259:1870"><div class="socials-3j6O6y textmeta" data-id="I4403:532;4259:1871">(Socials)</div><div class="nav" data-id="I4403:532;4259:1872"><div class="instagram-tCkCSc heading-alth5" data-id="I4403:532;4259:1873">Instagram</div><div class="behance-tCkCSc heading-alth5" data-id="I4403:532;4259:1874">Behance</div><div class="dribbble-tCkCSc heading-alth5" data-id="I4403:532;4259:1875">Dribbble</div></div></div></div><div class="grid-mZFI9U grid" data-id="I4403:532;5267:3373"><article class="button-text-SU24fl button-text" data-id="I4403:532;5267:3374"><div class="button-text-94P8jI button-text componentsbutton" data-id="I4403:532;5267:3374;2955:6381">By Gola Templates</div><div class="line-94P8jI line" data-id="I4403:532;5267:3374;2955:6382"></div></article><article class="button-text-B4Iwty button-text" data-id="I4403:532;5267:3375"><div class="button-text-jGY5KZ button-text componentsbutton" data-id="I4403:532;5267:3375;2955:6381">Back to Top</div><div class="line-jGY5KZ line" data-id="I4403:532;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
