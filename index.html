@@ -4,7 +4,7 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-31/10/2025 17:27:28 -->
+03/11/2025 06:35:56 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
@@ -217,6 +217,7 @@ input:focus {
 :root { 
   --backgrounddefault: #ffffff;
   --backgroundinverse-muted: #181a1b;
+  --backgroundinverse-muted-2: #1f2122;
   --backgroundmuted: #f8f8f8;
   --backgroundmuted-2: #eeeeee;
   --backgroundprimary: #0e1011;
@@ -226,25 +227,30 @@ input:focus {
   --icondefault: #0e1011;
   --iconinverse: #ffffff;
   --keppel: #37999d;
+  --perano: #acb5f7;
   --purple-mountains-majesty: #9b83b0;
+  --sinbad: #9cd3d6;
+  --tamarillo: #9e141d;
   --textdefault: #0e1011;
   --textinverse: #ffffff;
   --textinverse-muted: #ffffff99;
   --textmuted: #06272c99;
+  --thunderbird: #cb2c13;
   --woodsmoke: #0e101199;
  
   --font-size-18px: 18px;
+  --font-size-24px: 24px;
   --font-size-28px: 28px;
   --font-size-32px: 32px;
   --font-size-64px: 64px;
   --font-size-80px: 80px;
-  --font-size-l: 26px;
-  --font-size-m: 22px;
-  --font-size-s: 20px;
-  --font-size-xl: 30px;
-  --font-size-xs: 6.9px;
-  --font-size-xxl: 40px;
-  --font-size-xxxl: 48px;
+  --font-size-l: 20px;
+  --font-size-m: 6.9px;
+  --font-size-xl: 22px;
+  --font-size-xxl: 26px;
+  --font-size-xxxl: 30px;
+  --font-size-xxxxl: 40px;
+  --font-size-xxxxxl: 48px;
  
   --font-family-anton_sc: "Anton SC", Helvetica;
   --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
@@ -270,7 +276,7 @@ input:focus {
 
 .heading-alth2 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -278,7 +284,7 @@ input:focus {
 
 .heading-alth3 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -1px;
@@ -294,7 +300,7 @@ input:focus {
 
 .heading-alth5 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
@@ -308,9 +314,17 @@ input:focus {
   letter-spacing: 0px;
 }
 
+.textlarge {
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-24px);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
 .textmedium {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -318,7 +332,7 @@ input:focus {
 
 .textdefault {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -334,7 +348,7 @@ input:focus {
 
 .textmeta {
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxxl);
   font-style: italic;
   font-weight: 500;
   letter-spacing: 0px;
@@ -342,7 +356,7 @@ input:focus {
 
 .componentsbutton {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
@@ -356,20 +370,28 @@ input:focus {
   font-weight: 700;
 }
 
-.gambetta-mediumitalic-medium-woodsmoke-20px {
-  color: var(--woodsmoke);
-  font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-s);
-  font-style: italic;
-  font-weight: 500;
-}
-
 .helvetica-regular-normal-white-11px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-helvetica-regular);
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
+}
+
+.antonsc-normal-woodsmoke-128px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.gambetta-mediumitalic-medium-woodsmoke-20px {
+  color: var(--woodsmoke);
+  font-family: var(--font-family-gambetta-mediumitalic);
+  font-size: var(--font-size-l);
+  font-style: italic;
+  font-weight: 500;
 }
 
 .antonsc-normal-woodsmoke-96px {
@@ -380,10 +402,10 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-woodsmoke-128px {
-  color: var(--backgroundprimary);
+.antonsc-normal-white-64px {
+  color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: 128px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
 }
@@ -404,12 +426,36 @@ input:focus {
   font-weight: 400;
 }
 
-.inter-semi-bold-white-40px {
+.antonsc-normal-white-192px {
   color: var(--backgrounddefault);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxl);
+  font-family: var(--font-family-anton_sc);
+  font-size: 192px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.helvetica-bold-keppel-42-5px {
+  color: var(--keppel);
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.helvetica-regular-normal-keppel-6-9px {
+  color: var(--keppel);
+  font-family: var(--font-family-helvetica-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.helvetica-regular-normal-purple-mountains-majesty-6-9px {
+  color: var(--purple-mountains-majesty);
+  font-family: var(--font-family-helvetica-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
 }
 
 .antonsc-normal-white-96px {
@@ -418,6 +464,22 @@ input:focus {
   font-size: 96px;
   font-style: normal;
   font-weight: 400;
+}
+
+.antonsc-normal-white-240px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 240px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-semi-bold-white-40px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
 }
 
 :root {
@@ -471,6 +533,127 @@ input:focus {
   height: 32px;
   position: relative;
   width: 32px;
+}
+
+.award {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 407.4285888671875px;
+  justify-content: space-between;
+  margin-right: -0.67px;
+  padding: 35.42857360839844px;
+  position: relative;
+  width: 310px;
+}
+
+.branding-of-the-year {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+}
+
+.certificate {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 12.1px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-318 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 27.555553436279297px;
+  position: relative;
+}
+
+.frame-319 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.frame-320 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.general-categories {
+  background-color: transparent;
+  height: 97.22%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 98.23%;
+}
+
+.kajo-studio {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 27.3px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.logo {
+  background-color: transparent;
+  height: 35.42857360839844px;
+  position: relative;
+  width: 73.80952453613281px;
+}
+
+.lorem-ipsum-dolor-si {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 9.6px;
+  position: relative;
+  text-align: left;
+}
+
+.site-of-the-month {
+  align-self: stretch;
+  background-color: transparent;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+}
+
+.website-of-the-year {
+  align-self: stretch;
+  background-color: transparent;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
 }
 /* screen - index */
 
@@ -1871,4 +2054,4 @@ input:focus {
   height: 30px;
   position: relative;
 }
-</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="index"><div class="index screen " data-id="4119:1047"><div class="section-hero-IO3Fu5" data-id="4275:569"><div class="image-wrapper-l0bKKH" data-id="4275:689"><img class="image-38-UaZquT" data-id="5254:559" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fb256810bb51b0e496cb1d/img/image-38.png" alt="image 38"><img class="fwrlogo-w-1-UaZquT" data-id="9257:13047" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 1"></div><div class="grid-l0bKKH grid" data-id="4275:580"><div class="grid-oekx9b grid" data-id="4275:581"><h1 class="fwrinc-VR1KYV antonsc-normal-woodsmoke-128px" data-id="4275:582">FWRINC©</h1><div class="fwrinc-logo-1-VR1KYV" data-id="9163:1220"></div><img class="group-3-VR1KYV" data-id="9163:1233" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/group-3-1@2x.png" alt="Group 3"><div class="frame-365-VR1KYV" data-id="9163:1232"></div><div class="grid-VR1KYV grid" data-id="4275:583"><div class="based-in-prague-UbQ5As textmeta" data-id="4275:584">(Based in Prague)</div><p class="supplying-premium-te-UbQ5As heading-alth2" data-id="4275:585">&#34;Supplying premium teas and custom blends to elevate brands across Southeast Asia.&#34;</p></div></div><div class="grid-xw3zxs grid" data-id="4275:594"><div class="grid-AO8TqM grid" data-id="4275:595"><div class="about-us-OXVfpW textmeta" data-id="4565:355">(About Us)</div><div class="grid-OXVfpW grid" data-id="4565:357"><div class="profile-s3bwXq" data-id="4275:596">PROFILE</div><p class="our-company-speciali-s3bwXq textmedium" data-id="4275:597">Our company specializes in the wholesale and international trade of high-quality tea, serving chain beverage stores, food and beverage operators, and overseas distributors. We offer imported raw tea materials, bubble tea-specific teas, tea bags for tea brewing machines, pyramid tea bags, and matcha powder. In addition, we provide customized tea blending according to client needs, creating unique flavors and aromas that enhance product competitiveness.<br><br>Beyond tea supply, we offer tea bag OEM services (square flat bags and pyramid bags), as well as customized packaging and labeling to meet brand-specific requirements. Leveraging our professional import and export capabilities, we distribute premium tea to Southeast Asian markets, dedicated to promoting high-quality tea culture internationally.</p></div></div><div class="x23-1-AO8TqM" data-id="9108:1178"></div><div class="grid-n3ZnIN grid" data-id="4275:598"><div class="our-partner-RbUeVe textmeta" data-id="4275:599">(Our Partner)</div><img class="grid-RbUeVe grid" data-id="4275:600" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f9c960d029968d68d9f641/img/grid.svg" alt="Grid"></div></div></div></div><img class="section-projects-IO3Fu5" data-id="4226:1048" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/section-projects.jpg" alt="Section Projects"><div class="section-testimonials-IO3Fu5" data-id="4239:2138"><div class="grid-IrOCxE grid" data-id="4239:1963"><div class="grid-ShbVki grid" data-id="4239:1965"><div class="testimonials-G3cVj1 gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4239:1967">(Testimonials)</div><div class="x03-G3cVj1 gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4239:1966">(03)</div></div><div class="grid-uUMuTT grid" data-id="4239:1968"><div class="what-our-clients-say-0M9FQS antonsc-normal-woodsmoke-128px" data-id="4239:2257">WHAT OUR <br>CLIENTS SAY</div><p class="hear-our-clients-abo-0M9FQS heading-alth2" data-id="4239:1978">Hear our clients about their success stories and experiences with us.</p></div></div><div class="grid-iLKh5S grid" data-id="4239:2272"><div class="grid-fZukDl grid" data-id="4239:2273"><div class="card-vfYqOs card" data-id="4239:2293"><img class="image-wTgRtT image" data-id="4239:2900" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-wTgRtT grid" data-id="4239:2902"><div class="grid-WEHI3b grid" data-id="4239:3066"><p class="exceptional-branding-BeHPcD heading-alth3" data-id="4239:2904">Exceptional Branding That Elevated Our Identity.</p><p class="their-strategic-appr-BeHPcD textdefault" data-id="4239:2906">Their strategic approach completely transformed our brand. We’ve seen a huge increase in recognition and client engagement.</p></div><div class="grid-jzOwvF grid" data-id="4259:467"><img class="image-wrapper-2XPwzX" data-id="4259:468" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper@2x.png" alt="Image Wrapper"><div class="grid-2XPwzX grid" data-id="4259:470"><div class="dave-mitchell-qGkGHW heading-alth5" data-id="4259:471">Dave Mitchell</div><div class="lumina-qGkGHW gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:472">(Lumina)</div></div></div></div></div><div class="card-y8QUUg card" data-id="4239:3068"><img class="image-U0nxHX image" data-id="4239:3069" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-U0nxHX grid" data-id="4239:3070"><div class="grid-B12A86 grid" data-id="4239:3071"><p class="seamless-collaborati-B8PEEg heading-alth3" data-id="4239:3072">Seamless Collaboration &amp; Support With Exceptional Results.</p><p class="working-with-them-wa-B8PEEg textdefault" data-id="4239:3074">Working with them was easy and efficient. They perfectly captured our vision, and the results were outstanding.</p></div><div class="grid-jl275C grid" data-id="4239:3075"><img class="image-wrapper-y9pSxc" data-id="4239:3076" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-1@2x.png" alt="Image Wrapper"><div class="grid-y9pSxc grid" data-id="4239:3078"><div class="michaela-lee-Q7OQx1 heading-alth5" data-id="4259:354">Michaela Lee</div><div class="apex-fitness-Q7OQx1 gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4239:3079">(Apex Fitness)</div></div></div></div></div></div><div class="grid-csDVYZ grid" data-id="4239:3130"><div class="card-LpNWu5 card" data-id="4239:3143"><img class="image-VtipAc image" data-id="4239:3144" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-VtipAc grid" data-id="4239:3145"><div class="grid-sBpeA2 grid" data-id="4239:3146"><p class="outstanding-website-z59fdZ heading-alth3" data-id="4239:3147">Outstanding Website Design, Exceeding Expectations.</p><p class="the-website-they-cre-z59fdZ textdefault" data-id="4239:3149">The website they created is stunning, user-friendly, and has boosted our online conversions significantly. Highly recommend!</p></div><div class="grid-erfA9u grid" data-id="4259:460"><img class="image-wrapper-6keBuM" data-id="4259:461" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-2@2x.png" alt="Image Wrapper"><div class="grid-6keBuM grid" data-id="4259:463"><div class="sara-thompson-HIJgrv heading-alth5" data-id="4259:464">Sara Thompson</div><div class="horizon-HIJgrv gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:465">(Horizon)</div></div></div></div></div><div class="card-uOD3I1 card" data-id="4239:3131"><img class="image-XloBfs image" data-id="4239:3132" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-XloBfs grid" data-id="4239:3133"><div class="grid-FMINhQ grid" data-id="4239:3134"><p class="strategic-branding-i-mnxrIj heading-alth3" data-id="4239:3135">Strategic Branding &amp; Identity With Immediate Impact.</p><p class="our-new-branding-res-mnxrIj textdefault" data-id="4239:3137">Our new branding resonated with our audience immediately. We’ve received so many compliments and new business inquiries.</p></div><div class="grid-CB52pA grid" data-id="4259:439"><img class="image-wrapper-1xnhsd" data-id="4259:440" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-3@2x.png" alt="Image Wrapper"><div class="grid-1xnhsd grid" data-id="4259:442"><div class="amanda-lopez-t8oxKA heading-alth5" data-id="4259:443">Amanda Lopez</div><div class="urban-interiors-t8oxKA gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:444">(Urban Interiors)</div></div></div></div></div></div><div class="grid-Q7YiCW grid" data-id="4239:3155"><div class="card-QvixXh card" data-id="4239:3156"><img class="image-kDLHIL image" data-id="4239:3157" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-kDLHIL grid" data-id="4239:3158"><div class="grid-xkJv6I grid" data-id="4239:3159"><p class="creative-solutions-t-qwVrVP heading-alth3" data-id="4239:3160">Creative Solutions That Drove Real Results for Our Website.</p><p class="their-designs-are-no-qwVrVP textdefault" data-id="4239:3162">Their designs are not only beautiful but effective. Our sales increased by 30% post-launch. Incredible experience!</p></div><div class="grid-cPo4mA grid" data-id="4259:453"><img class="image-wrapper-hUPJv9" data-id="4259:454" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-4@2x.png" alt="Image Wrapper"><div class="grid-hUPJv9 grid" data-id="4259:456"><div class="emil-rogers-u90Mvs heading-alth5" data-id="4259:457">Emil Rogers</div><div class="pure-green-u90Mvs gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:458">(Pure Green)</div></div></div></div></div><div class="card-rG0w4j card" data-id="4239:3168"><img class="image-CgcX8x image" data-id="4239:3169" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-CgcX8x grid" data-id="4239:3170"><div class="grid-771OpU grid" data-id="4239:3171"><p class="ux-design-that-trans-xdmIxy heading-alth3" data-id="4239:3172">UX Design That Transformed Our User Experience.</p><p class="their-ux-design-made-xdmIxy textdefault" data-id="4239:3174">Their UX design made our platform more intuitive and enjoyable to use. Customer satisfaction has dramatically improved.</p></div><div class="grid-BKx3Pu grid" data-id="4259:446"><img class="image-wrapper-zTUxqr" data-id="4259:447" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-5@2x.png" alt="Image Wrapper"><div class="grid-zTUxqr grid" data-id="4259:449"><div class="jason-carter-An9JbO heading-alth5" data-id="4259:450">Jason Carter</div><div class="quantum-An9JbO gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:451">(Quantum)</div></div></div></div></div></div></div></div><footer class="footer-IO3Fu5" data-id="4259:487"><div class="grid-6isyAT grid" data-id="I4259:487;4259:1590"><div class="k-aj-o-hVpn2X antonsc-normal-white-128px" data-id="I4259:487;4259:1739">FWR<br>INC©</div></div><div class="grid-yG03hB grid" data-id="I4259:487;4259:1663"><div class="grid-ZFweIs grid" data-id="I4259:487;4259:298"><div class="grid-iuMxjI grid" data-id="I4259:487;4259:302"><div class="pages-ta7XIU textmeta" data-id="I4259:487;4259:303">(Pages)</div><div class="nav" data-id="I4259:487;4259:304"><div class="home-YTe04k heading-alth5" data-id="I4259:487;4259:305">Home</div><div class="studio-YTe04k studio heading-alth5" data-id="I4259:487;4259:306">Studio</div><div class="contact-YTe04k heading-alth5" data-id="I4259:487;4259:310">Contact</div></div></div><div class="grid-IAxWCd grid" data-id="I4259:487;4259:311"><div class="cms-1BA8So textmeta" data-id="I4259:487;4259:343">(CMS)</div><div class="nav" data-id="I4259:487;4259:313"><div class="work-8AkBNK heading-alth5" data-id="I4259:487;4259:314">Work</div><div class="work-single-8AkBNK heading-alth5" data-id="I4259:487;4259:315">Work Single</div><div class="blog-8AkBNK heading-alth5" data-id="I4259:487;4259:316">Blog</div><div class="blog-single-8AkBNK heading-alth5" data-id="I4259:487;4259:317">Blog Single</div></div></div><div class="grid-F4roku grid" data-id="I4259:487;4259:1989"><div class="utility-pages-HfqDss textmeta" data-id="I4259:487;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4259:487;4259:1991"><div class="licensing-LFGLx0 heading-alth5" data-id="I4259:487;4259:1993">Licensing</div></div></div><div class="grid-bzqKEy grid" data-id="I4259:487;4259:1870"><div class="socials-2OVt36 textmeta" data-id="I4259:487;4259:1871">(Socials)</div><div class="nav" data-id="I4259:487;4259:1872"><div class="instagram-2632Jb heading-alth5" data-id="I4259:487;4259:1873">Instagram</div><div class="behance-2632Jb heading-alth5" data-id="I4259:487;4259:1874">Behance</div><div class="dribbble-2632Jb heading-alth5" data-id="I4259:487;4259:1875">Dribbble</div></div></div></div><div class="grid-CnUvtX grid" data-id="I4259:487;5267:3373"><article class="button-text-pLaRz5 button-text" data-id="I4259:487;5267:3374"><div class="button-text-P4AVWO button-text componentsbutton" data-id="I4259:487;5267:3374;2955:6381">By Gola Templates</div><div class="line-P4AVWO line" data-id="I4259:487;5267:3374;2955:6382"></div></article><article class="button-text-JxXy2p button-text" data-id="I4259:487;5267:3375"><div class="button-text-beD6Np button-text componentsbutton" data-id="I4259:487;5267:3375;2955:6381">Back to Top</div><div class="line-beD6Np line" data-id="I4259:487;5267:3375;2955:6382"></div></article></div></div></footer><div class="header-small-IO3Fu5" data-id="9266:19450"><div class="grid-F9kB6x grid" data-id="I9266:19450;4275:587"><div class="grid-6hjZmk grid" data-id="I9266:19450;4275:588"><a href="products"><div class="projects-vrNV0c componentsbutton" data-id="I9266:19450;4275:589">Products</div></a><a href="service"><div class="services-vrNV0c componentsbutton" data-id="I9266:19450;4275:590">Services</div></a><a href="about"><div class="studio-vrNV0c studio componentsbutton" data-id="I9266:19450;4275:591">About</div></a><a href="contact"><div class="journal-vrNV0c componentsbutton" data-id="I9266:19450;4275:592">Contact</div></a></div></div><div class="button-text-F9kB6x button-text" data-id="I9266:19450;5267:2707"><div class="button-text-lAbctH button-text componentsbutton" data-id="I9266:19450;5267:2707;2830:1267">EN / ZH</div><div class="line-lAbctH line" data-id="I9266:19450;5267:2707;2830:1268"></div></div></div></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="index"><div class="index screen " data-id="4119:1047"><div class="section-hero-IO3Fu5" data-id="4275:569"><div class="image-wrapper-l0bKKH" data-id="4275:689"><img class="image-38-UaZquT" data-id="5254:559" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fb256810bb51b0e496cb1d/img/image-38.png" alt="image 38"><img class="fwrlogo-w-1-UaZquT" data-id="9257:13047" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 1"></div><div class="grid-l0bKKH grid" data-id="4275:580"><div class="grid-oekx9b grid" data-id="4275:581"><h1 class="fwrinc-VR1KYV antonsc-normal-woodsmoke-128px" data-id="4275:582">FWRINC©</h1><div class="fwrinc-logo-1-VR1KYV" data-id="9163:1220"></div><img class="group-3-VR1KYV" data-id="9163:1233" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/group-3-1@2x.png" alt="Group 3"><div class="frame-365-VR1KYV" data-id="9163:1232"></div><div class="grid-VR1KYV grid" data-id="4275:583"><div class="based-in-prague-UbQ5As textmeta" data-id="4275:584">(Based in Prague)</div><p class="supplying-premium-te-UbQ5As heading-alth2" data-id="4275:585">&#34;Supplying premium teas and custom blends to elevate brands across Southeast Asia.&#34;</p></div></div><div class="grid-xw3zxs grid" data-id="4275:594"><div class="grid-AO8TqM grid" data-id="4275:595"><div class="about-us-OXVfpW textmeta" data-id="4565:355">(About Us)</div><div class="grid-OXVfpW grid" data-id="4565:357"><div class="profile-s3bwXq" data-id="4275:596">PROFILE</div><p class="our-company-speciali-s3bwXq textmedium" data-id="4275:597">Our company specializes in the wholesale and international trade of high-quality tea, serving chain beverage stores, food and beverage operators, and overseas distributors. We offer imported raw tea materials, bubble tea-specific teas, tea bags for tea brewing machines, pyramid tea bags, and matcha powder. In addition, we provide customized tea blending according to client needs, creating unique flavors and aromas that enhance product competitiveness.<br><br>Beyond tea supply, we offer tea bag OEM services (square flat bags and pyramid bags), as well as customized packaging and labeling to meet brand-specific requirements. Leveraging our professional import and export capabilities, we distribute premium tea to Southeast Asian markets, dedicated to promoting high-quality tea culture internationally.</p></div></div><div class="x23-1-AO8TqM" data-id="9108:1178"></div><div class="grid-n3ZnIN grid" data-id="4275:598"><div class="our-partner-RbUeVe textmeta" data-id="4275:599">(Our Partner)</div><img class="grid-RbUeVe grid" data-id="4275:600" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f9c960d029968d68d9f641/img/grid.svg" alt="Grid"></div></div></div></div><img class="section-projects-IO3Fu5" data-id="4226:1048" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/section-projects.jpg" alt="Section Projects"><div class="section-testimonials-IO3Fu5" data-id="4239:2138"><div class="grid-IrOCxE grid" data-id="4239:1963"><div class="grid-ShbVki grid" data-id="4239:1965"><div class="testimonials-G3cVj1 gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4239:1967">(Testimonials)</div><div class="x03-G3cVj1 gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4239:1966">(03)</div></div><div class="grid-uUMuTT grid" data-id="4239:1968"><div class="what-our-clients-say-0M9FQS antonsc-normal-woodsmoke-128px" data-id="4239:2257">WHAT OUR <br>CLIENTS SAY</div><p class="hear-our-clients-abo-0M9FQS heading-alth2" data-id="4239:1978">Hear our clients about their success stories and experiences with us.</p></div></div><div class="grid-iLKh5S grid" data-id="4239:2272"><div class="grid-fZukDl grid" data-id="4239:2273"><div class="card-vfYqOs card" data-id="4239:2293"><img class="image-wTgRtT image" data-id="4239:2900" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-wTgRtT grid" data-id="4239:2902"><div class="grid-WEHI3b grid" data-id="4239:3066"><p class="exceptional-branding-BeHPcD heading-alth3" data-id="4239:2904">Exceptional Branding That Elevated Our Identity.</p><p class="their-strategic-appr-BeHPcD textdefault" data-id="4239:2906">Their strategic approach completely transformed our brand. We’ve seen a huge increase in recognition and client engagement.</p></div><div class="grid-jzOwvF grid" data-id="4259:467"><img class="image-wrapper-2XPwzX" data-id="4259:468" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper@2x.png" alt="Image Wrapper"><div class="grid-2XPwzX grid" data-id="4259:470"><div class="dave-mitchell-qGkGHW heading-alth5" data-id="4259:471">Dave Mitchell</div><div class="lumina-qGkGHW gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:472">(Lumina)</div></div></div></div></div><div class="card-y8QUUg card" data-id="4239:3068"><img class="image-U0nxHX image" data-id="4239:3069" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-U0nxHX grid" data-id="4239:3070"><div class="grid-B12A86 grid" data-id="4239:3071"><p class="seamless-collaborati-B8PEEg heading-alth3" data-id="4239:3072">Seamless Collaboration &amp; Support With Exceptional Results.</p><p class="working-with-them-wa-B8PEEg textdefault" data-id="4239:3074">Working with them was easy and efficient. They perfectly captured our vision, and the results were outstanding.</p></div><div class="grid-jl275C grid" data-id="4239:3075"><img class="image-wrapper-y9pSxc" data-id="4239:3076" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-1@2x.png" alt="Image Wrapper"><div class="grid-y9pSxc grid" data-id="4239:3078"><div class="michaela-lee-Q7OQx1 heading-alth5" data-id="4259:354">Michaela Lee</div><div class="apex-fitness-Q7OQx1 gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4239:3079">(Apex Fitness)</div></div></div></div></div></div><div class="grid-csDVYZ grid" data-id="4239:3130"><div class="card-LpNWu5 card" data-id="4239:3143"><img class="image-VtipAc image" data-id="4239:3144" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-VtipAc grid" data-id="4239:3145"><div class="grid-sBpeA2 grid" data-id="4239:3146"><p class="outstanding-website-z59fdZ heading-alth3" data-id="4239:3147">Outstanding Website Design, Exceeding Expectations.</p><p class="the-website-they-cre-z59fdZ textdefault" data-id="4239:3149">The website they created is stunning, user-friendly, and has boosted our online conversions significantly. Highly recommend!</p></div><div class="grid-erfA9u grid" data-id="4259:460"><img class="image-wrapper-6keBuM" data-id="4259:461" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-2@2x.png" alt="Image Wrapper"><div class="grid-6keBuM grid" data-id="4259:463"><div class="sara-thompson-HIJgrv heading-alth5" data-id="4259:464">Sara Thompson</div><div class="horizon-HIJgrv gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:465">(Horizon)</div></div></div></div></div><div class="card-uOD3I1 card" data-id="4239:3131"><img class="image-XloBfs image" data-id="4239:3132" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-XloBfs grid" data-id="4239:3133"><div class="grid-FMINhQ grid" data-id="4239:3134"><p class="strategic-branding-i-mnxrIj heading-alth3" data-id="4239:3135">Strategic Branding &amp; Identity With Immediate Impact.</p><p class="our-new-branding-res-mnxrIj textdefault" data-id="4239:3137">Our new branding resonated with our audience immediately. We’ve received so many compliments and new business inquiries.</p></div><div class="grid-CB52pA grid" data-id="4259:439"><img class="image-wrapper-1xnhsd" data-id="4259:440" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-3@2x.png" alt="Image Wrapper"><div class="grid-1xnhsd grid" data-id="4259:442"><div class="amanda-lopez-t8oxKA heading-alth5" data-id="4259:443">Amanda Lopez</div><div class="urban-interiors-t8oxKA gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:444">(Urban Interiors)</div></div></div></div></div></div><div class="grid-Q7YiCW grid" data-id="4239:3155"><div class="card-QvixXh card" data-id="4239:3156"><img class="image-kDLHIL image" data-id="4239:3157" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-kDLHIL grid" data-id="4239:3158"><div class="grid-xkJv6I grid" data-id="4239:3159"><p class="creative-solutions-t-qwVrVP heading-alth3" data-id="4239:3160">Creative Solutions That Drove Real Results for Our Website.</p><p class="their-designs-are-no-qwVrVP textdefault" data-id="4239:3162">Their designs are not only beautiful but effective. Our sales increased by 30% post-launch. Incredible experience!</p></div><div class="grid-cPo4mA grid" data-id="4259:453"><img class="image-wrapper-hUPJv9" data-id="4259:454" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-4@2x.png" alt="Image Wrapper"><div class="grid-hUPJv9 grid" data-id="4259:456"><div class="emil-rogers-u90Mvs heading-alth5" data-id="4259:457">Emil Rogers</div><div class="pure-green-u90Mvs gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:458">(Pure Green)</div></div></div></div></div><div class="card-rG0w4j card" data-id="4239:3168"><img class="image-CgcX8x image" data-id="4239:3169" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/-.svg" alt="image"><div class="grid-CgcX8x grid" data-id="4239:3170"><div class="grid-771OpU grid" data-id="4239:3171"><p class="ux-design-that-trans-xdmIxy heading-alth3" data-id="4239:3172">UX Design That Transformed Our User Experience.</p><p class="their-ux-design-made-xdmIxy textdefault" data-id="4239:3174">Their UX design made our platform more intuitive and enjoyable to use. Customer satisfaction has dramatically improved.</p></div><div class="grid-BKx3Pu grid" data-id="4259:446"><img class="image-wrapper-zTUxqr" data-id="4259:447" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/image-wrapper-5@2x.png" alt="Image Wrapper"><div class="grid-zTUxqr grid" data-id="4259:449"><div class="jason-carter-An9JbO heading-alth5" data-id="4259:450">Jason Carter</div><div class="quantum-An9JbO gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4259:451">(Quantum)</div></div></div></div></div></div></div></div><footer class="footer-IO3Fu5" data-id="4259:487"><div class="grid-6isyAT grid" data-id="I4259:487;4259:1590"><div class="k-aj-o-hVpn2X antonsc-normal-white-128px" data-id="I4259:487;4259:1739">FWR<br>INC©</div></div><div class="grid-yG03hB grid" data-id="I4259:487;4259:1663"><div class="grid-ZFweIs grid" data-id="I4259:487;4259:298"><div class="grid-iuMxjI grid" data-id="I4259:487;4259:302"><div class="pages-ta7XIU textmeta" data-id="I4259:487;4259:303">(Pages)</div><div class="nav" data-id="I4259:487;4259:304"><div class="home-YTe04k heading-alth5" data-id="I4259:487;4259:305">Home</div><div class="studio-YTe04k studio heading-alth5" data-id="I4259:487;4259:306">Studio</div><div class="contact-YTe04k heading-alth5" data-id="I4259:487;4259:310">Contact</div></div></div><div class="grid-IAxWCd grid" data-id="I4259:487;4259:311"><div class="cms-1BA8So textmeta" data-id="I4259:487;4259:343">(CMS)</div><div class="nav" data-id="I4259:487;4259:313"><div class="work-8AkBNK heading-alth5" data-id="I4259:487;4259:314">Work</div><div class="work-single-8AkBNK heading-alth5" data-id="I4259:487;4259:315">Work Single</div><div class="blog-8AkBNK heading-alth5" data-id="I4259:487;4259:316">Blog</div><div class="blog-single-8AkBNK heading-alth5" data-id="I4259:487;4259:317">Blog Single</div></div></div><div class="grid-F4roku grid" data-id="I4259:487;4259:1989"><div class="utility-pages-HfqDss textmeta" data-id="I4259:487;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4259:487;4259:1991"><div class="licensing-LFGLx0 heading-alth5" data-id="I4259:487;4259:1993">Licensing</div></div></div><div class="grid-bzqKEy grid" data-id="I4259:487;4259:1870"><div class="socials-2OVt36 textmeta" data-id="I4259:487;4259:1871">(Socials)</div><div class="nav" data-id="I4259:487;4259:1872"><div class="instagram-2632Jb heading-alth5" data-id="I4259:487;4259:1873">Instagram</div><div class="behance-2632Jb heading-alth5" data-id="I4259:487;4259:1874">Behance</div><div class="dribbble-2632Jb heading-alth5" data-id="I4259:487;4259:1875">Dribbble</div></div></div></div><div class="grid-CnUvtX grid" data-id="I4259:487;5267:3373"><article class="button-text-pLaRz5 button-text" data-id="I4259:487;5267:3374"><div class="button-text-P4AVWO button-text componentsbutton" data-id="I4259:487;5267:3374;2955:6381">By Gola Templates</div><div class="line-P4AVWO line" data-id="I4259:487;5267:3374;2955:6382"></div></article><article class="button-text-JxXy2p button-text" data-id="I4259:487;5267:3375"><div class="button-text-beD6Np button-text componentsbutton" data-id="I4259:487;5267:3375;2955:6381">Back to Top</div><div class="line-beD6Np line" data-id="I4259:487;5267:3375;2955:6382"></div></article></div></div></footer><div class="header-small-IO3Fu5" data-id="9266:19450"><div class="grid-F9kB6x grid" data-id="I9266:19450;4275:587"><div class="grid-6hjZmk grid" data-id="I9266:19450;4275:588"><a href="products"><div class="projects-vrNV0c componentsbutton" data-id="I9266:19450;4275:589">Products</div></a><a href="service"><div class="services-vrNV0c componentsbutton" data-id="I9266:19450;4275:590">Services</div></a><a href="about"><div class="studio-vrNV0c studio componentsbutton" data-id="I9266:19450;4275:591">About</div></a><a href="contact"><div class="journal-vrNV0c componentsbutton" data-id="I9266:19450;4275:592">Contact</div></a></div></div><div class="button-text-F9kB6x button-text" data-id="I9266:19450;5267:2707"><a href="index-zh"><div class="button-text-lAbctH button-text componentsbutton" data-id="I9266:19450;5267:2707;2830:1267">EN / ZH</div></a><div class="line-lAbctH line" data-id="I9266:19450;5267:2707;2830:1268"></div></div></div></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
