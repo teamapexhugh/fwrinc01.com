@@ -4,12 +4,12 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-30/10/2025 06:10:10 -->
+03/11/2025 12:21:31 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Inter:400,700,600|Anton+SC:400");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400");
 
 
 @font-face {
@@ -217,6 +217,7 @@ input:focus {
 :root { 
   --backgrounddefault: #ffffff;
   --backgroundinverse-muted: #181a1b;
+  --backgroundinverse-muted-2: #1f2122;
   --backgroundmuted: #f8f8f8;
   --backgroundmuted-2: #eeeeee;
   --backgroundprimary: #0e1011;
@@ -226,26 +227,30 @@ input:focus {
   --icondefault: #0e1011;
   --iconinverse: #ffffff;
   --keppel: #37999d;
+  --perano: #acb5f7;
   --purple-mountains-majesty: #9b83b0;
+  --sinbad: #9cd3d6;
+  --tamarillo: #9e141d;
   --textdefault: #0e1011;
   --textinverse: #ffffff;
   --textinverse-muted: #ffffff99;
   --textmuted: #06272c99;
+  --thunderbird: #cb2c13;
   --woodsmoke: #0e101199;
  
   --font-size-18px: 18px;
   --font-size-24px: 24px;
   --font-size-28px: 28px;
-  --font-size-32px: 32px;
+  --font-size-48px: 48px;
   --font-size-64px: 64px;
   --font-size-80px: 80px;
-  --font-size-l: 26px;
-  --font-size-m: 22px;
-  --font-size-s: 20px;
-  --font-size-xl: 30px;
-  --font-size-xs: 6.9px;
-  --font-size-xxl: 40px;
-  --font-size-xxxl: 48px;
+  --font-size-l: 20px;
+  --font-size-m: 6.9px;
+  --font-size-xl: 22px;
+  --font-size-xxl: 26px;
+  --font-size-xxxl: 30px;
+  --font-size-xxxxl: 32px;
+  --font-size-xxxxxl: 40px;
  
   --font-family-anton_sc: "Anton SC", Helvetica;
   --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
@@ -271,7 +276,7 @@ input:focus {
 
 .heading-alth2 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-48px);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -279,7 +284,7 @@ input:focus {
 
 .heading-alth3 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -1px;
@@ -287,7 +292,7 @@ input:focus {
 
 .heading-alth4 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-32px);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -295,7 +300,7 @@ input:focus {
 
 .heading-alth5 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
@@ -319,7 +324,7 @@ input:focus {
 
 .textmedium {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -327,7 +332,7 @@ input:focus {
 
 .textdefault {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -343,7 +348,7 @@ input:focus {
 
 .textmeta {
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxxl);
   font-style: italic;
   font-weight: 500;
   letter-spacing: 0px;
@@ -351,18 +356,10 @@ input:focus {
 
 .componentsbutton {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
-}
-
-.antonsc-normal-woodsmoke-128px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 128px;
-  font-style: normal;
-  font-weight: 400;
 }
 
 .helvetica-bold-white-24-8px {
@@ -373,18 +370,50 @@ input:focus {
   font-weight: 700;
 }
 
-.gambetta-mediumitalic-medium-woodsmoke-20px {
-  color: var(--woodsmoke);
-  font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-s);
-  font-style: italic;
-  font-weight: 500;
-}
-
 .helvetica-regular-normal-white-11px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-helvetica-regular);
   font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-woodsmoke-128px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.gambetta-mediumitalic-medium-woodsmoke-20px {
+  color: var(--woodsmoke);
+  font-family: var(--font-family-gambetta-mediumitalic);
+  font-size: var(--font-size-l);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.antonsc-normal-woodsmoke-96px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-64px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-32px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 400;
 }
@@ -400,25 +429,57 @@ input:focus {
 .gambetta-mediumitalic-medium-woodsmoke-32px {
   color: var(--woodsmoke);
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: 32px;
+  font-size: var(--font-size-xxxxl);
   font-style: italic;
   font-weight: 500;
 }
 
-.antonsc-normal-white-192px {
+.inter-semi-bold-white-40px {
   color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 192px;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.inter-semi-bold-white-40px-2 {
+  color: var(--textinverse-muted);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.helvetica-bold-keppel-42-5px {
+  color: var(--keppel);
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.helvetica-regular-normal-keppel-6-9px {
+  color: var(--keppel);
+  font-family: var(--font-family-helvetica-regular);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 400;
 }
 
-.inter-semi-bold-white-48px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxl);
+.helvetica-regular-normal-purple-mountains-majesty-6-9px {
+  color: var(--purple-mountains-majesty);
+  font-family: var(--font-family-helvetica-regular);
+  font-size: var(--font-size-m);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-96px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 :root {
@@ -467,11 +528,145 @@ input:focus {
   position: absolute;
 }
 
+.your-name {
+  background-color: transparent;
+  color: var(--textmuted);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.4px;
+  margin-top: -2.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
 .material-symbolsarrow-forward-rounded {
   background-color: transparent;
   height: 32px;
   position: relative;
   width: 32px;
+}
+
+.award {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 407.4285888671875px;
+  justify-content: space-between;
+  margin-right: -0.67px;
+  padding: 35.42857360839844px;
+  position: relative;
+  width: 310px;
+}
+
+.branding-of-the-year {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+}
+
+.certificate {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 12.1px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-318 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 27.555553436279297px;
+  position: relative;
+}
+
+.frame-319 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.frame-320 {
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.general-categories {
+  background-color: transparent;
+  height: 97.22%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 98.23%;
+}
+
+.kajo-studio {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 27.3px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.logo {
+  background-color: transparent;
+  height: 35.42857360839844px;
+  position: relative;
+  width: 73.80952453613281px;
+}
+
+.lorem-ipsum-dolor-si {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 9.6px;
+  position: relative;
+  text-align: left;
+}
+
+.site-of-the-month {
+  align-self: stretch;
+  background-color: transparent;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
+}
+
+.website-of-the-year {
+  align-self: stretch;
+  background-color: transparent;
+  font-family: var(--font-family-helvetica-bold);
+  font-size: 42.5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.00px;
+  line-height: 46.8px;
+  margin-top: -0.69px;
+  position: relative;
+  text-align: left;
 }
 /* screen - index-zh */
 
@@ -485,104 +680,6 @@ input:focus {
   overflow-x: hidden;
   position: relative;
   top: 0px;
-}
-
-.index-zh .header-small-P2sgyd {
-  align-items: center;
-  background-color: transparent;
-  border-radius: 500px;
-  display: flex;
-  justify-content: space-between;
-  padding: 64px 96px 0px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 960px;
-  z-index: 3;
-}
-
-.index-zh .grid-GE2Jx7 {
-  align-items: center;
-  align-self: stretch;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 12px;
-}
-
-.index-zh .grid-2OobIR {
-  align-items: center;
-  align-self: stretch;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 32px;
-}
-
-.index-zh .projects-tYdavY {
-  background-color: transparent;
-  color: var(--backgrounddefault);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.index-zh .services-tYdavY {
-  background-color: transparent;
-  color: var(--backgrounddefault);
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.index-zh .studio-tYdavY {
-  color: var(--backgrounddefault);
-  line-height: 22px;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.index-zh .journal-tYdavY {
-  background-color: transparent;
-  color: var(--backgrounddefault);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.index-zh .button-text-GE2Jx7 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: center;
-}
-
-.index-zh .button-text-EG2np1 {
-  color: var(--backgrounddefault);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  margin-top: -1.00px;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.index-zh .line-EG2np1 {
-  background-color: var(--backgrounddefault);
 }
 
 .index-zh .section-hero-P2sgyd {
@@ -600,9 +697,34 @@ input:focus {
 
 .index-zh .image-wrapper-ji3H56 {
   background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69089e471798e80def477ada/img/image-wrapper.svg);
+  background-position: 50% 50%;
+  background-size: cover;
   height: 1080px;
+  overflow: hidden;
   position: relative;
   width: 960px;
+}
+
+.index-zh .image-38-9zY1VO {
+  background-color: transparent;
+  height: 1196px;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: -89px;
+  width: 1063px;
+}
+
+.index-zh .fwrlogo-w-1-9zY1VO {
+  aspect-ratio: 5.052381;
+  background-color: transparent;
+  height: 55px;
+  left: 96px;
+  object-fit: cover;
+  position: absolute;
+  top: 60px;
+  width: 278px;
 }
 
 .index-zh .grid-ji3H56 {
@@ -733,43 +855,110 @@ input:focus {
   width: fit-content;
 }
 
-.index-zh .grid-wmq1dl {
-  align-items: flex-start;
+.index-zh .header-small-KN31M3 {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 500px;
   display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 128px;
-  padding: 96px 96px 128px;
+  justify-content: space-between;
+  left: 0px;
+  padding: 64px 96px 0px;
+  position: absolute;
+  top: 0px;
   width: 960px;
 }
 
-.index-zh .grid-pd8AKW {
-  align-items: flex-start;
+.index-zh .grid-idQiiS {
+  align-items: center;
   align-self: stretch;
-  display: flex;
+  display: inline-flex;
   flex: 0 0 auto;
-  flex-direction: column;
-  gap: 48px;
-  width: 100%;
+  gap: 12px;
 }
 
-.index-zh .companies-we-worked-with-INkOia {
+.index-zh .grid-Ux2bQX {
+  align-items: center;
+  align-self: stretch;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 32px;
+}
+
+.index-zh .projects-vCoZHV {
   background-color: transparent;
   color: var(--backgrounddefault);
-  font-style: italic;
-  font-weight: 500;
-  line-height: 30px;
-  margin-top: -1.00px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
   position: relative;
   text-align: left;
   white-space: nowrap;
   width: fit-content;
 }
 
-.index-zh .grid-INkOia {
-  align-self: stretch;
+.index-zh .services-vCoZHV {
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index-zh .studio-vCoZHV {
+  color: var(--backgrounddefault);
+  cursor: pointer;
+  line-height: 22px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index-zh .journal-vCoZHV {
+  background-color: transparent;
+  color: var(--backgrounddefault);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index-zh .button-text-idQiiS {
+  align-items: flex-start;
+  display: inline-flex;
   flex: 0 0 auto;
-  width: 100%;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+.index-zh .button-text-FgGCbB {
+  color: var(--backgrounddefault);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: -1.00px;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index-zh .line-FgGCbB {
+  background-color: var(--backgrounddefault);
+}
+
+.index-zh .grid-wmq1dl {
+  height: 446px;
+  width: 960px;
 }
 
 .index-zh .section-projects-P2sgyd {
@@ -1105,4 +1294,4 @@ input:focus {
 .index-zh .line-BC9pMi {
   background-color: var(--backgroundprimary);
 }
-</style></head><body style="margin: 0;background: #0e1011;"><input type="hidden" id="anPageName" name="page" value="index-zh"><div class="index-zh screen " data-id="5267:561"><div class="header-small-P2sgyd" data-id="5267:867"><div class="grid-GE2Jx7 grid" data-id="I5267:867;4275:587"><div class="grid-2OobIR grid" data-id="I5267:867;4275:588"><div class="projects-tYdavY componentsbutton" data-id="I5267:867;4275:589">產品</div><a href="service-zh"><div class="services-tYdavY componentsbutton" data-id="I5267:867;4275:590">服務項目</div></a><div class="studio-tYdavY studio componentsbutton" data-id="I5267:867;4275:591">關於</div><div class="journal-tYdavY componentsbutton" data-id="I5267:867;4275:592">聯繫</div></div></div><div class="button-text-GE2Jx7 button-text" data-id="I5267:867;5267:2707"><div class="button-text-EG2np1 button-text componentsbutton" data-id="I5267:867;5267:2707;2830:1267">EN / ZH</div><div class="line-EG2np1 line" data-id="I5267:867;5267:2707;2830:1268"></div></div></div><div class="section-hero-P2sgyd" data-id="5267:562"><img class="image-wrapper-ji3H56" data-id="5267:563" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fe3b5110201b33192622cc/img/image-wrapper-11.svg" alt="Image Wrapper"><div class="grid-ji3H56 grid" data-id="5267:565"><div class="grid-MCdYxF grid" data-id="5267:566"><div class="fwrinc-KN31M3" data-id="5267:567">FWRINC©</div><div class="grid-KN31M3 grid" data-id="5267:572"><div class="grid-aOznjx grid" data-id="5267:574"><p class="x36-1000-1300-b2-b-oem-fBE2ZB textlarge" data-id="5267:576"><span class="span0-vPbNVf textlarge">雲霧之上的承諾一甲子的茶香，從梅山深處走入世界</span><span class="span1-vPbNVf textlarge">。<br></span><span class="span2-vPbNVf textmedium"><br></span><span class="span3-vPbNVf textsmall">&nbsp;&nbsp;&nbsp;&nbsp;我們的故事，根植於嘉義梅山著名的 36 彎公路。每一道艱辛的彎路，都通往我們海拔 1,000 至 1,300 公尺的茶園。正是這份與山爭霧、與天爭暖的環境，淬鍊出梅山高山茶冷冽、純淨、回甘深遠的無上品格。<br><br></span><span class="span4-vPbNVf textlarge">超越傳統貿易商：茶廠一甲子背景，轉化為您的品質壁壘。<br></span><span class="span5-vPbNVf textsmall"><br>&nbsp;&nbsp;&nbsp;&nbsp;作為傳承茶魂的後代，我們將老茶廠的匠人精神，全面升級為現代化的 B2B 源頭直供解決方案。我們的存在，是為了徹底消除傳統茶葉貿易中的品質不確定性和中間商溢價，製程完全掌控，與獨家 OEM 技術支援，卻保您的品牌在東南亞市場擁有獨一無二的產品優勢。<br></span></p></div></div><div class="grid-vR94jy grid" data-id="5267:568"><div class="based-in-prague-17jxJY textmeta" data-id="5267:569">(Based in Prague)</div></div></div><div class="grid-wmq1dl grid" data-id="5267:571"><div class="grid-pd8AKW grid" data-id="5267:577"><div class="companies-we-worked-with-INkOia textmeta" data-id="5267:578">(Companies we worked with)</div><img class="grid-INkOia grid" data-id="5267:579" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fb256810bb51b0e496cb1d/img/grid-1.svg" alt="Grid"></div></div></div></div><img class="section-projects-P2sgyd" data-id="5267:657" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fc9c38564bcef5ef6f9290/img/section-projects.jpg" alt="Section Projects"><footer class="footer-P2sgyd" data-id="5267:866"><div class="grid-xIMwCe grid" data-id="I5267:866;5267:2000"><h1 class="k-aj-o-ajA6Gy antonsc-normal-woodsmoke-128px" data-id="I5267:866;5267:2001">FWRINC©</h1></div><div class="grid-unhtPZ grid" data-id="I5267:866;5267:2002"><div class="grid-PVhhxK grid" data-id="I5267:866;5267:2003"><div class="grid-lrim5F grid" data-id="I5267:866;5267:2004"><div class="pages-xFFTjc textmeta" data-id="I5267:866;5267:2005">(Pages)</div><div class="nav" data-id="I5267:866;5267:2006"><div class="home-J34OX3 heading-alth5" data-id="I5267:866;5267:2007">Home</div><div class="service-J34OX3 heading-alth5" data-id="I5267:866;5267:2008">Service</div><div class="studio-J34OX3 studio heading-alth5" data-id="I5267:866;5267:2009">Studio</div><div class="contact-J34OX3 heading-alth5" data-id="I5267:866;5267:2010">Contact</div></div></div><div class="grid-zxgKTv grid" data-id="I5267:866;5267:2011"><div class="cms-Ant7sW textmeta" data-id="I5267:866;5267:2012">(CMS)</div><div class="nav" data-id="I5267:866;5267:2013"><div class="work-rq5dxg heading-alth5" data-id="I5267:866;5267:2014">Work</div><div class="work-single-rq5dxg heading-alth5" data-id="I5267:866;5267:2015">Work Single</div><div class="blog-rq5dxg heading-alth5" data-id="I5267:866;5267:2016">Blog</div><div class="blog-single-rq5dxg heading-alth5" data-id="I5267:866;5267:2017">Blog Single</div></div></div><div class="grid-oXiSQO grid" data-id="I5267:866;5267:2018"><div class="utility-pages-Ggx3eB textmeta" data-id="I5267:866;5267:2019">(Utility Pages)</div><div class="nav" data-id="I5267:866;5267:2020"><div class="licensing-Fx0LKx heading-alth5" data-id="I5267:866;5267:2022">Licensing</div></div></div><div class="grid-I8deJV grid" data-id="I5267:866;5267:2023"><div class="socials-tKFUUB textmeta" data-id="I5267:866;5267:2024">(Socials)</div><div class="nav" data-id="I5267:866;5267:2025"><div class="instagram-38XMxV heading-alth5" data-id="I5267:866;5267:2026">Instagram</div><div class="behance-38XMxV heading-alth5" data-id="I5267:866;5267:2027">Behance</div><div class="dribbble-38XMxV heading-alth5" data-id="I5267:866;5267:2028">Dribbble</div></div></div></div><div class="grid-5nGAyG grid" data-id="I5267:866;5267:2029"><article class="button-text-pZDTPz button-text" data-id="I5267:866;5267:3265"><div class="button-text-BXSEyE button-text componentsbutton" data-id="I5267:866;5267:3265;2830:1267">By Gola Templates</div><div class="line-BXSEyE line" data-id="I5267:866;5267:3265;2830:1268"></div></article><article class="button-text-Ckx72o button-text" data-id="I5267:866;5267:2367"><div class="button-text-BC9pMi button-text componentsbutton" data-id="I5267:866;5267:2367;2830:1267">Back to Top</div><div class="line-BC9pMi line" data-id="I5267:866;5267:2367;2830:1268"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head><body style="margin: 0;background: #0e1011;"><input type="hidden" id="anPageName" name="page" value="index-zh"><div class="index-zh screen " data-id="5267:561"><div class="section-hero-P2sgyd" data-id="5267:562"><div class="image-wrapper-ji3H56" data-id="5267:563-cfd35268-7a05-41f6-873f-25313d37920e"><img class="image-38-9zY1VO" data-id="5267:564" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fb256810bb51b0e496cb1d/img/image-38.png" alt="image 38"><img class="fwrlogo-w-1-9zY1VO" data-id="9298:35312" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 1"></div><div class="grid-ji3H56 grid" data-id="5267:565"><div class="grid-MCdYxF grid" data-id="5267:566"><div class="fwrinc-KN31M3" data-id="5267:567">FWRINC©</div><div class="grid-KN31M3 grid" data-id="5267:572"><div class="grid-aOznjx grid" data-id="5267:574"><p class="x36-1000-1300-b2-b-oem-fBE2ZB textlarge" data-id="5267:576"><span class="span0-vPbNVf textlarge">雲霧之上的承諾一甲子的茶香，從梅山深處走入世界</span><span class="span1-vPbNVf textlarge">。<br></span><span class="span2-vPbNVf textmedium"><br></span><span class="span3-vPbNVf textsmall">&nbsp;&nbsp;&nbsp;&nbsp;我們的故事，根植於嘉義梅山著名的 36 彎公路。每一道艱辛的彎路，都通往我們海拔 1,000 至 1,300 公尺的茶園。正是這份與山爭霧、與天爭暖的環境，淬鍊出梅山高山茶冷冽、純淨、回甘深遠的無上品格。<br><br></span><span class="span4-vPbNVf textlarge">超越傳統貿易商：茶廠一甲子背景，轉化為您的品質壁壘。<br></span><span class="span5-vPbNVf textsmall"><br>&nbsp;&nbsp;&nbsp;&nbsp;作為傳承茶魂的後代，我們將老茶廠的匠人精神，全面升級為現代化的 B2B 源頭直供解決方案。我們的存在，是為了徹底消除傳統茶葉貿易中的品質不確定性和中間商溢價，製程完全掌控，與獨家 OEM 技術支援，卻保您的品牌在東南亞市場擁有獨一無二的產品優勢。<br></span></p></div></div><div class="grid-vR94jy grid" data-id="5267:568"><div class="based-in-prague-17jxJY textmeta" data-id="5267:569">(Based in Prague)</div></div><div class="header-small-KN31M3" data-id="5267:867"><div class="grid-idQiiS grid" data-id="I5267:867;4275:587"><div class="grid-Ux2bQX grid" data-id="I5267:867;4275:588"><a href="products-zh"><div class="projects-vCoZHV componentsbutton" data-id="I5267:867;4275:589">產品</div></a><a href="service-zh"><div class="services-vCoZHV componentsbutton" data-id="I5267:867;4275:590">服務項目</div></a><a href="about-zh"><div class="studio-vCoZHV studio componentsbutton" data-id="I5267:867;4275:591">關於</div></a><a href="contact-zh"><div class="journal-vCoZHV componentsbutton" data-id="I5267:867;4275:592">聯繫</div></a></div></div><div class="button-text-idQiiS button-text" data-id="I5267:867;5267:2707"><a href="index"><div class="button-text-FgGCbB button-text componentsbutton" data-id="I5267:867;5267:2707;2830:1267">EN / ZH</div></a><div class="line-FgGCbB line" data-id="I5267:867;5267:2707;2830:1268"></div></div></div></div><div class="grid-wmq1dl grid" data-id="5267:571"></div></div></div><img class="section-projects-P2sgyd" data-id="5267:657" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fc9c38564bcef5ef6f9290/img/section-projects.jpg" alt="Section Projects"><footer class="footer-P2sgyd" data-id="5267:866"><div class="grid-xIMwCe grid" data-id="I5267:866;5267:2000"><h1 class="k-aj-o-ajA6Gy antonsc-normal-woodsmoke-128px" data-id="I5267:866;5267:2001">FWRINC©</h1></div><div class="grid-unhtPZ grid" data-id="I5267:866;5267:2002"><div class="grid-PVhhxK grid" data-id="I5267:866;5267:2003"><div class="grid-lrim5F grid" data-id="I5267:866;5267:2004"><div class="pages-xFFTjc textmeta" data-id="I5267:866;5267:2005">(Pages)</div><div class="nav" data-id="I5267:866;5267:2006"><div class="home-J34OX3 heading-alth5" data-id="I5267:866;5267:2007">Home</div><div class="service-J34OX3 heading-alth5" data-id="I5267:866;5267:2008">Service</div><div class="studio-J34OX3 studio heading-alth5" data-id="I5267:866;5267:2009">Studio</div><div class="contact-J34OX3 heading-alth5" data-id="I5267:866;5267:2010">Contact</div></div></div><div class="grid-zxgKTv grid" data-id="I5267:866;5267:2011"><div class="cms-Ant7sW textmeta" data-id="I5267:866;5267:2012">(CMS)</div><div class="nav" data-id="I5267:866;5267:2013"><div class="work-rq5dxg heading-alth5" data-id="I5267:866;5267:2014">Work</div><div class="work-single-rq5dxg heading-alth5" data-id="I5267:866;5267:2015">Work Single</div><div class="blog-rq5dxg heading-alth5" data-id="I5267:866;5267:2016">Blog</div><div class="blog-single-rq5dxg heading-alth5" data-id="I5267:866;5267:2017">Blog Single</div></div></div><div class="grid-oXiSQO grid" data-id="I5267:866;5267:2018"><div class="utility-pages-Ggx3eB textmeta" data-id="I5267:866;5267:2019">(Utility Pages)</div><div class="nav" data-id="I5267:866;5267:2020"><div class="licensing-Fx0LKx heading-alth5" data-id="I5267:866;5267:2022">Licensing</div></div></div><div class="grid-I8deJV grid" data-id="I5267:866;5267:2023"><div class="socials-tKFUUB textmeta" data-id="I5267:866;5267:2024">(Socials)</div><div class="nav" data-id="I5267:866;5267:2025"><div class="instagram-38XMxV heading-alth5" data-id="I5267:866;5267:2026">Instagram</div><div class="behance-38XMxV heading-alth5" data-id="I5267:866;5267:2027">Behance</div><div class="dribbble-38XMxV heading-alth5" data-id="I5267:866;5267:2028">Dribbble</div></div></div></div><div class="grid-5nGAyG grid" data-id="I5267:866;5267:2029"><article class="button-text-pZDTPz button-text" data-id="I5267:866;5267:3265"><div class="button-text-BXSEyE button-text componentsbutton" data-id="I5267:866;5267:3265;2830:1267">By Gola Templates</div><div class="line-BXSEyE line" data-id="I5267:866;5267:3265;2830:1268"></div></article><article class="button-text-Ckx72o button-text" data-id="I5267:866;5267:2367"><div class="button-text-BC9pMi button-text componentsbutton" data-id="I5267:866;5267:2367;2830:1267">Back to Top</div><div class="line-BC9pMi line" data-id="I5267:866;5267:2367;2830:1268"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
