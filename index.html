@@ -4,12 +4,12 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-03/11/2025 06:59:19 -->
+04/11/2025 06:20:32 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400|ABeeZee:400,400italic");
 
 
 @font-face {
@@ -241,7 +241,7 @@ input:focus {
   --font-size-18px: 18px;
   --font-size-24px: 24px;
   --font-size-28px: 28px;
-  --font-size-32px: 32px;
+  --font-size-48px: 48px;
   --font-size-64px: 64px;
   --font-size-80px: 80px;
   --font-size-l: 20px;
@@ -249,9 +249,10 @@ input:focus {
   --font-size-xl: 22px;
   --font-size-xxl: 26px;
   --font-size-xxxl: 30px;
-  --font-size-xxxxl: 40px;
-  --font-size-xxxxxl: 48px;
+  --font-size-xxxxl: 32px;
+  --font-size-xxxxxl: 40px;
  
+  --font-family-abeezee: "ABeeZee", Helvetica;
   --font-family-anton_sc: "Anton SC", Helvetica;
   --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
   --font-family-helvetica-bold: "Helvetica-Bold", Helvetica;
@@ -276,7 +277,7 @@ input:focus {
 
 .heading-alth2 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-48px);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -284,7 +285,7 @@ input:focus {
 
 .heading-alth3 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -1px;
@@ -292,7 +293,7 @@ input:focus {
 
 .heading-alth4 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-32px);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -347,10 +348,10 @@ input:focus {
 }
 
 .textmeta {
-  font-family: var(--font-family-gambetta-mediumitalic);
+  font-family: var(--font-family-abeezee);
   font-size: var(--font-size-xxxl);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0px;
 }
 
@@ -370,10 +371,26 @@ input:focus {
   font-weight: 700;
 }
 
+.antonsc-normal-white-48px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .helvetica-regular-normal-white-11px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-helvetica-regular);
   font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-woodsmoke-128px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 128px;
   font-style: normal;
   font-weight: 400;
 }
@@ -386,14 +403,6 @@ input:focus {
   font-weight: 500;
 }
 
-.antonsc-normal-woodsmoke-128px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 128px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .antonsc-normal-woodsmoke-96px {
   color: var(--backgroundprimary);
   font-family: var(--font-family-anton_sc);
@@ -402,10 +411,10 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-64px {
+.antonsc-normal-white-32px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: 64px;
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 400;
 }
@@ -413,7 +422,7 @@ input:focus {
 .gambetta-mediumitalic-medium-woodsmoke-32px {
   color: var(--woodsmoke);
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: 32px;
+  font-size: var(--font-size-xxxxl);
   font-style: italic;
   font-weight: 500;
 }
@@ -422,14 +431,6 @@ input:focus {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
   font-size: 128px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.antonsc-normal-white-192px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 192px;
   font-style: normal;
   font-weight: 400;
 }
@@ -458,18 +459,10 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-96px {
+.antonsc-normal-white-64px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.antonsc-normal-white-240px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 240px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
 }
@@ -477,7 +470,15 @@ input:focus {
 .inter-semi-bold-white-40px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.inter-semi-bold-white-40px-2 {
+  color: var(--textinverse-muted);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 600;
 }
@@ -533,6 +534,30 @@ input:focus {
   height: 32px;
   position: relative;
   width: 32px;
+}
+
+.your-name {
+  background-color: transparent;
+  color: var(--textmuted);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.4px;
+  margin-top: -2.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.x1200m {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.4px;
+  position: relative;
+  text-align: left;
 }
 
 .award {
@@ -815,7 +840,7 @@ input:focus {
   background-color: transparent;
   color: var(--woodsmoke);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -882,7 +907,7 @@ input:focus {
   background-color: transparent;
   color: var(--woodsmoke);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1681,7 +1706,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1731,7 +1756,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1797,7 +1822,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1830,7 +1855,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
