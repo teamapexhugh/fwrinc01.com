@@ -4,12 +4,12 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-03/11/2025 12:33:38 -->
+04/11/2025 06:58:04 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400|ABeeZee:400,400italic");
 
 
 @font-face {
@@ -252,6 +252,7 @@ input:focus {
   --font-size-xxxxl: 32px;
   --font-size-xxxxxl: 40px;
  
+  --font-family-abeezee: "ABeeZee", Helvetica;
   --font-family-anton_sc: "Anton SC", Helvetica;
   --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
   --font-family-helvetica-bold: "Helvetica-Bold", Helvetica;
@@ -347,10 +348,10 @@ input:focus {
 }
 
 .textmeta {
-  font-family: var(--font-family-gambetta-mediumitalic);
+  font-family: var(--font-family-abeezee);
   font-size: var(--font-size-xxxl);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0px;
 }
 
@@ -368,6 +369,14 @@ input:focus {
   font-size: 24.8px;
   font-style: normal;
   font-weight: 700;
+}
+
+.antonsc-normal-white-48px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .helvetica-regular-normal-white-11px {
@@ -402,14 +411,6 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-64px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .antonsc-normal-white-32px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
@@ -432,22 +433,6 @@ input:focus {
   font-size: var(--font-size-xxxxl);
   font-style: italic;
   font-weight: 500;
-}
-
-.inter-semi-bold-white-40px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
-  font-style: normal;
-  font-weight: 600;
-}
-
-.inter-semi-bold-white-40px-2 {
-  color: var(--textinverse-muted);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
-  font-style: normal;
-  font-weight: 600;
 }
 
 .helvetica-bold-keppel-42-5px {
@@ -474,12 +459,28 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-96px {
+.antonsc-normal-white-64px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: 96px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
+}
+
+.inter-semi-bold-white-40px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.inter-semi-bold-white-40px-2 {
+  color: var(--textinverse-muted);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 600;
 }
 
 :root {
@@ -539,6 +540,24 @@ input:focus {
   text-align: left;
   white-space: nowrap;
   width: fit-content;
+}
+
+.x1200m {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.4px;
+  position: relative;
+  text-align: left;
+}
+
+.material-symbolsarrow-forward-rounded {
+  background-color: transparent;
+  height: 32px;
+  position: relative;
+  width: 32px;
 }
 
 .award {
@@ -660,13 +679,6 @@ input:focus {
   margin-top: -0.69px;
   position: relative;
   text-align: left;
-}
-
-.material-symbolsarrow-forward-rounded {
-  background-color: transparent;
-  height: 32px;
-  position: relative;
-  width: 32px;
 }
 /* screen - contact */
 
@@ -980,7 +992,7 @@ input:focus {
   background-color: var(--backgroundprimary);
   display: flex;
   flex-direction: column;
-  height: 1080px;
+  height: 753px;
   justify-content: space-between;
   padding: 96px 96px 64px;
   position: relative;
@@ -1041,7 +1053,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1103,7 +1115,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1169,7 +1181,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1202,7 +1214,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1313,4 +1325,4 @@ input:focus {
   position: relative;
   width: 100%;
 }
-</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="contact"><div class="contact screen " data-id="4403:308"><div class="section-contact-DhmS6L" data-id="4403:593"><div class="image-wrapper-7pe4YA" data-id="4403:594"><img class="image-j8iwek" data-id="5103:1556" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69089e471798e80def477ada/img/image-1.png" alt="Image"><img class="fwrlogo-w-1-j8iwek" data-id="9266:19476" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 1"></div><div class="grid-7pe4YA grid" data-id="4403:596"><div class="grid-x7IySR grid" data-id="4403:597"><div class="contact-us-DS34qz antonsc-normal-woodsmoke-96px" data-id="4403:598">CONTACT US</div><div class="grid-DS34qz grid" data-id="4403:599"><div class="grid-ZxrutY grid" data-id="4403:711"><div class="grid-JkYzLW grid" data-id="4403:723"><div class="grid-ZoSIgS grid" data-id="4403:715"><div class="name-Qd2JMI gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4403:716">(Name)</div><div class="input-Qd2JMI input" data-id="4403:717"><div class="your-name textsmall" data-id="I4403:717;2856:5741">First Name</div></div></div><div class="grid-DdhVJ7 grid" data-id="4403:724"><div class="email-9lx7x8 gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4403:725">(Email)</div><div class="input-9lx7x8 input" data-id="4403:726"><div class="your-name textsmall" data-id="I4403:726;2856:5741">Email Address</div></div></div></div><div class="grid-RUMPUG grid" data-id="4403:714"><div class="input-EvaOIh input" data-id="4403:706"><div class="your-name textsmall" data-id="I4403:706;2856:5741">Your Message</div></div></div></div><div class="button-ZxrutY" data-id="4403:731"><div class="button-8Ut03l componentsbutton" data-id="I4403:731;2830:1221">Send Message</div></div></div></div></div><div class="header-small-7pe4YA" data-id="9263:909"><div class="grid-Eh26hs grid" data-id="I9263:909;4275:587"><div class="grid-yhHBx0 grid" data-id="I9263:909;4275:588"><a href="products"><div class="projects-Iy1HUK componentsbutton" data-id="I9263:909;4275:589">Products</div></a><a href="service"><div class="services-Iy1HUK componentsbutton" data-id="I9263:909;4275:590">Services</div></a><a href="about"><div class="studio-Iy1HUK studio componentsbutton" data-id="I9263:909;4275:591">About</div></a><a href="contact"><div class="journal-Iy1HUK componentsbutton" data-id="I9263:909;4275:592">Contact</div></a></div></div><div class="button-text-Eh26hs button-text" data-id="I9263:909;5267:2707"><a href="index-zh"><div class="button-text-BhocYb button-text componentsbutton" data-id="I9263:909;5267:2707;2830:1267">EN / ZH</div></a><div class="line-BhocYb line" data-id="I9263:909;5267:2707;2830:1268"></div></div></div></div><footer class="footer-DhmS6L" data-id="4403:532"><div class="grid-mwR7bx grid" data-id="I4403:532;4259:1590"><h1 class="k-aj-o-jFrZcZ antonsc-normal-white-128px" data-id="I4403:532;4259:1739">FWR<br>INC©</h1></div><div class="grid-15Q2zj grid" data-id="I4403:532;4259:1663"><div class="grid-hM1CG5 grid" data-id="I4403:532;4259:298"><div class="grid-ex7uzh grid" data-id="I4403:532;4259:302"><div class="pages-LbpvNV textmeta" data-id="I4403:532;4259:303">(Pages)</div><div class="nav" data-id="I4403:532;4259:304"><a href="index"><div class="home-DytWh2 heading-alth5" data-id="I4403:532;4259:305">Home</div></a><div class="service-DytWh2 heading-alth5" data-id="I4403:532;4259:307">Service</div><div class="studio-DytWh2 studio heading-alth5" data-id="I4403:532;4259:306">Studio</div><div class="contact-DytWh2 heading-alth5" data-id="I4403:532;4259:310">Contact</div></div></div><div class="grid-ixc5Me grid" data-id="I4403:532;4259:311"><div class="cms-aN5Rxy textmeta" data-id="I4403:532;4259:343">(CMS)</div><div class="nav" data-id="I4403:532;4259:313"><div class="work-4xJOId heading-alth5" data-id="I4403:532;4259:314">Work</div><div class="work-single-4xJOId heading-alth5" data-id="I4403:532;4259:315">Work Single</div><div class="blog-4xJOId heading-alth5" data-id="I4403:532;4259:316">Blog</div><div class="blog-single-4xJOId heading-alth5" data-id="I4403:532;4259:317">Blog Single</div></div></div><div class="grid-973pEY grid" data-id="I4403:532;4259:1989"><div class="utility-pages-hFii7R textmeta" data-id="I4403:532;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4403:532;4259:1991"><div class="licensing-NbH3LN heading-alth5" data-id="I4403:532;4259:1993">Licensing</div></div></div><div class="grid-k1fAFE grid" data-id="I4403:532;4259:1870"><div class="socials-3j6O6y textmeta" data-id="I4403:532;4259:1871">(Socials)</div><div class="nav" data-id="I4403:532;4259:1872"><div class="instagram-tCkCSc heading-alth5" data-id="I4403:532;4259:1873">Instagram</div><div class="behance-tCkCSc heading-alth5" data-id="I4403:532;4259:1874">Behance</div><div class="dribbble-tCkCSc heading-alth5" data-id="I4403:532;4259:1875">Dribbble</div></div></div></div><div class="grid-mZFI9U grid" data-id="I4403:532;5267:3373"><article class="button-text-SU24fl button-text" data-id="I4403:532;5267:3374"><div class="button-text-94P8jI button-text componentsbutton" data-id="I4403:532;5267:3374;2955:6381">By Gola Templates</div><div class="line-94P8jI line" data-id="I4403:532;5267:3374;2955:6382"></div></article><article class="button-text-B4Iwty button-text" data-id="I4403:532;5267:3375"><div class="button-text-jGY5KZ button-text componentsbutton" data-id="I4403:532;5267:3375;2955:6381">Back to Top</div><div class="line-jGY5KZ line" data-id="I4403:532;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="contact"><div class="contact screen " data-id="4403:308"><div class="section-contact-DhmS6L" data-id="4403:593"><div class="image-wrapper-7pe4YA" data-id="4403:594"><img class="image-j8iwek" data-id="5103:1556" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69089e471798e80def477ada/img/image-1.png" alt="Image"><img class="fwrlogo-w-1-j8iwek" data-id="9266:19476" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 1"></div><div class="grid-7pe4YA grid" data-id="4403:596"><div class="grid-x7IySR grid" data-id="4403:597"><div class="contact-us-DS34qz antonsc-normal-woodsmoke-96px" data-id="4403:598">CONTACT US</div><div class="grid-DS34qz grid" data-id="4403:599"><div class="grid-ZxrutY grid" data-id="4403:711"><div class="grid-JkYzLW grid" data-id="4403:723"><div class="grid-ZoSIgS grid" data-id="4403:715"><div class="name-Qd2JMI gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4403:716">(Name)</div><div class="input-Qd2JMI input" data-id="4403:717"><div class="your-name textsmall" data-id="I4403:717;2856:5741">First Name</div></div></div><div class="grid-DdhVJ7 grid" data-id="4403:724"><div class="email-9lx7x8 gambetta-mediumitalic-medium-woodsmoke-20px" data-id="4403:725">(Email)</div><div class="input-9lx7x8 input" data-id="4403:726"><div class="your-name textsmall" data-id="I4403:726;2856:5741">Email Address</div></div></div></div><div class="grid-RUMPUG grid" data-id="4403:714"><div class="input-EvaOIh input" data-id="4403:706"><div class="your-name textsmall" data-id="I4403:706;2856:5741">Your Message</div></div></div></div><div class="button-ZxrutY" data-id="4403:731"><div class="button-8Ut03l componentsbutton" data-id="I4403:731;2830:1221">Send Message</div></div></div></div></div><div class="header-small-7pe4YA" data-id="9263:909"><div class="grid-Eh26hs grid" data-id="I9263:909;4275:587"><div class="grid-yhHBx0 grid" data-id="I9263:909;4275:588"><a href="products"><div class="projects-Iy1HUK componentsbutton" data-id="I9263:909;4275:589">Products</div></a><a href="service"><div class="services-Iy1HUK componentsbutton" data-id="I9263:909;4275:590">Services</div></a><a href="about"><div class="studio-Iy1HUK studio componentsbutton" data-id="I9263:909;4275:591">About</div></a><a href="contact"><div class="journal-Iy1HUK componentsbutton" data-id="I9263:909;4275:592">Contact</div></a></div></div><div class="button-text-Eh26hs button-text" data-id="I9263:909;5267:2707"><a href="contact-zh"><div class="button-text-BhocYb button-text componentsbutton" data-id="I9263:909;5267:2707;2830:1267">EN / ZH</div></a><div class="line-BhocYb line" data-id="I9263:909;5267:2707;2830:1268"></div></div></div></div><footer class="footer-DhmS6L" data-id="4403:532"><div class="grid-mwR7bx grid" data-id="I4403:532;4259:1590"><h1 class="k-aj-o-jFrZcZ antonsc-normal-white-128px" data-id="I4403:532;4259:1739">FWRINC©</h1></div><div class="grid-15Q2zj grid" data-id="I4403:532;4259:1663"><div class="grid-hM1CG5 grid" data-id="I4403:532;4259:298"><div class="grid-ex7uzh grid" data-id="I4403:532;4259:302"><div class="pages-LbpvNV textmeta" data-id="I4403:532;4259:303">(Pages)</div><div class="nav" data-id="I4403:532;4259:304"><a href="index"><div class="home-DytWh2 heading-alth5" data-id="I4403:532;4259:305">Home</div></a><div class="service-DytWh2 heading-alth5" data-id="I4403:532;4259:307">Service</div><div class="studio-DytWh2 studio heading-alth5" data-id="I4403:532;4259:306">Studio</div><div class="contact-DytWh2 heading-alth5" data-id="I4403:532;4259:310">Contact</div></div></div><div class="grid-ixc5Me grid" data-id="I4403:532;4259:311"><div class="cms-aN5Rxy textmeta" data-id="I4403:532;4259:343">(CMS)</div><div class="nav" data-id="I4403:532;4259:313"><div class="work-4xJOId heading-alth5" data-id="I4403:532;4259:314">Work</div><div class="work-single-4xJOId heading-alth5" data-id="I4403:532;4259:315">Work Single</div><div class="blog-4xJOId heading-alth5" data-id="I4403:532;4259:316">Blog</div><div class="blog-single-4xJOId heading-alth5" data-id="I4403:532;4259:317">Blog Single</div></div></div><div class="grid-973pEY grid" data-id="I4403:532;4259:1989"><div class="utility-pages-hFii7R textmeta" data-id="I4403:532;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4403:532;4259:1991"><div class="licensing-NbH3LN heading-alth5" data-id="I4403:532;4259:1993">Licensing</div></div></div><div class="grid-k1fAFE grid" data-id="I4403:532;4259:1870"><div class="socials-3j6O6y textmeta" data-id="I4403:532;4259:1871">(Socials)</div><div class="nav" data-id="I4403:532;4259:1872"><div class="instagram-tCkCSc heading-alth5" data-id="I4403:532;4259:1873">Instagram</div><div class="behance-tCkCSc heading-alth5" data-id="I4403:532;4259:1874">Behance</div><div class="dribbble-tCkCSc heading-alth5" data-id="I4403:532;4259:1875">Dribbble</div></div></div></div><div class="grid-mZFI9U grid" data-id="I4403:532;5267:3373"><article class="button-text-SU24fl button-text" data-id="I4403:532;5267:3374"><div class="button-text-94P8jI button-text componentsbutton" data-id="I4403:532;5267:3374;2955:6381">By Gola Templates</div><div class="line-94P8jI line" data-id="I4403:532;5267:3374;2955:6382"></div></article><article class="button-text-B4Iwty button-text" data-id="I4403:532;5267:3375"><div class="button-text-jGY5KZ button-text componentsbutton" data-id="I4403:532;5267:3375;2955:6381">Back to Top</div><div class="line-jGY5KZ line" data-id="I4403:532;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
