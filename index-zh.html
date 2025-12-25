@@ -4,13 +4,20 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-03/11/2025 12:57:06 -->
+25/12/2025 15:11:15 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400");
+@import url("https://fonts.googleapis.com/css?family=Anton+SC:400|Inter:400,600|ABeeZee:400,400italic");
 
+
+@font-face {
+  font-family: "Gambetta-MediumItalic";
+  font-style: italic;
+  font-weight: 500;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/690e1971ff31ef35e95971ed/fonts/gambetta-mediumitalic.woff') format("woff");
+}
 
 @font-face {
   font-family: "Helvetica-Bold";
@@ -241,31 +248,23 @@ input:focus {
   --font-size-18px: 18px;
   --font-size-24px: 24px;
   --font-size-28px: 28px;
-  --font-size-48px: 48px;
+  --font-size-30px: 30px;
   --font-size-64px: 64px;
-  --font-size-80px: 80px;
   --font-size-l: 20px;
   --font-size-m: 6.9px;
   --font-size-xl: 22px;
   --font-size-xxl: 26px;
-  --font-size-xxxl: 30px;
-  --font-size-xxxxl: 32px;
-  --font-size-xxxxxl: 40px;
+  --font-size-xxxl: 32px;
+  --font-size-xxxxl: 40px;
+  --font-size-xxxxxl: 48px;
  
+  --font-family-abeezee: "ABeeZee", Helvetica;
   --font-family-anton_sc: "Anton SC", Helvetica;
   --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
   --font-family-helvetica-bold: "Helvetica-Bold", Helvetica;
   --font-family-helvetica-regular: "Helvetica-Regular", Helvetica;
   --font-family-inter: "Inter", Helvetica;
 }
-.heading-altsmall {
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-80px);
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: -2px;
-}
-
 .heading-alth1 {
   font-family: var(--font-family-inter);
   font-size: var(--font-size-64px);
@@ -276,7 +275,7 @@ input:focus {
 
 .heading-alth2 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-48px);
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -284,7 +283,7 @@ input:focus {
 
 .heading-alth3 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -1px;
@@ -292,7 +291,7 @@ input:focus {
 
 .heading-alth4 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -347,10 +346,10 @@ input:focus {
 }
 
 .textmeta {
-  font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xxxl);
+  font-family: var(--font-family-abeezee);
+  font-size: var(--font-size-30px);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0px;
 }
 
@@ -360,6 +359,14 @@ input:focus {
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0px;
+}
+
+.antonsc-normal-white-48px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 400;
 }
 
 .helvetica-bold-white-24-8px {
@@ -378,10 +385,10 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-woodsmoke-128px {
+.antonsc-normal-woodsmoke-96px {
   color: var(--backgroundprimary);
   font-family: var(--font-family-anton_sc);
-  font-size: 128px;
+  font-size: 96px;
   font-style: normal;
   font-weight: 400;
 }
@@ -394,18 +401,10 @@ input:focus {
   font-weight: 500;
 }
 
-.antonsc-normal-woodsmoke-96px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .antonsc-normal-white-32px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 400;
 }
@@ -418,10 +417,10 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-48px {
+.antonsc-normal-white-64px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: 48px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
 }
@@ -429,9 +428,17 @@ input:focus {
 .gambetta-mediumitalic-medium-woodsmoke-32px {
   color: var(--woodsmoke);
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: italic;
   font-weight: 500;
+}
+
+.inter-semi-bold-white-40px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
 }
 
 .helvetica-bold-keppel-42-5px {
@@ -458,41 +465,69 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-64px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.antonsc-normal-white-96px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.inter-semi-bold-white-40px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
-  font-style: normal;
-  font-weight: 600;
-}
-
 .inter-semi-bold-white-40px-2 {
   color: var(--textinverse-muted);
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
+}
+
+.antonsc-normal-woodsmoke-128px {
+  color: var(--backgroundprimary);
+  font-family: var(--font-family-anton_sc);
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 :root {
 }
 
+
+.grid {
+  background-color: transparent;
+  position: relative;
+}
+
+.line {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+
+.nav {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.your-name {
+  background-color: transparent;
+  color: var(--textmuted);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.4px;
+  margin-top: -2.00px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.material-symbolsarrow-forward-rounded {
+  background-color: transparent;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
 
 .award {
   align-items: flex-start;
@@ -514,11 +549,6 @@ input:focus {
   margin-top: -0.69px;
   position: relative;
   text-align: left;
-}
-
-.button-text {
-  background-color: transparent;
-  position: relative;
 }
 
 .certificate {
@@ -576,13 +606,6 @@ input:focus {
   width: fit-content;
 }
 
-.line {
-  align-self: stretch;
-  height: 2px;
-  position: relative;
-  width: 100%;
-}
-
 .logo {
   background-color: transparent;
   height: 35.42857360839844px;
@@ -599,18 +622,6 @@ input:focus {
   text-align: left;
 }
 
-.nav {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  width: 100%;
-}
-
 .site-of-the-month {
   align-self: stretch;
   background-color: transparent;
@@ -621,14 +632,6 @@ input:focus {
   letter-spacing: 0.00px;
   line-height: 46.8px;
   margin-top: -0.69px;
-  position: relative;
-  text-align: left;
-}
-
-.studio {
-  background-color: transparent;
-  font-style: normal;
-  font-weight: 600;
   position: relative;
   text-align: left;
 }
@@ -651,31 +654,6 @@ input:focus {
   position: relative;
   text-align: left;
 }
-
-.grid {
-  background-color: transparent;
-  position: relative;
-}
-
-.material-symbolsarrow-forward-rounded {
-  background-color: transparent;
-  height: 32px;
-  position: relative;
-  width: 32px;
-}
-
-.your-name {
-  background-color: transparent;
-  color: var(--textmuted);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32.4px;
-  margin-top: -2.00px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
 /* screen - index-zh */
 
 .index-zh {
@@ -695,7 +673,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   display: flex;
-  flex: 0 0 auto;
+  height: 1622px;
   justify-content: center;
   overflow: hidden;
   position: relative;
@@ -753,13 +731,8 @@ input:focus {
 
 .index-zh .fwrinc-KN31M3 {
   background-color: transparent;
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: var(--font-size-80px);
-  font-style: normal;
-  font-weight: 400;
   letter-spacing: 0.00px;
-  line-height: 88.0px;
+  line-height: 70.4px;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
@@ -851,7 +824,7 @@ input:focus {
   background-color: transparent;
   color: var(--woodsmoke);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -917,7 +890,6 @@ input:focus {
 
 .index-zh .studio-vCoZHV {
   color: var(--backgrounddefault);
-  cursor: pointer;
   line-height: 22px;
   white-space: nowrap;
   width: fit-content;
@@ -1003,7 +975,7 @@ input:focus {
   background-color: transparent;
   flex: 1;
   letter-spacing: 0.00px;
-  line-height: 128px;
+  line-height: 105.6px;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
@@ -1042,7 +1014,7 @@ input:focus {
   background-color: transparent;
   color: var(--woodsmoke);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1053,6 +1025,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   line-height: 33.8px;
@@ -1065,6 +1038,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   line-height: 33.8px;
@@ -1082,6 +1056,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   line-height: 33.8px;
@@ -1098,19 +1073,19 @@ input:focus {
   gap: 32px;
 }
 
-.index-zh .cms-Ant7sW {
+.index-zh .socials-Ant7sW {
   align-self: stretch;
   background-color: transparent;
   color: var(--woodsmoke);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
 }
 
-.index-zh .work-rq5dxg {
+.index-zh .instagram-rq5dxg {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
@@ -1122,7 +1097,7 @@ input:focus {
   text-align: left;
 }
 
-.index-zh .work-single-rq5dxg {
+.index-zh .behance-rq5dxg {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
@@ -1133,106 +1108,7 @@ input:focus {
   text-align: left;
 }
 
-.index-zh .blog-rq5dxg {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  position: relative;
-  text-align: left;
-}
-
-.index-zh .blog-single-rq5dxg {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  position: relative;
-  text-align: left;
-}
-
-.index-zh .grid-oXiSQO {
-  align-items: flex-start;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 32px;
-}
-
-.index-zh .utility-pages-Ggx3eB {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--woodsmoke);
-  font-style: italic;
-  font-weight: 500;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.index-zh .licensing-Fx0LKx {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.index-zh .grid-I8deJV {
-  align-items: flex-start;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 32px;
-}
-
-.index-zh .socials-tKFUUB {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--woodsmoke);
-  font-style: italic;
-  font-weight: 500;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.index-zh .instagram-38XMxV {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.index-zh .behance-38XMxV {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  position: relative;
-  text-align: left;
-}
-
-.index-zh .dribbble-38XMxV {
+.index-zh .dribbble-rq5dxg {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
@@ -1299,4 +1175,18 @@ input:focus {
 .index-zh .line-BC9pMi {
   background-color: var(--backgroundprimary);
 }
-</style></head><body style="margin: 0;background: #0e1011;"><input type="hidden" id="anPageName" name="page" value="index-zh"><div class="index-zh screen " data-id="5267:561"><div class="section-hero-P2sgyd" data-id="5267:562"><div class="image-wrapper-ji3H56" data-id="5267:563"><img class="image-38-9zY1VO" data-id="5267:564" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fb256810bb51b0e496cb1d/img/image-38.png" alt="image 38"><img class="fwrlogo-w-1-9zY1VO" data-id="9298:35312" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 1"></div><div class="grid-ji3H56 grid" data-id="5267:565"><div class="grid-MCdYxF grid" data-id="5267:566"><div class="fwrinc-KN31M3" data-id="5267:567">FWRINC©</div><div class="grid-KN31M3 grid" data-id="5267:572"><div class="grid-aOznjx grid" data-id="5267:574"><p class="x36-1000-1300-b2-b-oem-fBE2ZB textlarge" data-id="5267:576"><span class="span0-vPbNVf textlarge">雲霧之上的承諾一甲子的茶香，從梅山深處走入世界</span><span class="span1-vPbNVf textlarge">。<br></span><span class="span2-vPbNVf textmedium"><br></span><span class="span3-vPbNVf textsmall">&nbsp;&nbsp;&nbsp;&nbsp;我們的故事，根植於嘉義梅山著名的 36 彎公路。每一道艱辛的彎路，都通往我們海拔 1,000 至 1,300 公尺的茶園。正是這份與山爭霧、與天爭暖的環境，淬鍊出梅山高山茶冷冽、純淨、回甘深遠的無上品格。<br><br></span><span class="span4-vPbNVf textlarge">超越傳統貿易商：茶廠一甲子背景，轉化為您的品質壁壘。<br></span><span class="span5-vPbNVf textsmall"><br>&nbsp;&nbsp;&nbsp;&nbsp;作為傳承茶魂的後代，我們將老茶廠的匠人精神，全面升級為現代化的 B2B 源頭直供解決方案。我們的存在，是為了徹底消除傳統茶葉貿易中的品質不確定性和中間商溢價，製程完全掌控，與獨家 OEM 技術支援，卻保您的品牌在東南亞市場擁有獨一無二的產品優勢。<br></span></p></div></div><div class="grid-vR94jy grid" data-id="5267:568"><div class="based-in-prague-17jxJY textmeta" data-id="5267:569">(Based in Prague)</div></div><div class="header-small-KN31M3" data-id="5267:867"><div class="grid-idQiiS grid" data-id="I5267:867;4275:587"><div class="grid-Ux2bQX grid" data-id="I5267:867;4275:588"><a href="products-zh"><div class="projects-vCoZHV componentsbutton" data-id="I5267:867;4275:589">產品</div></a><a href="service-zh"><div class="services-vCoZHV componentsbutton" data-id="I5267:867;4275:590">服務項目</div></a><a href="about-zh"><div class="studio-vCoZHV studio componentsbutton" data-id="I5267:867;4275:591">關於</div></a><a href="contact-zh"><div class="journal-vCoZHV componentsbutton" data-id="I5267:867;4275:592">聯繫</div></a></div></div><div class="button-text-idQiiS button-text" data-id="I5267:867;5267:2707"><a href="index"><div class="button-text-FgGCbB button-text componentsbutton" data-id="I5267:867;5267:2707;2830:1267">EN / ZH</div></a><div class="line-FgGCbB line" data-id="I5267:867;5267:2707;2830:1268"></div></div></div></div><div class="grid-wmq1dl grid" data-id="5267:571"></div></div></div><img class="section-projects-P2sgyd" data-id="5267:657" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fc9c38564bcef5ef6f9290/img/section-projects.jpg" alt="Section Projects"><footer class="footer-P2sgyd" data-id="5267:866"><div class="grid-xIMwCe grid" data-id="I5267:866;5267:2000"><h1 class="k-aj-o-ajA6Gy antonsc-normal-woodsmoke-128px" data-id="I5267:866;5267:2001">FWRINC©</h1></div><div class="grid-unhtPZ grid" data-id="I5267:866;5267:2002"><div class="grid-PVhhxK grid" data-id="I5267:866;5267:2003"><div class="grid-lrim5F grid" data-id="I5267:866;5267:2004"><div class="pages-xFFTjc textmeta" data-id="I5267:866;5267:2005">(Pages)</div><div class="nav" data-id="I5267:866;5267:2006"><div class="home-J34OX3 heading-alth5" data-id="I5267:866;5267:2007">Home</div><div class="service-J34OX3 heading-alth5" data-id="I5267:866;5267:2008">Service</div><div class="studio-J34OX3 studio heading-alth5" data-id="I5267:866;5267:2009">Studio</div><div class="contact-J34OX3 heading-alth5" data-id="I5267:866;5267:2010">Contact</div></div></div><div class="grid-zxgKTv grid" data-id="I5267:866;5267:2011"><div class="cms-Ant7sW textmeta" data-id="I5267:866;5267:2012">(CMS)</div><div class="nav" data-id="I5267:866;5267:2013"><div class="work-rq5dxg heading-alth5" data-id="I5267:866;5267:2014">Work</div><div class="work-single-rq5dxg heading-alth5" data-id="I5267:866;5267:2015">Work Single</div><div class="blog-rq5dxg heading-alth5" data-id="I5267:866;5267:2016">Blog</div><div class="blog-single-rq5dxg heading-alth5" data-id="I5267:866;5267:2017">Blog Single</div></div></div><div class="grid-oXiSQO grid" data-id="I5267:866;5267:2018"><div class="utility-pages-Ggx3eB textmeta" data-id="I5267:866;5267:2019">(Utility Pages)</div><div class="nav" data-id="I5267:866;5267:2020"><div class="licensing-Fx0LKx heading-alth5" data-id="I5267:866;5267:2022">Licensing</div></div></div><div class="grid-I8deJV grid" data-id="I5267:866;5267:2023"><div class="socials-tKFUUB textmeta" data-id="I5267:866;5267:2024">(Socials)</div><div class="nav" data-id="I5267:866;5267:2025"><div class="instagram-38XMxV heading-alth5" data-id="I5267:866;5267:2026">Instagram</div><div class="behance-38XMxV heading-alth5" data-id="I5267:866;5267:2027">Behance</div><div class="dribbble-38XMxV heading-alth5" data-id="I5267:866;5267:2028">Dribbble</div></div></div></div><div class="grid-5nGAyG grid" data-id="I5267:866;5267:2029"><article class="button-text-pZDTPz button-text" data-id="I5267:866;5267:3265"><div class="button-text-BXSEyE button-text componentsbutton" data-id="I5267:866;5267:3265;2830:1267">By Gola Templates</div><div class="line-BXSEyE line" data-id="I5267:866;5267:3265;2830:1268"></div></article><article class="button-text-Ckx72o button-text" data-id="I5267:866;5267:2367"><div class="button-text-BC9pMi button-text componentsbutton" data-id="I5267:866;5267:2367;2830:1267">Back to Top</div><div class="line-BC9pMi line" data-id="I5267:866;5267:2367;2830:1268"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+
+.index-zh .button-text {
+  background-color: transparent;
+  position: relative;
+}
+
+.index-zh .studio {
+  background-color: transparent;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+}
+</style></head><body style="margin: 0;background: #0e1011;"><input type="hidden" id="anPageName" name="page" value="index-zh"><div class="index-zh screen " data-id="5267:561"><div class="section-hero-P2sgyd" data-id="5267:562"><div class="image-wrapper-ji3H56" data-id="5267:563"><img class="image-38-9zY1VO" data-id="5267:564" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68fb256810bb51b0e496cb1d/img/image-38.png" alt="image 38"><img class="fwrlogo-w-1-9zY1VO" data-id="9298:35312" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 1"></div><div class="grid-ji3H56 grid" data-id="5267:565"><div class="grid-MCdYxF grid" data-id="5267:566"><div class="fwrinc-KN31M3 antonsc-normal-white-64px" data-id="5267:567">FWRINC©</div><div class="grid-KN31M3 grid" data-id="5267:572"><div class="grid-aOznjx grid" data-id="5267:574"><p class="x36-1000-1300-b2-b-oem-fBE2ZB textlarge" data-id="5267:576"><span class="span0-vPbNVf textlarge">雲霧之上的承諾一甲子的茶香，從梅山深處走入世界</span><span class="span1-vPbNVf textlarge">。<br></span><span class="span2-vPbNVf textmedium"><br></span><span class="span3-vPbNVf textsmall">&nbsp;&nbsp;&nbsp;&nbsp;我們的故事，根植於嘉義梅山著名的 36 彎公路。每一道艱辛的彎路，都通往我們海拔 1,000 至 1,300 公尺的茶園。正是這份與山爭霧、與天爭暖的環境，淬鍊出梅山高山茶冷冽、純淨、回甘深遠的無上品格。<br><br></span><span class="span4-vPbNVf textlarge">超越傳統貿易商：茶廠一甲子背景，轉化為您的品質壁壘。<br></span><span class="span5-vPbNVf textsmall"><br>&nbsp;&nbsp;&nbsp;&nbsp;作為傳承茶魂的後代，我們將老茶廠的匠人精神，全面升級為現代化的 B2B 源頭直供解決方案。我們的存在，是為了徹底消除傳統茶葉貿易中的品質不確定性和中間商溢價，製程完全掌控，與獨家 OEM 技術支援，卻保您的品牌在東南亞市場擁有獨一無二的產品優勢。<br></span></p></div></div><div class="grid-vR94jy grid" data-id="5267:568"><div class="based-in-prague-17jxJY textmeta" data-id="5267:569">(Based in Prague)</div></div><div class="header-small-KN31M3" data-id="5267:867"><div class="grid-idQiiS grid" data-id="I5267:867;4275:587"><div class="grid-Ux2bQX grid" data-id="I5267:867;4275:588"><a href="products-zh"><div class="projects-vCoZHV componentsbutton" data-id="I5267:867;4275:589">產品</div></a><a href="service-zh"><div class="services-vCoZHV componentsbutton" data-id="I5267:867;4275:590">服務項目</div></a><a href="about-zh"><div class="studio-vCoZHV studio componentsbutton" data-id="I5267:867;4275:591">關於</div></a><a href="contact-zh"><div class="journal-vCoZHV componentsbutton" data-id="I5267:867;4275:592">聯繫</div></a></div></div><div class="button-text-idQiiS button-text" data-id="I5267:867;5267:2707"><a href="index"><div class="button-text-FgGCbB button-text componentsbutton" data-id="I5267:867;5267:2707;2830:1267">EN / ZH</div></a><div class="line-FgGCbB line" data-id="I5267:867;5267:2707;2830:1268"></div></div></div></div><div class="grid-wmq1dl grid" data-id="5267:571"></div></div></div><img class="section-projects-P2sgyd" data-id="5267:657" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/694d540faa7a81e1ff289182/img/section-projects.jpg" alt="Section Projects"><footer class="footer-P2sgyd" data-id="5267:866"><div class="grid-xIMwCe grid" data-id="I5267:866;5267:2000"><h1 class="k-aj-o-ajA6Gy antonsc-normal-woodsmoke-96px" data-id="I5267:866;5267:2001">FWRINC©</h1></div><div class="grid-unhtPZ grid" data-id="I5267:866;5267:2002"><div class="grid-PVhhxK grid" data-id="I5267:866;5267:2003"><div class="grid-lrim5F grid" data-id="I5267:866;5267:2004"><div class="pages-xFFTjc textmeta" data-id="I5267:866;5267:2005">(Pages)</div><div class="nav" data-id="I5267:866;5267:2006"><a href="products-zh"><div class="home-J34OX3 heading-alth5" data-id="I5267:866;5267:2007">產品</div></a><a href="service-zh"><div class="service-J34OX3 heading-alth5" data-id="I5267:866;5267:2008">服務項目</div></a><a href="about-zh"><div class="studio-J34OX3 studio heading-alth5" data-id="I5267:866;5267:2009">關於我們</div></a><a href="contact-zh"><div class="contact-J34OX3 heading-alth5" data-id="I5267:866;5267:2010">聯繫我們</div></a></div></div><div class="grid-zxgKTv grid" data-id="I5267:866;5267:2023"><div class="socials-Ant7sW textmeta" data-id="I5267:866;5267:2024">(Socials)</div><div class="nav" data-id="I5267:866;5267:2025"><div class="instagram-rq5dxg heading-alth5" data-id="I5267:866;5267:2026">Instagram</div><div class="behance-rq5dxg heading-alth5" data-id="I5267:866;5267:2027">Behance</div><div class="dribbble-rq5dxg heading-alth5" data-id="I5267:866;5267:2028">Dribbble</div></div></div></div><div class="grid-5nGAyG grid" data-id="I5267:866;5267:2029"><article class="button-text-pZDTPz button-text" data-id="I5267:866;5267:3265"><div class="button-text-BXSEyE button-text componentsbutton" data-id="I5267:866;5267:3265;2830:1267"></div><div class="line-BXSEyE line" data-id="I5267:866;5267:3265;2830:1268"></div></article><article class="button-text-Ckx72o button-text" data-id="I5267:866;5267:2367"><div class="button-text-BC9pMi button-text componentsbutton" data-id="I5267:866;5267:2367;2830:1267">Back to Top</div><div class="line-BC9pMi line" data-id="I5267:866;5267:2367;2830:1268"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
