@@ -4,13 +4,20 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-04/11/2025 06:49:15 -->
+25/12/2025 16:11:29 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400|ABeeZee:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Anton+SC:400|Inter:400,600|ABeeZee:400,400italic");
 
+
+@font-face {
+  font-family: "Gambetta-MediumItalic";
+  font-style: italic;
+  font-weight: 500;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/690e1971ff31ef35e95971ed/fonts/gambetta-mediumitalic.woff') format("woff");
+}
 
 @font-face {
   font-family: "Helvetica-Bold";
@@ -241,16 +248,15 @@ input:focus {
   --font-size-18px: 18px;
   --font-size-24px: 24px;
   --font-size-28px: 28px;
-  --font-size-48px: 48px;
+  --font-size-30px: 30px;
   --font-size-64px: 64px;
-  --font-size-80px: 80px;
   --font-size-l: 20px;
   --font-size-m: 6.9px;
   --font-size-xl: 22px;
   --font-size-xxl: 26px;
-  --font-size-xxxl: 30px;
-  --font-size-xxxxl: 32px;
-  --font-size-xxxxxl: 40px;
+  --font-size-xxxl: 32px;
+  --font-size-xxxxl: 40px;
+  --font-size-xxxxxl: 48px;
  
   --font-family-abeezee: "ABeeZee", Helvetica;
   --font-family-anton_sc: "Anton SC", Helvetica;
@@ -259,14 +265,6 @@ input:focus {
   --font-family-helvetica-regular: "Helvetica-Regular", Helvetica;
   --font-family-inter: "Inter", Helvetica;
 }
-.heading-altsmall {
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-80px);
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: -2px;
-}
-
 .heading-alth1 {
   font-family: var(--font-family-inter);
   font-size: var(--font-size-64px);
@@ -277,7 +275,7 @@ input:focus {
 
 .heading-alth2 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-48px);
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -285,7 +283,7 @@ input:focus {
 
 .heading-alth3 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -1px;
@@ -293,7 +291,7 @@ input:focus {
 
 .heading-alth4 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -349,7 +347,7 @@ input:focus {
 
 .textmeta {
   font-family: var(--font-family-abeezee);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-30px);
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0px;
@@ -371,14 +369,6 @@ input:focus {
   font-weight: 700;
 }
 
-.antonsc-normal-white-48px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .helvetica-regular-normal-white-11px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-helvetica-regular);
@@ -387,10 +377,18 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-woodsmoke-128px {
+.antonsc-normal-white-48px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-woodsmoke-96px {
   color: var(--backgroundprimary);
   font-family: var(--font-family-anton_sc);
-  font-size: 128px;
+  font-size: 96px;
   font-style: normal;
   font-weight: 400;
 }
@@ -403,18 +401,10 @@ input:focus {
   font-weight: 500;
 }
 
-.antonsc-normal-woodsmoke-96px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .antonsc-normal-white-32px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 400;
 }
@@ -422,7 +412,7 @@ input:focus {
 .gambetta-mediumitalic-medium-woodsmoke-32px {
   color: var(--woodsmoke);
   font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: italic;
   font-weight: 500;
 }
@@ -446,7 +436,7 @@ input:focus {
 .inter-semi-bold-white-40px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
 }
@@ -454,7 +444,7 @@ input:focus {
 .inter-semi-bold-white-40px-2 {
   color: var(--textinverse-muted);
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
 }
@@ -516,28 +506,11 @@ input:focus {
   width: 100%;
 }
 
-.studio {
+.image-wrapper {
   background-color: transparent;
-  font-style: normal;
-  font-weight: 600;
+  height: 880px;
   position: relative;
-  text-align: left;
-}
-
-.vector {
-  background-color: transparent;
-  position: absolute;
-}
-
-.x1200m {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--textinverse-muted);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 37.4px;
-  position: relative;
-  text-align: left;
+  width: 640px;
 }
 
 .material-symbolsarrow-forward-rounded {
@@ -667,6 +640,11 @@ input:focus {
   text-align: left;
 }
 
+.vector {
+  background-color: transparent;
+  position: absolute;
+}
+
 .website-of-the-year {
   align-self: stretch;
   background-color: transparent;
@@ -687,6 +665,7 @@ input:focus {
   background-color: var(--backgroundprimary);
   display: flex;
   flex-direction: column;
+  height: 4160px;
   left: 0px;
   overflow: hidden;
   overflow-x: hidden;
@@ -764,7 +743,6 @@ input:focus {
 
 .products-zh .studio-y5wcCd {
   color: var(--backgrounddefault);
-  cursor: pointer;
   line-height: 22px;
   white-space: nowrap;
   width: fit-content;
@@ -862,7 +840,7 @@ input:focus {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  height: 2920px;
+  height: 3008px;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -937,6 +915,17 @@ input:focus {
   position: relative;
 }
 
+.products-zh .x1200m-WCpVEJ {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.4px;
+  position: relative;
+  text-align: left;
+}
+
 .products-zh .grid-GLK7Ov {
   align-items: flex-start;
   background-color: var(--backgroundinverse-muted);
@@ -992,6 +981,17 @@ input:focus {
   line-height: 62.4px;
   margin-top: -1.00px;
   position: relative;
+}
+
+.products-zh .cp-aV9JPG {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.4px;
+  position: relative;
+  text-align: left;
 }
 
 .products-zh .grid-96ySYF {
@@ -1051,6 +1051,17 @@ input:focus {
   position: relative;
 }
 
+.products-zh .x27-3WTwXQ {
+  align-self: stretch;
+  background-color: transparent;
+  color: var(--textinverse-muted);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.4px;
+  position: relative;
+  text-align: left;
+}
+
 .products-zh .grid-m7432W {
   align-items: flex-start;
   background-color: var(--backgroundinverse-muted-2);
@@ -1105,10 +1116,27 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   letter-spacing: 0.00px;
-  line-height: 62.4px;
+  line-height: 48px;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
+}
+
+.products-zh .span0-MoICwx {
+  line-height: 62.4px;
+}
+
+.products-zh .span1-MoICwx {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 86.4px;
+}
+
+.products-zh .span2-MoICwx {
+  line-height: 62.4px;
 }
 
 .products-zh .text_label-k4cxPn {
@@ -1280,15 +1308,14 @@ input:focus {
 
 .products-zh .footer-kwv4bH {
   align-items: flex-start;
-  align-self: stretch;
   background-color: var(--backgrounddefault);
   display: flex;
   flex-direction: column;
-  height: 772px;
+  height: 710px;
   justify-content: space-between;
   padding: 96px 96px 64px;
   position: relative;
-  width: 100%;
+  width: 1920px;
   z-index: 0;
 }
 
@@ -1308,7 +1335,7 @@ input:focus {
   background-color: transparent;
   flex: 1;
   letter-spacing: 0.00px;
-  line-height: 128px;
+  line-height: 105.6px;
   margin-top: -1.00px;
   position: relative;
   text-align: left;
@@ -1364,6 +1391,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   line-height: 33.8px;
@@ -1376,6 +1404,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   line-height: 33.8px;
@@ -1393,6 +1422,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   line-height: 33.8px;
@@ -1411,7 +1441,7 @@ input:focus {
   position: relative;
 }
 
-.products-zh .cms-aLGzZr {
+.products-zh .socials-aLGzZr {
   align-self: stretch;
   background-color: transparent;
   color: var(--woodsmoke);
@@ -1423,7 +1453,7 @@ input:focus {
   text-align: left;
 }
 
-.products-zh .work-EYZagx {
+.products-zh .instagram-EYZagx {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
@@ -1435,7 +1465,7 @@ input:focus {
   text-align: left;
 }
 
-.products-zh .work-single-EYZagx {
+.products-zh .behance-EYZagx {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
@@ -1446,110 +1476,7 @@ input:focus {
   text-align: left;
 }
 
-.products-zh .blog-EYZagx {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  position: relative;
-  text-align: left;
-}
-
-.products-zh .blog-single-EYZagx {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  position: relative;
-  text-align: left;
-}
-
-.products-zh .grid-xyniGs {
-  align-items: flex-start;
-  background-color: transparent;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 32px;
-  position: relative;
-}
-
-.products-zh .utility-pages-4PotaU {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--woodsmoke);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.products-zh .licensing-DjZNjt {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.products-zh .grid-gkMNd1 {
-  align-items: flex-start;
-  background-color: transparent;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 32px;
-  position: relative;
-}
-
-.products-zh .socials-beguV5 {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--woodsmoke);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.products-zh .instagram-HduXJf {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.products-zh .behance-HduXJf {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--backgroundprimary);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 33.8px;
-  position: relative;
-  text-align: left;
-}
-
-.products-zh .dribbble-HduXJf {
+.products-zh .dribbble-EYZagx {
   align-self: stretch;
   background-color: transparent;
   color: var(--backgroundprimary);
@@ -1627,15 +1554,17 @@ input:focus {
   width: 640px;
 }
 
-.products-zh .image-wrapper {
+.products-zh .studio {
   background-color: transparent;
-  height: 880px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
   position: relative;
-  width: 640px;
+  text-align: left;
 }
 
 .products-zh .text_label {
   background-color: transparent;
   text-align: left;
 }
-</style></head><body style="margin: 0;background: #0e1011;"><input type="hidden" id="anPageName" name="page" value="products-zh"><div class="products-zh screen " data-id="5267:1555"><div class="section-hero-kwv4bH" data-id="5267:1556"><div class="header-small-TzDPar" data-id="9298:35336"><div class="grid-sHJA3T" data-id="I9298:35336;4275:587"><div class="grid-kdeNih" data-id="I9298:35336;4275:588"><a href="products-zh"><div class="projects-y5wcCd componentsbutton" data-id="I9298:35336;4275:589">產品</div></a><a href="service-zh"><div class="services-y5wcCd componentsbutton" data-id="I9298:35336;4275:590">服務項目</div></a><a href="about-zh"><div class="studio-y5wcCd studio componentsbutton" data-id="I9298:35336;4275:591">關於</div></a><a href="contact-zh"><div class="journal-y5wcCd componentsbutton" data-id="I9298:35336;4275:592">聯繫</div></a></div></div><a href="products"><div class="button-text-sHJA3T button-text" data-id="I9298:35336;5267:2707"><a href="products" onclick="window.event.stopPropagation()"><div class="button-text-QviAL1 button-text componentsbutton" data-id="I9298:35336;5267:2707;2830:1267">EN / ZH</div></a><div class="line-QviAL1 line" data-id="I9298:35336;5267:2707;2830:1268"></div></div></a></div><a href="index-zh"><div class="frame-376-TzDPar" data-id="9299:827"><img class="fwrlogo-w-2-uUypbr" data-id="9299:828" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 2"></div></a><p class="halal-TzDPar heading-alth4" data-id="5267:1558">台灣茶廠源頭直供 | 您的 Halal 清真高品質供應鏈專家</p><div class="text_label-TzDPar text_label antonsc-normal-white-64px" data-id="5267:1557">產品</div></div><div class="grid-kwv4bH" data-id="9311:278986"><div class="grid-3axMFP" data-id="9311:278987"><div class="grid-AY9st3" data-id="9311:278988"><img class="image-wrapper" data-id="9311:278989" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6908a4d8dcde75f13579ec23/img/image-wrapper-2@2x.png" alt="Image Wrapper"><div class="grid-TxYHAu" data-id="9311:278991"><div class="x01-FxrJGr textmeta" data-id="9311:278992">01</div><div class="grid-FxrJGr" data-id="9311:278993"><div class="text_label-WCpVEJ text_label antonsc-normal-white-48px" data-id="9311:278994">阿里山高山烏龍茶</div><div class="x1200m textmedium" data-id="9311:278995">梅山 1200 m 冷冽韻】 條索緊結墨綠，茶湯金黃帶綠。具優雅花香、喉韻清爽持久，是台灣高山茶的代表作。</div></div></div></div><div class="grid-GLK7Ov" data-id="9311:279014"><img class="image-wrapper" data-id="9311:279015" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-wrapper-28@2x.png" alt="Image Wrapper"><div class="grid-CvzuAV" data-id="9311:279017"><div class="x02-SM26ic textmeta" data-id="9311:279018">02</div><div class="grid-SM26ic" data-id="9311:279019"><div class="text_label-aV9JPG text_label antonsc-normal-white-48px" data-id="9311:279020">阿里山高山烏龍茶</div><div class="x1200m textmedium" data-id="9311:279021">梅山 1200 m 冷冽韻】 條索緊結墨綠，茶湯金黃帶綠。具優雅花香、喉韻清爽持久，是台灣高山茶的代表作。</div></div></div></div><div class="grid-96ySYF" data-id="9311:279023"><img class="image-wrapper" data-id="9311:279024" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-wrapper-29@2x.png" alt="Image Wrapper"><div class="grid-yPHJEG" data-id="9311:279026"><div class="x03-azI7Xb textmeta" data-id="9311:279027">03</div><div class="grid-azI7Xb" data-id="9311:279028"><div class="text_label-3WTwXQ text_label antonsc-normal-white-48px" data-id="9311:279029">阿里山高山烏龍茶</div><div class="x1200m textmedium" data-id="9311:279030">梅山 1200 m 冷冽韻】 條索緊結墨綠，茶湯金黃帶綠。具優雅花香、喉韻清爽持久，是台灣高山茶的代表作。</div></div></div></div><div class="grid-m7432W" data-id="9311:279032"><img class="image-wrapper" data-id="9311:279033" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-wrapper-30@2x.png" alt="Image Wrapper"><div class="grid-bUOcP0" data-id="9311:279035"><div class="x04-6b7hEs textmeta" data-id="9311:279036">04</div><div class="grid-6b7hEs" data-id="9311:279037"><div class="b-k4cxPn antonsc-normal-white-48px" data-id="9311:279038">專業級 B 端紅茶</div><div class="text_label-k4cxPn text_label textmedium" data-id="9311:279039">【奶茶專用醇厚底】 針對東南亞市場對濃烈茶味的需求優化。茶湯顏色紅亮，風味醇厚，極耐久煮與奶化，是製作珍珠奶茶的最佳基底。</div></div></div></div><div class="grid-CsGRzm" data-id="9311:278996"><div class="image-wrapper-RM8UUC image-wrapper" data-id="9311:278997"><img class="image-TjNjmo image" data-id="9311:278998" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-9.png" alt="Image"></div><div class="grid-RM8UUC" data-id="9311:278999"><div class="x05-C0RvaL textmeta" data-id="9311:279000">05</div><div class="grid-C0RvaL" data-id="9311:279001"><div class="text_label-3vFALw text_label antonsc-normal-white-48px" data-id="9311:279002">茉莉香綠茶</div><div class="text_label-5517o1 text_label textmedium" data-id="9311:279003">【穩定花香，調味百搭】 採用優質綠茶與天然茉莉花窨製。花香持久穩定，適合搭配果汁、果醬等調飲，風味層次豐富</div></div></div></div><div class="grid-gMCVcE" data-id="9311:279004"><div class="image-wrapper-dMUHiM image-wrapper" data-id="9311:279005"><img class="image-Goh9ep image" data-id="9311:279006" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-10.png" alt="Image"></div><div class="grid-dMUHiM" data-id="9311:279007"><div class="x06-04I40z textmeta" data-id="9311:279008">06</div><div class="grid-04I40z" data-id="9311:279009"><div class="text_label-1KGxtz text_label antonsc-normal-white-48px" data-id="9311:279010">重烘焙熟香烏龍</div><div class="text_label-5hyo23 text_label textmedium" data-id="9311:279011">【獨家麥芽碳焙香】 經過中度或重度烘焙，帶有獨特的熟果香或微弱焦糖香。茶湯厚實，冷泡或熱泡風味皆佳。</div></div></div></div><div class="grid-wABU3L" data-id="9311:279012"></div></div></div><footer class="footer-kwv4bH" data-id="5267:1572"><div class="grid-5cD5x7" data-id="I5267:1572;5267:2000"><h1 class="k-aj-o-e0jKjA antonsc-normal-woodsmoke-128px" data-id="I5267:1572;5267:2001">FWRINC©</h1></div><div class="grid-1h4VzL" data-id="I5267:1572;5267:2002"><div class="grid-bLvOs2" data-id="I5267:1572;5267:2003"><div class="grid-Fx2WyF" data-id="I5267:1572;5267:2004"><div class="pages-hMOjpO textmeta" data-id="I5267:1572;5267:2005">(Pages)</div><div class="nav" data-id="I5267:1572;5267:2006"><div class="home-dP6XCx heading-alth5" data-id="I5267:1572;5267:2007">Home</div><div class="service-dP6XCx heading-alth5" data-id="I5267:1572;5267:2008">Service</div><div class="studio-dP6XCx studio heading-alth5" data-id="I5267:1572;5267:2009">Studio</div><div class="contact-dP6XCx heading-alth5" data-id="I5267:1572;5267:2010">Contact</div></div></div><div class="grid-LvNA3W" data-id="I5267:1572;5267:2011"><div class="cms-aLGzZr textmeta" data-id="I5267:1572;5267:2012">(CMS)</div><div class="nav" data-id="I5267:1572;5267:2013"><div class="work-EYZagx heading-alth5" data-id="I5267:1572;5267:2014">Work</div><div class="work-single-EYZagx heading-alth5" data-id="I5267:1572;5267:2015">Work Single</div><div class="blog-EYZagx heading-alth5" data-id="I5267:1572;5267:2016">Blog</div><div class="blog-single-EYZagx heading-alth5" data-id="I5267:1572;5267:2017">Blog Single</div></div></div><div class="grid-xyniGs" data-id="I5267:1572;5267:2018"><div class="utility-pages-4PotaU textmeta" data-id="I5267:1572;5267:2019">(Utility Pages)</div><div class="nav" data-id="I5267:1572;5267:2020"><div class="licensing-DjZNjt heading-alth5" data-id="I5267:1572;5267:2022">Licensing</div></div></div><div class="grid-gkMNd1" data-id="I5267:1572;5267:2023"><div class="socials-beguV5 textmeta" data-id="I5267:1572;5267:2024">(Socials)</div><div class="nav" data-id="I5267:1572;5267:2025"><div class="instagram-HduXJf heading-alth5" data-id="I5267:1572;5267:2026">Instagram</div><div class="behance-HduXJf heading-alth5" data-id="I5267:1572;5267:2027">Behance</div><div class="dribbble-HduXJf heading-alth5" data-id="I5267:1572;5267:2028">Dribbble</div></div></div></div><div class="grid-3EFkGH" data-id="I5267:1572;5267:2029"><article class="button-text-2u1kXU button-text" data-id="I5267:1572;5267:3265"><div class="button-text-HVHjPZ button-text componentsbutton" data-id="I5267:1572;5267:3265;2830:1267">By Gola Templates</div><div class="line-HVHjPZ line" data-id="I5267:1572;5267:3265;2830:1268"></div></article><article class="button-text-gYAvzh button-text" data-id="I5267:1572;5267:2367"><div class="button-text-yYryuj button-text componentsbutton" data-id="I5267:1572;5267:2367;2830:1267">Back to Top</div><div class="line-yYryuj line" data-id="I5267:1572;5267:2367;2830:1268"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head><body style="margin: 0;background: #0e1011;"><input type="hidden" id="anPageName" name="page" value="products-zh"><div class="products-zh screen " data-id="5267:1555"><div class="section-hero-kwv4bH" data-id="5267:1556"><div class="header-small-TzDPar" data-id="9298:35336"><div class="grid-sHJA3T" data-id="I9298:35336;4275:587"><div class="grid-kdeNih" data-id="I9298:35336;4275:588"><a href="products-zh"><div class="projects-y5wcCd componentsbutton" data-id="I9298:35336;4275:589">產品</div></a><a href="service-zh"><div class="services-y5wcCd componentsbutton" data-id="I9298:35336;4275:590">服務項目</div></a><a href="about-zh"><div class="studio-y5wcCd studio componentsbutton" data-id="I9298:35336;4275:591">關於</div></a><a href="contact-zh"><div class="journal-y5wcCd componentsbutton" data-id="I9298:35336;4275:592">聯繫</div></a></div></div><a href="products"><div class="button-text-sHJA3T button-text" data-id="I9298:35336;5267:2707"><a href="products" onclick="window.event.stopPropagation()"><div class="button-text-QviAL1 button-text componentsbutton" data-id="I9298:35336;5267:2707;2830:1267">EN / ZH</div></a><div class="line-QviAL1 line" data-id="I9298:35336;5267:2707;2830:1268"></div></div></a></div><a href="index-zh"><div class="frame-376-TzDPar" data-id="9299:827"><img class="fwrlogo-w-2-uUypbr" data-id="9299:828" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-w-1.png" alt="fwrlogo-w 2"></div></a><p class="halal-TzDPar heading-alth4" data-id="5267:1558">台灣茶廠源頭直供 | 您的 Halal 清真高品質供應鏈專家</p><div class="text_label-TzDPar text_label antonsc-normal-white-64px" data-id="5267:1557">產品</div></div><div class="grid-kwv4bH" data-id="9311:278986"><div class="grid-3axMFP" data-id="9311:278987"><div class="grid-AY9st3" data-id="9311:278988"><img class="image-wrapper" data-id="9311:278989" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/694d540faa7a81e1ff289182/img/image-wrapper@2x.png" alt="Image Wrapper"><div class="grid-TxYHAu" data-id="9311:278991"><div class="x01-FxrJGr textmeta" data-id="9311:278992">01</div><div class="grid-FxrJGr" data-id="9311:278993"><div class="text_label-WCpVEJ text_label antonsc-normal-white-48px" data-id="9311:278994">阿里山高山烏龍茶</div><div class="x1200m-WCpVEJ textmedium" data-id="9311:278995">梅山 1200 m 冷冽韻】 條索緊結墨綠，茶湯金黃帶綠。具優雅花香、喉韻清爽持久，是台灣高山茶的代表作。</div></div></div></div><div class="grid-GLK7Ov" data-id="9311:279014"><img class="image-wrapper" data-id="9311:279015" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/694d540faa7a81e1ff289182/img/image-wrapper-1@2x.png" alt="Image Wrapper"><div class="grid-CvzuAV" data-id="9311:279017"><div class="x02-SM26ic textmeta" data-id="9311:279018">02</div><div class="grid-SM26ic" data-id="9311:279019"><div class="text_label-aV9JPG text_label antonsc-normal-white-48px" data-id="9311:279020">四季春茶</div><div class="cp-aV9JPG textmedium" data-id="9311:279021">【高 CP 值輕發酵茶】 帶有清新的花香和清爽的口感，是台灣烏龍茶中價格親民且香氣表現優異的選項。</div></div></div></div><div class="grid-96ySYF" data-id="9311:279023"><img class="image-wrapper" data-id="9311:279024" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/694d540faa7a81e1ff289182/img/image-wrapper-2@2x.png" alt="Image Wrapper"><div class="grid-yPHJEG" data-id="9311:279026"><div class="x03-azI7Xb textmeta" data-id="9311:279027">03</div><div class="grid-azI7Xb" data-id="9311:279028"><div class="text_label-3WTwXQ text_label antonsc-normal-white-48px" data-id="9311:279029">阿里山金萱烏龍</div><div class="x27-3WTwXQ textmedium" data-id="9311:279030">【獨特天然奶香】 又稱 27 仔。獨特的天然牛奶糖香氣是其最大特色。口感醇厚順滑，深受亞洲消費者喜愛。</div></div></div></div><div class="grid-m7432W" data-id="9311:279032"><img class="image-wrapper" data-id="9311:279033" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/694d540faa7a81e1ff289182/img/image-wrapper-3@2x.png" alt="Image Wrapper"><div class="grid-bUOcP0" data-id="9311:279035"><div class="x04-6b7hEs textmeta" data-id="9311:279036">04</div><div class="grid-6b7hEs" data-id="9311:279037"><div class="b-k4cxPn antonsc-normal-white-48px" data-id="9311:279038"><span class="span0-MoICwx antonsc-normal-white-48px">專業級</span><span class="span1-MoICwx"> B </span><span class="span2-MoICwx antonsc-normal-white-48px">端紅茶</span></div><div class="text_label-k4cxPn text_label textmedium" data-id="9311:279039">【奶茶專用醇厚底】 針對東南亞市場對濃烈茶味的需求優化。茶湯顏色紅亮，風味醇厚，極耐久煮與奶化，是製作珍珠奶茶的最佳基底。</div></div></div></div><div class="grid-CsGRzm" data-id="9311:278996"><div class="image-wrapper-RM8UUC image-wrapper" data-id="9311:278997"><img class="image-TjNjmo image" data-id="9311:278998" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-9.png" alt="Image"></div><div class="grid-RM8UUC" data-id="9311:278999"><div class="x05-C0RvaL textmeta" data-id="9311:279000">05</div><div class="grid-C0RvaL" data-id="9311:279001"><div class="text_label-3vFALw text_label antonsc-normal-white-48px" data-id="9311:279002">茉莉香綠茶</div><div class="text_label-5517o1 text_label textmedium" data-id="9311:279003">【穩定花香，調味百搭】 採用優質綠茶與天然茉莉花窨製。花香持久穩定，適合搭配果汁、果醬等調飲，風味層次豐富</div></div></div></div><div class="grid-gMCVcE" data-id="9311:279004"><div class="image-wrapper-dMUHiM image-wrapper" data-id="9311:279005"><img class="image-Goh9ep image" data-id="9311:279006" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-10.png" alt="Image"></div><div class="grid-dMUHiM" data-id="9311:279007"><div class="x06-04I40z textmeta" data-id="9311:279008">06</div><div class="grid-04I40z" data-id="9311:279009"><div class="text_label-1KGxtz text_label antonsc-normal-white-48px" data-id="9311:279010">重烘焙熟香烏龍</div><div class="text_label-5hyo23 text_label textmedium" data-id="9311:279011">【獨家麥芽碳焙香】 經過中度或重度烘焙，帶有獨特的熟果香或微弱焦糖香。茶湯厚實，冷泡或熱泡風味皆佳。</div></div></div></div><div class="grid-wABU3L" data-id="9311:279012"></div></div></div><footer class="footer-kwv4bH" data-id="9322:129617"><div class="grid-5cD5x7" data-id="I9322:129617;5267:2000"><h1 class="k-aj-o-e0jKjA antonsc-normal-woodsmoke-96px" data-id="I9322:129617;5267:2001">FWRINC©</h1></div><div class="grid-1h4VzL" data-id="I9322:129617;5267:2002"><div class="grid-bLvOs2" data-id="I9322:129617;5267:2003"><div class="grid-Fx2WyF" data-id="I9322:129617;5267:2004"><div class="pages-hMOjpO textmeta" data-id="I9322:129617;5267:2005">(Pages)</div><div class="nav" data-id="I9322:129617;5267:2006"><a href="products-zh"><div class="home-dP6XCx heading-alth5" data-id="I9322:129617;5267:2007">產品</div></a><a href="service-zh"><div class="service-dP6XCx heading-alth5" data-id="I9322:129617;5267:2008">服務項目</div></a><a href="about-zh"><div class="studio-dP6XCx studio heading-alth5" data-id="I9322:129617;5267:2009">關於我們</div></a><a href="contact-zh"><div class="contact-dP6XCx heading-alth5" data-id="I9322:129617;5267:2010">聯繫我們</div></a></div></div><div class="grid-LvNA3W" data-id="I9322:129617;5267:2023"><div class="socials-aLGzZr textmeta" data-id="I9322:129617;5267:2024">(Socials)</div><div class="nav" data-id="I9322:129617;5267:2025"><div class="instagram-EYZagx heading-alth5" data-id="I9322:129617;5267:2026">Instagram</div><div class="behance-EYZagx heading-alth5" data-id="I9322:129617;5267:2027">Behance</div><div class="dribbble-EYZagx heading-alth5" data-id="I9322:129617;5267:2028">Dribbble</div></div></div></div><div class="grid-3EFkGH" data-id="I9322:129617;5267:2029"><article class="button-text-2u1kXU button-text" data-id="I9322:129617;5267:3265"><div class="button-text-HVHjPZ button-text componentsbutton" data-id="I9322:129617;5267:3265;2830:1267"></div><div class="line-HVHjPZ line" data-id="I9322:129617;5267:3265;2830:1268"></div></article><article class="button-text-gYAvzh button-text" data-id="I9322:129617;5267:2367"><div class="button-text-yYryuj button-text componentsbutton" data-id="I9322:129617;5267:2367;2830:1267">Back to Top</div><div class="line-yYryuj line" data-id="I9322:129617;5267:2367;2830:1268"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
