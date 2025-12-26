@@ -4,13 +4,20 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-04/11/2025 06:25:28 -->
+26/12/2025 07:49:04 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 @import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400|ABeeZee:400,400italic");
 
+
+@font-face {
+  font-family: "Gambetta-MediumItalic";
+  font-style: italic;
+  font-weight: 500;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/690e1971ff31ef35e95971ed/fonts/gambetta-mediumitalic.woff') format("woff");
+}
 
 @font-face {
   font-family: "Helvetica-Bold";
@@ -219,7 +226,6 @@ input:focus {
   --backgroundinverse-muted: #181a1b;
   --backgroundinverse-muted-2: #1f2122;
   --backgroundmuted: #f8f8f8;
-  --backgroundmuted-2: #eeeeee;
   --backgroundprimary: #0e1011;
   --black: #000000;
   --borderdefault: #e8e8e8;
@@ -239,18 +245,17 @@ input:focus {
   --woodsmoke: #0e101199;
  
   --font-size-18px: 18px;
-  --font-size-24px: 24px;
   --font-size-28px: 28px;
+  --font-size-30px: 30px;
   --font-size-48px: 48px;
   --font-size-64px: 64px;
-  --font-size-80px: 80px;
   --font-size-l: 20px;
   --font-size-m: 6.9px;
   --font-size-xl: 22px;
   --font-size-xxl: 26px;
-  --font-size-xxxl: 30px;
-  --font-size-xxxxl: 32px;
-  --font-size-xxxxxl: 40px;
+  --font-size-xxxl: 32px;
+  --font-size-xxxxl: 40px;
+  --font-size-xxxxxl: 42.5px;
  
   --font-family-abeezee: "ABeeZee", Helvetica;
   --font-family-anton_sc: "Anton SC", Helvetica;
@@ -259,14 +264,6 @@ input:focus {
   --font-family-helvetica-regular: "Helvetica-Regular", Helvetica;
   --font-family-inter: "Inter", Helvetica;
 }
-.heading-altsmall {
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-80px);
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: -2px;
-}
-
 .heading-alth1 {
   font-family: var(--font-family-inter);
   font-size: var(--font-size-64px);
@@ -285,7 +282,7 @@ input:focus {
 
 .heading-alth3 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -1px;
@@ -293,7 +290,7 @@ input:focus {
 
 .heading-alth4 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -310,14 +307,6 @@ input:focus {
 .textxlarge {
   font-family: var(--font-family-inter);
   font-size: var(--font-size-28px);
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0px;
-}
-
-.textlarge {
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-24px);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -349,7 +338,7 @@ input:focus {
 
 .textmeta {
   font-family: var(--font-family-abeezee);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-30px);
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0px;
@@ -371,36 +360,12 @@ input:focus {
   font-weight: 700;
 }
 
-.antonsc-normal-white-48px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .helvetica-regular-normal-white-11px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-helvetica-regular);
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
-}
-
-.antonsc-normal-woodsmoke-128px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 128px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.gambetta-mediumitalic-medium-woodsmoke-20px {
-  color: var(--woodsmoke);
-  font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-l);
-  font-style: italic;
-  font-weight: 500;
 }
 
 .antonsc-normal-woodsmoke-96px {
@@ -411,10 +376,18 @@ input:focus {
   font-weight: 400;
 }
 
+.antonsc-normal-white-48px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .antonsc-normal-white-32px {
   color: var(--backgrounddefault);
   font-family: var(--font-family-anton_sc);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 400;
 }
@@ -427,18 +400,34 @@ input:focus {
   font-weight: 400;
 }
 
-.gambetta-mediumitalic-medium-woodsmoke-32px {
-  color: var(--woodsmoke);
-  font-family: var(--font-family-gambetta-mediumitalic);
+.antonsc-normal-white-64px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-semi-bold-white-40px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-inter);
   font-size: var(--font-size-xxxxl);
-  font-style: italic;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.inter-semi-bold-white-40px-2 {
+  color: var(--textinverse-muted);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
 }
 
 .helvetica-bold-keppel-42-5px {
   color: var(--keppel);
   font-family: var(--font-family-helvetica-bold);
-  font-size: 42.5px;
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 700;
 }
@@ -459,28 +448,12 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-64px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.inter-semi-bold-white-40px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
-  font-style: normal;
-  font-weight: 600;
-}
-
-.inter-semi-bold-white-40px-2 {
-  color: var(--textinverse-muted);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
-  font-style: normal;
-  font-weight: 600;
+.gambetta-mediumitalic-medium-woodsmoke-32px {
+  color: var(--woodsmoke);
+  font-family: var(--font-family-gambetta-mediumitalic);
+  font-size: var(--font-size-xxxl);
+  font-style: italic;
+  font-weight: 500;
 }
 
 :root {
@@ -514,30 +487,6 @@ input:focus {
   gap: 16px;
   position: relative;
   width: 100%;
-}
-
-.studio {
-  background-color: transparent;
-  font-style: normal;
-  font-weight: 600;
-  position: relative;
-  text-align: left;
-}
-
-.vector {
-  background-color: transparent;
-  position: absolute;
-}
-
-.x1200m {
-  align-self: stretch;
-  background-color: transparent;
-  color: var(--textinverse-muted);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 37.4px;
-  position: relative;
-  text-align: left;
 }
 
 .your-name {
@@ -657,7 +606,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   font-family: var(--font-family-helvetica-bold);
-  font-size: 42.5px;
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.00px;
@@ -667,11 +616,21 @@ input:focus {
   text-align: left;
 }
 
+.text_label {
+  background-color: transparent;
+  text-align: left;
+}
+
+.vector {
+  background-color: transparent;
+  position: absolute;
+}
+
 .website-of-the-year {
   align-self: stretch;
   background-color: transparent;
   font-family: var(--font-family-helvetica-bold);
-  font-size: 42.5px;
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.00px;
@@ -701,7 +660,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 39px;
-  height: 3399px;
+  height: 3397px;
   padding: 0px 96px 96px;
   position: relative;
   width: 100%;
@@ -782,21 +741,17 @@ input:focus {
 .products .grid-ovU619 {
   align-items: center;
   align-self: stretch;
-  background-color: transparent;
   display: inline-flex;
   flex: 0 0 auto;
   gap: 12px;
-  position: relative;
 }
 
 .products .grid-4dKWxE {
   align-items: center;
   align-self: stretch;
-  background-color: transparent;
   display: inline-flex;
   flex: 0 0 auto;
   gap: 32px;
-  position: relative;
 }
 
 .products .projects-YohJRs {
@@ -871,410 +826,28 @@ input:focus {
   background-color: var(--backgroundprimary);
 }
 
-.products .grid-Ng5eiX {
-  align-items: flex-start;
-  background-color: transparent;
+.products .section-projects-Ng5eiX {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--backgroundmuted);
   display: flex;
   flex-direction: column;
-  height: 2920px;
-  left: 0px;
-  position: absolute;
-  top: 488px;
+  height: 2927px;
+  justify-content: center;
+  margin-bottom: -104.00px;
+  position: relative;
+  width: 100%;
+}
+
+.products .section-projects-RKgq0W {
+  background-color: transparent;
+  height: 2930px;
+  margin-bottom: -1.50px;
+  margin-left: -96.00px;
+  margin-right: -96.00px;
+  margin-top: -1.50px;
+  position: relative;
   width: 1920px;
-}
-
-.products .grid-LVykCQ {
-  align-items: flex-start;
-  background-color: transparent;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px 0px;
-  height: 1461px;
-  margin-right: -99.00px;
-  position: relative;
-  width: 2019px;
-}
-
-.products .grid-EYLmw0 {
-  align-items: flex-start;
-  background-color: var(--backgroundinverse-muted-2);
-  display: flex;
-  flex-direction: column;
-  height: 1460px;
-  position: relative;
-  width: 640px;
-}
-
-.products .grid-nbvYTg {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 48px;
-  justify-content: center;
-  padding: 80px;
-  position: relative;
-  width: 100%;
-}
-
-.products .x01-xSaRLQ {
-  background-color: transparent;
-  color: var(--textinverse-muted);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.products .grid-xSaRLQ {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.products .text_label-LJhgpN {
-  letter-spacing: 0.00px;
-  line-height: 62.4px;
-  margin-top: -1.00px;
-}
-
-.products .grid-2JDo5q {
-  align-items: flex-start;
-  background-color: var(--backgroundinverse-muted);
-  display: flex;
-  flex-direction: column;
-  height: 1460px;
-  position: relative;
-  width: 640px;
-}
-
-.products .grid-hFqPjP {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 48px;
-  justify-content: center;
-  padding: 80px;
-  position: relative;
-  width: 100%;
-}
-
-.products .x02-Z393Rn {
-  background-color: transparent;
-  color: var(--textinverse-muted);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.products .grid-Z393Rn {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.products .text_label-O6DHFw {
-  letter-spacing: 0.00px;
-  line-height: 62.4px;
-  margin-top: -1.00px;
-}
-
-.products .grid-mObi8F {
-  align-items: flex-start;
-  background-color: var(--backgroundinverse-muted-2);
-  display: flex;
-  flex-direction: column;
-  height: 1460px;
-  position: relative;
-  width: 640px;
-}
-
-.products .grid-lrgCXi {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 48px;
-  justify-content: center;
-  padding: 80px;
-  position: relative;
-  width: 100%;
-}
-
-.products .x03-jximpx {
-  background-color: transparent;
-  color: var(--textinverse-muted);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.products .grid-jximpx {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.products .text_label-MpvhLH {
-  letter-spacing: 0.00px;
-  line-height: 62.4px;
-  margin-top: -1.00px;
-}
-
-.products .grid-kVZOde {
-  align-items: flex-start;
-  background-color: var(--backgroundinverse-muted-2);
-  display: flex;
-  flex-direction: column;
-  height: 1460px;
-  margin-bottom: -1459.00px;
-  position: relative;
-  width: 640px;
-}
-
-.products .grid-EFUFwH {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 48px;
-  justify-content: center;
-  padding: 80px;
-  position: relative;
-  width: 100%;
-}
-
-.products .x04-yQtHxD {
-  background-color: transparent;
-  color: var(--textinverse-muted);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.products .grid-yQtHxD {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.products .b-z1jQX2 {
-  align-self: stretch;
-  background-color: transparent;
-  letter-spacing: 0.00px;
-  line-height: 62.4px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-}
-
-.products .text_label-z1jQX2 {
-  color: var(--textinverse-muted);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 37.4px;
-}
-
-.products .grid-7YTEOY {
-  align-items: flex-start;
-  background-color: var(--backgroundinverse-muted);
-  display: flex;
-  flex-direction: column;
-  margin-bottom: -1459.00px;
-  position: relative;
-  width: 640px;
-}
-
-.products .image-wrapper-bTEIRN {
-  overflow: hidden;
-}
-
-.products .image-h6kVFo {
-  height: 880px;
-  top: calc(50.00% - 440px);
-}
-
-.products .grid-bTEIRN {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 48px;
-  justify-content: center;
-  padding: 80px 80px 233px;
-  position: relative;
-  width: 100%;
-}
-
-.products .x05-TRKVcX {
-  background-color: transparent;
-  color: var(--textinverse-muted);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.products .grid-TRKVcX {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.products .text_label-MHb7gB {
-  letter-spacing: 0.00px;
-  line-height: 62.4px;
-  margin-top: -1.00px;
-}
-
-.products .text_label-OxarmI {
-  color: var(--textinverse-muted);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 37.4px;
-}
-
-.products .grid-jmv9Cd {
-  align-items: flex-start;
-  background-color: var(--backgroundinverse-muted-2);
-  display: flex;
-  flex-direction: column;
-  margin-bottom: -1459.00px;
-  position: relative;
-  width: 640px;
-}
-
-.products .image-wrapper-39ydg0 {
-  overflow: hidden;
-}
-
-.products .image-IGISsl {
-  height: 958px;
-  top: calc(50.00% - 479px);
-}
-
-.products .grid-39ydg0 {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 48px;
-  justify-content: center;
-  padding: 80px 80px 233px;
-  position: relative;
-  width: 100%;
-}
-
-.products .x06-UKt7t8 {
-  background-color: transparent;
-  color: var(--textinverse-muted);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: left;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.products .grid-UKt7t8 {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.products .text_label-UhwEoi {
-  letter-spacing: 0.00px;
-  line-height: 62.4px;
-  margin-top: -1.00px;
-}
-
-.products .text_label-YrQ8LU {
-  color: var(--textinverse-muted);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 37.4px;
-}
-
-.products .grid-6AuCCI {
-  background-color: var(--backgroundinverse-muted);
-  height: 1px;
-  margin-bottom: -1460.00px;
-  position: relative;
-  width: 640px;
 }
 
 .products .footer-gpZP15 {
@@ -1283,7 +856,7 @@ input:focus {
   background-color: var(--backgroundprimary);
   display: flex;
   flex-direction: column;
-  height: 761px;
+  height: 762px;
   justify-content: space-between;
   padding: 96px 96px 64px;
   position: relative;
@@ -1294,12 +867,10 @@ input:focus {
 .products .grid-pi6SWD {
   align-items: center;
   align-self: stretch;
-  background-color: transparent;
   display: flex;
   flex: 0 0 auto;
   gap: 128px;
   justify-content: space-around;
-  position: relative;
   width: 100%;
 }
 
@@ -1316,35 +887,29 @@ input:focus {
 .products .grid-Nn7n2Q {
   align-items: flex-start;
   align-self: stretch;
-  background-color: transparent;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 96px;
-  position: relative;
   width: 100%;
 }
 
 .products .grid-DPZlch {
   align-items: flex-start;
   align-self: stretch;
-  background-color: transparent;
   display: flex;
   flex: 0 0 auto;
   gap: 96px;
-  position: relative;
   width: 100%;
 }
 
 .products .grid-fsRc2m {
   align-items: center;
-  background-color: transparent;
   display: flex;
   flex: 1;
   flex-direction: column;
   flex-grow: 1;
   gap: 32px;
-  position: relative;
 }
 
 .products .pages-ikixEx {
@@ -1403,13 +968,11 @@ input:focus {
 
 .products .grid-FrZh1J {
   align-items: flex-start;
-  background-color: transparent;
   display: flex;
   flex: 1;
   flex-direction: column;
   flex-grow: 1;
   gap: 32px;
-  position: relative;
 }
 
 .products .cms-Y9KgGY {
@@ -1471,13 +1034,11 @@ input:focus {
 
 .products .grid-NJ0amU {
   align-items: flex-start;
-  background-color: transparent;
   display: flex;
   flex: 1;
   flex-direction: column;
   flex-grow: 1;
   gap: 32px;
-  position: relative;
 }
 
 .products .utility-pages-KRW7a6 {
@@ -1506,13 +1067,11 @@ input:focus {
 
 .products .grid-S3AnCD {
   align-items: flex-start;
-  background-color: transparent;
   display: flex;
   flex: 1;
   flex-direction: column;
   flex-grow: 1;
   gap: 32px;
-  position: relative;
 }
 
 .products .socials-QC8hBQ {
@@ -1564,11 +1123,9 @@ input:focus {
 .products .grid-yDihQJ {
   align-items: flex-start;
   align-self: stretch;
-  background-color: transparent;
   display: flex;
   flex: 0 0 auto;
   justify-content: space-between;
-  position: relative;
   width: 100%;
 }
 
@@ -1620,25 +1177,11 @@ input:focus {
   background-color: var(--backgrounddefault);
 }
 
-.products .image {
+.products .studio {
   background-color: transparent;
-  left: calc(50.00% - 320px);
-  object-fit: cover;
-  position: absolute;
-  width: 640px;
-}
-
-.products .image-wrapper {
-  background-color: transparent;
-  height: 880px;
-  position: relative;
-  width: 640px;
-}
-
-.products .text_label {
-  align-self: stretch;
-  background-color: transparent;
+  font-style: normal;
+  font-weight: 600;
   position: relative;
   text-align: left;
 }
-</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="products"><div class="products screen " data-id="4267:458"><div class="section-hero-gpZP15" data-id="4267:459"><div class="group-6-Ng5eiX" data-id="9257:13022"><div class="group-4-6v5spm" data-id="9257:13024"><div class="frame-375-CYovq8" data-id="9257:13025"><a href="index"><img class="fwrlogo-b-1-2QYWbx" data-id="9257:13026" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-b-1.png" alt="fwrlogo-b 1"></a></div></div></div><div class="products-Ng5eiX antonsc-normal-woodsmoke-96px" data-id="4289:500">PRODUCTS</div><p class="explore-our-tea-prod-Ng5eiX heading-alth3" data-id="4267:470">&#34;Explore our tea products, showcasing creativity, innovation, and distinctive flavors.&#34;</p><div class="header-small-Ng5eiX" data-id="9263:876"><div class="grid-ovU619" data-id="I9263:876;4275:587"><div class="grid-4dKWxE" data-id="I9263:876;4275:588"><a href="products"><div class="projects-YohJRs componentsbutton" data-id="I9263:876;4275:589">Products</div></a><a href="service"><div class="services-YohJRs componentsbutton" data-id="I9263:876;4275:590">Services</div></a><a href="about"><div class="studio-YohJRs studio componentsbutton" data-id="I9263:876;4275:591">About</div></a><a href="contact"><div class="journal-YohJRs componentsbutton" data-id="I9263:876;4275:592">Contact</div></a></div></div><div class="button-text-ovU619 button-text" data-id="I9263:876;5267:2707"><a href="products-zh"><div class="button-text-R4jwKs button-text componentsbutton" data-id="I9263:876;5267:2707;2830:1267">EN / ZH</div></a><div class="line-R4jwKs line" data-id="I9263:876;5267:2707;2830:1268"></div></div></div><div class="grid-Ng5eiX" data-id="9311:279196"><div class="grid-LVykCQ" data-id="9311:279197"><div class="grid-EYLmw0" data-id="9311:279198"><img class="image-wrapper" data-id="9311:279199" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6908a4d8dcde75f13579ec23/img/image-wrapper-2@2x.png" alt="Image Wrapper"><div class="grid-nbvYTg" data-id="9311:279201"><div class="x01-xSaRLQ textmeta" data-id="9311:279202">01</div><div class="grid-xSaRLQ" data-id="9311:279203"><div class="text_label-LJhgpN text_label antonsc-normal-white-48px" data-id="9311:279204">阿里山高山烏龍茶</div><div class="x1200m textmedium" data-id="9311:279205">梅山 1200 m 冷冽韻】 條索緊結墨綠，茶湯金黃帶綠。具優雅花香、喉韻清爽持久，是台灣高山茶的代表作。</div></div></div></div><div class="grid-2JDo5q" data-id="9311:279206"><img class="image-wrapper" data-id="9311:279207" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-wrapper-28@2x.png" alt="Image Wrapper"><div class="grid-hFqPjP" data-id="9311:279209"><div class="x02-Z393Rn textmeta" data-id="9311:279210">02</div><div class="grid-Z393Rn" data-id="9311:279211"><div class="text_label-O6DHFw text_label antonsc-normal-white-48px" data-id="9311:279212">阿里山高山烏龍茶</div><div class="x1200m textmedium" data-id="9311:279213">梅山 1200 m 冷冽韻】 條索緊結墨綠，茶湯金黃帶綠。具優雅花香、喉韻清爽持久，是台灣高山茶的代表作。</div></div></div></div><div class="grid-mObi8F" data-id="9311:279214"><img class="image-wrapper" data-id="9311:279215" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-wrapper-29@2x.png" alt="Image Wrapper"><div class="grid-lrgCXi" data-id="9311:279217"><div class="x03-jximpx textmeta" data-id="9311:279218">03</div><div class="grid-jximpx" data-id="9311:279219"><div class="text_label-MpvhLH text_label antonsc-normal-white-48px" data-id="9311:279220">阿里山高山烏龍茶</div><div class="x1200m textmedium" data-id="9311:279221">梅山 1200 m 冷冽韻】 條索緊結墨綠，茶湯金黃帶綠。具優雅花香、喉韻清爽持久，是台灣高山茶的代表作。</div></div></div></div><div class="grid-kVZOde" data-id="9311:279222"><img class="image-wrapper" data-id="9311:279223" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-wrapper-30@2x.png" alt="Image Wrapper"><div class="grid-EFUFwH" data-id="9311:279225"><div class="x04-yQtHxD textmeta" data-id="9311:279226">04</div><div class="grid-yQtHxD" data-id="9311:279227"><div class="b-z1jQX2 antonsc-normal-white-48px" data-id="9311:279228">專業級 B 端紅茶</div><div class="text_label-z1jQX2 text_label textmedium" data-id="9311:279229">【奶茶專用醇厚底】 針對東南亞市場對濃烈茶味的需求優化。茶湯顏色紅亮，風味醇厚，極耐久煮與奶化，是製作珍珠奶茶的最佳基底。</div></div></div></div><div class="grid-7YTEOY" data-id="9311:279230"><div class="image-wrapper-bTEIRN image-wrapper" data-id="9311:279231"><img class="image-h6kVFo image" data-id="9311:279232" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-9.png" alt="Image"></div><div class="grid-bTEIRN" data-id="9311:279233"><div class="x05-TRKVcX textmeta" data-id="9311:279234">05</div><div class="grid-TRKVcX" data-id="9311:279235"><div class="text_label-MHb7gB text_label antonsc-normal-white-48px" data-id="9311:279236">茉莉香綠茶</div><div class="text_label-OxarmI text_label textmedium" data-id="9311:279237">【穩定花香，調味百搭】 採用優質綠茶與天然茉莉花窨製。花香持久穩定，適合搭配果汁、果醬等調飲，風味層次豐富</div></div></div></div><div class="grid-jmv9Cd" data-id="9311:279238"><div class="image-wrapper-39ydg0 image-wrapper" data-id="9311:279239"><img class="image-IGISsl image" data-id="9311:279240" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/6909961fd2f72470bf6fc8e6/img/image-10.png" alt="Image"></div><div class="grid-39ydg0" data-id="9311:279241"><div class="x06-UKt7t8 textmeta" data-id="9311:279242">06</div><div class="grid-UKt7t8" data-id="9311:279243"><div class="text_label-UhwEoi text_label antonsc-normal-white-48px" data-id="9311:279244">重烘焙熟香烏龍</div><div class="text_label-YrQ8LU text_label textmedium" data-id="9311:279245">【獨家麥芽碳焙香】 經過中度或重度烘焙，帶有獨特的熟果香或微弱焦糖香。茶湯厚實，冷泡或熱泡風味皆佳。</div></div></div></div><div class="grid-6AuCCI" data-id="9311:279246"></div></div></div></div><footer class="footer-gpZP15" data-id="4267:654"><div class="grid-pi6SWD" data-id="I4267:654;4259:1590"><h1 class="k-aj-o-m01XyV antonsc-normal-white-128px" data-id="I4267:654;4259:1739">FWRINC©</h1></div><div class="grid-Nn7n2Q" data-id="I4267:654;4259:1663"><div class="grid-DPZlch" data-id="I4267:654;4259:298"><div class="grid-fsRc2m" data-id="I4267:654;4259:302"><div class="pages-ikixEx textmeta" data-id="I4267:654;4259:303">(Pages)</div><div class="nav" data-id="I4267:654;4259:304"><a href="index"><div class="home-J9VDwX heading-alth5" data-id="I4267:654;4259:305">Home</div></a><a href="service"><div class="service-J9VDwX heading-alth5" data-id="I4267:654;4259:307">Service</div></a><div class="studio-J9VDwX studio heading-alth5" data-id="I4267:654;4259:306">Studio</div><div class="contact-J9VDwX heading-alth5" data-id="I4267:654;4259:310">Contact</div></div></div><div class="grid-FrZh1J" data-id="I4267:654;4259:311"><div class="cms-Y9KgGY textmeta" data-id="I4267:654;4259:343">(CMS)</div><div class="nav" data-id="I4267:654;4259:313"><div class="work-SGLPLe heading-alth5" data-id="I4267:654;4259:314">Work</div><div class="work-single-SGLPLe heading-alth5" data-id="I4267:654;4259:315">Work Single</div><div class="blog-SGLPLe heading-alth5" data-id="I4267:654;4259:316">Blog</div><div class="blog-single-SGLPLe heading-alth5" data-id="I4267:654;4259:317">Blog Single</div></div></div><div class="grid-NJ0amU" data-id="I4267:654;4259:1989"><div class="utility-pages-KRW7a6 textmeta" data-id="I4267:654;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4267:654;4259:1991"><div class="licensing-6fYx3S heading-alth5" data-id="I4267:654;4259:1993">Licensing</div></div></div><div class="grid-S3AnCD" data-id="I4267:654;4259:1870"><div class="socials-QC8hBQ textmeta" data-id="I4267:654;4259:1871">(Socials)</div><div class="nav" data-id="I4267:654;4259:1872"><div class="instagram-7o8wlv heading-alth5" data-id="I4267:654;4259:1873">Instagram</div><div class="behance-7o8wlv heading-alth5" data-id="I4267:654;4259:1874">Behance</div><div class="dribbble-7o8wlv heading-alth5" data-id="I4267:654;4259:1875">Dribbble</div></div></div></div><div class="grid-yDihQJ" data-id="I4267:654;5267:3373"><article class="button-text-lxbkUQ button-text" data-id="I4267:654;5267:3374"><div class="button-text-zF3PXT button-text componentsbutton" data-id="I4267:654;5267:3374;2955:6381">By Gola Templates</div><div class="line-zF3PXT line" data-id="I4267:654;5267:3374;2955:6382"></div></article><article class="button-text-VKo5L3 button-text" data-id="I4267:654;5267:3375"><div class="button-text-fjUVNp button-text componentsbutton" data-id="I4267:654;5267:3375;2955:6381">Back to Top</div><div class="line-fjUVNp line" data-id="I4267:654;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="products"><div class="products screen " data-id="4267:458"><div class="section-hero-gpZP15" data-id="4267:459"><div class="group-6-Ng5eiX" data-id="9257:13022"><div class="group-4-6v5spm" data-id="9257:13024"><div class="frame-375-CYovq8" data-id="9257:13025"><a href="index"><img class="fwrlogo-b-1-2QYWbx" data-id="9257:13026" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-b-1.png" alt="fwrlogo-b 1"></a></div></div></div><div class="products-Ng5eiX antonsc-normal-woodsmoke-96px" data-id="4289:500">PRODUCTS</div><p class="explore-our-tea-prod-Ng5eiX heading-alth3" data-id="4267:470">&#34;Explore our tea products, showcasing creativity, innovation, and distinctive flavors.&#34;</p><div class="header-small-Ng5eiX" data-id="9263:876"><div class="grid-ovU619 grid" data-id="I9263:876;4275:587"><div class="grid-4dKWxE grid" data-id="I9263:876;4275:588"><a href="products"><div class="projects-YohJRs componentsbutton" data-id="I9263:876;4275:589">Products</div></a><a href="service"><div class="services-YohJRs componentsbutton" data-id="I9263:876;4275:590">Services</div></a><a href="about"><div class="studio-YohJRs studio componentsbutton" data-id="I9263:876;4275:591">About</div></a><a href="contact"><div class="journal-YohJRs componentsbutton" data-id="I9263:876;4275:592">Contact</div></a></div></div><div class="button-text-ovU619 button-text" data-id="I9263:876;5267:2707"><a href="products-zh"><div class="button-text-R4jwKs button-text componentsbutton" data-id="I9263:876;5267:2707;2830:1267">EN / ZH</div></a><div class="line-R4jwKs line" data-id="I9263:876;5267:2707;2830:1268"></div></div></div><div class="section-projects-Ng5eiX" data-id="9325:189001"><img class="section-projects-RKgq0W" data-id="9325:189002" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/694e3d6368b8cf3537b66c2d/img/section-projects-1.jpg" alt="Section Projects"></div></div><footer class="footer-gpZP15" data-id="4267:654"><div class="grid-pi6SWD grid" data-id="I4267:654;4259:1590"><h1 class="k-aj-o-m01XyV antonsc-normal-white-128px" data-id="I4267:654;4259:1739">FWRINC©</h1></div><div class="grid-Nn7n2Q grid" data-id="I4267:654;4259:1663"><div class="grid-DPZlch grid" data-id="I4267:654;4259:298"><div class="grid-fsRc2m grid" data-id="I4267:654;4259:302"><div class="pages-ikixEx textmeta" data-id="I4267:654;4259:303">(Pages)</div><div class="nav" data-id="I4267:654;4259:304"><a href="index"><div class="home-J9VDwX heading-alth5" data-id="I4267:654;4259:305">Home</div></a><a href="service"><div class="service-J9VDwX heading-alth5" data-id="I4267:654;4259:307">Service</div></a><div class="studio-J9VDwX studio heading-alth5" data-id="I4267:654;4259:306">Studio</div><div class="contact-J9VDwX heading-alth5" data-id="I4267:654;4259:310">Contact</div></div></div><div class="grid-FrZh1J grid" data-id="I4267:654;4259:311"><div class="cms-Y9KgGY textmeta" data-id="I4267:654;4259:343">(CMS)</div><div class="nav" data-id="I4267:654;4259:313"><div class="work-SGLPLe heading-alth5" data-id="I4267:654;4259:314">Work</div><div class="work-single-SGLPLe heading-alth5" data-id="I4267:654;4259:315">Work Single</div><div class="blog-SGLPLe heading-alth5" data-id="I4267:654;4259:316">Blog</div><div class="blog-single-SGLPLe heading-alth5" data-id="I4267:654;4259:317">Blog Single</div></div></div><div class="grid-NJ0amU grid" data-id="I4267:654;4259:1989"><div class="utility-pages-KRW7a6 textmeta" data-id="I4267:654;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4267:654;4259:1991"><div class="licensing-6fYx3S heading-alth5" data-id="I4267:654;4259:1993">Licensing</div></div></div><div class="grid-S3AnCD grid" data-id="I4267:654;4259:1870"><div class="socials-QC8hBQ textmeta" data-id="I4267:654;4259:1871">(Socials)</div><div class="nav" data-id="I4267:654;4259:1872"><div class="instagram-7o8wlv heading-alth5" data-id="I4267:654;4259:1873">Instagram</div><div class="behance-7o8wlv heading-alth5" data-id="I4267:654;4259:1874">Behance</div><div class="dribbble-7o8wlv heading-alth5" data-id="I4267:654;4259:1875">Dribbble</div></div></div></div><div class="grid-yDihQJ grid" data-id="I4267:654;5267:3373"><article class="button-text-lxbkUQ button-text" data-id="I4267:654;5267:3374"><div class="button-text-zF3PXT button-text componentsbutton" data-id="I4267:654;5267:3374;2955:6381">By Gola Templates</div><div class="line-zF3PXT line" data-id="I4267:654;5267:3374;2955:6382"></div></article><article class="button-text-VKo5L3 button-text" data-id="I4267:654;5267:3375"><div class="button-text-fjUVNp button-text componentsbutton" data-id="I4267:654;5267:3375;2955:6381">Back to Top</div><div class="line-fjUVNp line" data-id="I4267:654;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
