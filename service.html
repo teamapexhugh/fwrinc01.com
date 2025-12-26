@@ -4,13 +4,20 @@
 <!-- This code was generated using AnimaApp.com. 
 This code is a high-fidelity prototype.
 Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
-03/11/2025 06:35:56 -->
+26/12/2025 08:02:49 -->
 
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=1920, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600|Anton+SC:400|ABeeZee:400,400italic");
 
+
+@font-face {
+  font-family: "Gambetta-MediumItalic";
+  font-style: italic;
+  font-weight: 500;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/690e1971ff31ef35e95971ed/fonts/gambetta-mediumitalic.woff') format("woff");
+}
 
 @font-face {
   font-family: "Helvetica-Bold";
@@ -219,7 +226,6 @@ input:focus {
   --backgroundinverse-muted: #181a1b;
   --backgroundinverse-muted-2: #1f2122;
   --backgroundmuted: #f8f8f8;
-  --backgroundmuted-2: #eeeeee;
   --backgroundprimary: #0e1011;
   --black: #000000;
   --borderdefault: #e8e8e8;
@@ -241,31 +247,24 @@ input:focus {
   --font-size-18px: 18px;
   --font-size-24px: 24px;
   --font-size-28px: 28px;
-  --font-size-32px: 32px;
+  --font-size-30px: 30px;
+  --font-size-48px: 48px;
   --font-size-64px: 64px;
-  --font-size-80px: 80px;
   --font-size-l: 20px;
   --font-size-m: 6.9px;
   --font-size-xl: 22px;
   --font-size-xxl: 26px;
-  --font-size-xxxl: 30px;
+  --font-size-xxxl: 32px;
   --font-size-xxxxl: 40px;
-  --font-size-xxxxxl: 48px;
+  --font-size-xxxxxl: 42.5px;
  
+  --font-family-abeezee: "ABeeZee", Helvetica;
   --font-family-anton_sc: "Anton SC", Helvetica;
   --font-family-gambetta-mediumitalic: "Gambetta-MediumItalic", Helvetica;
   --font-family-helvetica-bold: "Helvetica-Bold", Helvetica;
   --font-family-helvetica-regular: "Helvetica-Regular", Helvetica;
   --font-family-inter: "Inter", Helvetica;
 }
-.heading-altsmall {
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-80px);
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: -2px;
-}
-
 .heading-alth1 {
   font-family: var(--font-family-inter);
   font-size: var(--font-size-64px);
@@ -276,7 +275,7 @@ input:focus {
 
 .heading-alth2 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-48px);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -292,7 +291,7 @@ input:focus {
 
 .heading-alth4 {
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-32px);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -347,10 +346,10 @@ input:focus {
 }
 
 .textmeta {
-  font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-xxxl);
+  font-family: var(--font-family-abeezee);
+  font-size: var(--font-size-30px);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0px;
 }
 
@@ -378,26 +377,34 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-woodsmoke-128px {
-  color: var(--backgroundprimary);
-  font-family: var(--font-family-anton_sc);
-  font-size: 128px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.gambetta-mediumitalic-medium-woodsmoke-20px {
-  color: var(--woodsmoke);
-  font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: var(--font-size-l);
-  font-style: italic;
-  font-weight: 500;
-}
-
 .antonsc-normal-woodsmoke-96px {
   color: var(--backgroundprimary);
   font-family: var(--font-family-anton_sc);
   font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-48px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-32px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.antonsc-normal-white-128px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-anton_sc);
+  font-size: 128px;
   font-style: normal;
   font-weight: 400;
 }
@@ -410,34 +417,26 @@ input:focus {
   font-weight: 400;
 }
 
-.gambetta-mediumitalic-medium-woodsmoke-32px {
-  color: var(--woodsmoke);
-  font-family: var(--font-family-gambetta-mediumitalic);
-  font-size: 32px;
-  font-style: italic;
-  font-weight: 500;
+.inter-semi-bold-white-40px {
+  color: var(--backgrounddefault);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
 }
 
-.antonsc-normal-white-128px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 128px;
+.inter-semi-bold-white-40px-2 {
+  color: var(--textinverse-muted);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
-  font-weight: 400;
-}
-
-.antonsc-normal-white-192px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 192px;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .helvetica-bold-keppel-42-5px {
   color: var(--keppel);
   font-family: var(--font-family-helvetica-bold);
-  font-size: 42.5px;
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 700;
 }
@@ -458,28 +457,12 @@ input:focus {
   font-weight: 400;
 }
 
-.antonsc-normal-white-96px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.antonsc-normal-white-240px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-anton_sc);
-  font-size: 240px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.inter-semi-bold-white-40px {
-  color: var(--backgrounddefault);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-xxxxl);
-  font-style: normal;
-  font-weight: 600;
+.gambetta-mediumitalic-medium-woodsmoke-32px {
+  color: var(--woodsmoke);
+  font-family: var(--font-family-gambetta-mediumitalic);
+  font-size: var(--font-size-xxxl);
+  font-style: italic;
+  font-weight: 500;
 }
 
 :root {
@@ -515,17 +498,17 @@ input:focus {
   width: 100%;
 }
 
-.studio {
+.your-name {
   background-color: transparent;
+  color: var(--textmuted);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 32.4px;
+  margin-top: -2.00px;
   position: relative;
   text-align: left;
-}
-
-.vector {
-  background-color: transparent;
-  position: absolute;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .material-symbolsarrow-forward-rounded {
@@ -632,7 +615,7 @@ input:focus {
   align-self: stretch;
   background-color: transparent;
   font-family: var(--font-family-helvetica-bold);
-  font-size: 42.5px;
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.00px;
@@ -642,11 +625,21 @@ input:focus {
   text-align: left;
 }
 
+.text_label {
+  background-color: transparent;
+  text-align: left;
+}
+
+.vector {
+  background-color: transparent;
+  position: absolute;
+}
+
 .website-of-the-year {
   align-self: stretch;
   background-color: transparent;
   font-family: var(--font-family-helvetica-bold);
-  font-size: 42.5px;
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.00px;
@@ -843,12 +836,9 @@ input:focus {
 }
 
 .service .section-service-R3SQrl {
-  align-items: flex-start;
   align-self: stretch;
   background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
+  height: 2459px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -856,13 +846,13 @@ input:focus {
 
 .service .grid-KHXajG {
   align-items: center;
-  align-self: stretch;
   background-color: transparent;
   display: flex;
-  flex: 0 0 auto;
   gap: 24px;
-  position: relative;
-  width: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1920px;
 }
 
 .service .image-wrapper-SVhLTb {
@@ -881,37 +871,37 @@ input:focus {
 }
 
 .service .grid-Hw8zg0 {
-  align-items: flex-start;
-  align-self: stretch;
   background-color: transparent;
-  display: flex;
-  flex: 0 0 auto;
-  gap: 96px;
-  padding: 96px 96px 128px;
-  position: relative;
-  width: 100%;
+  height: 1710px;
+  left: 0px;
+  position: absolute;
+  top: 790px;
+  width: 1920px;
 }
 
 .service .brand-strategy-v2rUEl {
   background-color: transparent;
+  height: auto;
+  left: 119px;
   letter-spacing: 0.00px;
   line-height: 105.6px;
-  margin-top: -1.00px;
-  position: relative;
+  position: absolute;
   text-align: left;
-  width: 640px;
+  top: 96px;
+  width: 594px;
 }
 
 .service .grid-v2rUEl {
   align-items: flex-start;
   background-color: transparent;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  flex-grow: 1;
   gap: 80px;
   justify-content: center;
-  position: relative;
+  left: 807px;
+  position: absolute;
+  top: 96px;
+  width: 981px;
 }
 
 .service .grid-x81XH6 {
@@ -1293,7 +1283,7 @@ input:focus {
   background-color: var(--backgroundprimary);
   display: flex;
   flex-direction: column;
-  height: 1080px;
+  height: 774px;
   justify-content: space-between;
   padding: 96px 96px 64px;
   position: relative;
@@ -1362,7 +1352,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1422,7 +1412,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1490,7 +1480,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1525,7 +1515,7 @@ input:focus {
   background-color: transparent;
   color: var(--textinverse-muted);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   margin-top: -1.00px;
   position: relative;
@@ -1648,6 +1638,14 @@ input:focus {
   text-align: left;
 }
 
+.service .studio {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+}
+
 .service .tea-bag-oem-services {
   align-self: stretch;
   background-color: transparent;
@@ -1655,4 +1653,4 @@ input:focus {
   position: relative;
   text-align: left;
 }
-</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="service"><div class="service screen " data-id="4232:1672"><div class="section-hero-R3SQrl" data-id="4232:1729"><div class="group-5-hWxk0B" data-id="9257:13021"><a href="index"><div class="group-4-Iq2ZDW" data-id="9257:13013"><div class="frame-375-b7gnFC" data-id="9257:13012"><img class="fwrlogo-b-1-3KOXOd" data-id="9257:13011" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-b-1.png" alt="fwrlogo-b 1"></div></div></a></div><div class="service-hWxk0B service-1 antonsc-normal-woodsmoke-96px" data-id="4289:506">SERVICE</div><p class="explore-our-tailored-hWxk0B heading-alth3" data-id="4232:1744">&#34;Explore our tailored services designed to elevate your brand.&#34;</p><div class="header-small-hWxk0B" data-id="9263:865"><div class="grid-iXnQvR" data-id="I9263:865;4275:587"><div class="grid-sqbMqK" data-id="I9263:865;4275:588"><a href="products"><div class="projects-DfSGgH componentsbutton" data-id="I9263:865;4275:589">Products</div></a><a href="service"><div class="services-DfSGgH componentsbutton" data-id="I9263:865;4275:590">Services</div></a><a href="about"><div class="studio-DfSGgH studio componentsbutton" data-id="I9263:865;4275:591">About</div></a><a href="contact"><div class="journal-DfSGgH componentsbutton" data-id="I9263:865;4275:592">Contact</div></a></div></div><div class="button-text-iXnQvR button-text" data-id="I9263:865;5267:2707"><a href="service-zh"><div class="button-text-2ib31c button-text componentsbutton" data-id="I9263:865;5267:2707;2830:1267">EN / ZH</div></a><div class="line-2ib31c line" data-id="I9263:865;5267:2707;2830:1268"></div></div></div></div><div class="section-service-R3SQrl" data-id="4249:689"><div class="grid-KHXajG" data-id="4267:973"><img class="image-wrapper-SVhLTb" data-id="4267:974" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f9d95e53777c04255d8532/img/image-wrapper@3x.png" alt="Image Wrapper"><img class="image-wrapper-8L7uOZ" data-id="4267:976" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f9d95e53777c04255d8532/img/image-wrapper-1@2x.png" alt="Image Wrapper"></div><div class="grid-Hw8zg0" data-id="4232:1746"><div class="brand-strategy-v2rUEl antonsc-normal-woodsmoke-96px" data-id="4232:1748">BRAND<br>STRATEGY</div><div class="grid-v2rUEl" data-id="4232:1749"><div class="grid-x81XH6" data-id="4232:1750"><p class="we-create-compelling-4v3mYN heading-alth2" data-id="4232:1762">We create compelling brand identities that resonate with your audience, helping you establish a strong presence and foster meaningful connections.</p></div><div class="grid-nPIS4c" data-id="4565:361"><div class="grid-hSNdJ2" data-id="4565:362"><p class="tea-raw-material-supply-wholesale-FK96yr heading-alth3" data-id="4565:363">Tea Raw Material Supply &amp; Wholesale</p><p class="imported-raw-tea-mat-FK96yr textdefault" data-id="4565:364">● Imported raw tea materials wholesale.<br>● Specialized manufacturing and wholesale supply of tea for chain beverage stores, <br>&nbsp;&nbsp;&nbsp;&nbsp; breakfast shops, cafés, and hotels.<br>● Tea wholesale for bubble tea shops.<br>● Tea bags designed for tea extraction machines.<br>● Customized packaging services.<br>● Pyramid (triangular) tea bags.<br>● Matcha powder.</p></div><div class="border" data-id="4565:365"></div><div class="grid-wxJSGj" data-id="4565:366"><div class="customized-tea-blending-qRioQd heading-alth3" data-id="4565:367">Customized Tea Blending</div><p class="as-the-tea-beverage-qRioQd textdefault" data-id="4565:368">As the tea beverage market continues to innovate, our company can develop customized tea products according to your needs—from product research and development, raw material sourcing, and production, to packaging.<br> We tailor unique tea blends with distinctive flavors, aromas, and textures that highlight your brand’s individuality and strengthen your product’s competitiveness.</p></div><div class="border" data-id="4565:369"></div><div class="grid-CaprMi" data-id="4565:370"><div class="tea-bag-oem-services-WUB0J7 tea-bag-oem-services heading-alth3" data-id="4565:371">Tea Bag OEM Services</div><p class="flat-rectangular-tea-WUB0J7 flat-rectangular-tea textdefault" data-id="4565:372">Flat rectangular tea bags and pyramid (triangular) tea bags.</p></div><div class="border" data-id="4565:373"></div><div class="grid-FxTOxU" data-id="4565:374"><div class="customized-private-label-packaging-aV8thE heading-alth3" data-id="4565:375">Customized Private Label Packaging</div><p class="we-provide-customize-aV8thE textdefault" data-id="4565:376">We provide customized packaging formats and labeling solutions based on each brand’s specific requirements.</p></div></div></div></div></div><div class="section-testimonials-R3SQrl" data-id="4267:756"><div class="grid-47L1Sh" data-id="4259:285"><div class="grid-YHFfxS" data-id="4259:287"><div class="testimonials-Q6DL6Q gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:288">(Testimonials)</div><div class="x01-Q6DL6Q gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:289">(01)</div></div><div class="grid-nfGIug" data-id="4259:290"><div class="tea-bag-oem-services-j1Ordz tea-bag-oem-services antonsc-normal-woodsmoke-96px" data-id="4259:291">TEA BAG OEM SERVICES</div><p class="flat-rectangular-tea-j1Ordz flat-rectangular-tea heading-alth3" data-id="4259:292">Flat rectangular tea bags and pyramid (triangular) tea bags.</p></div></div><div class="grid-tnUSJW" data-id="4259:264"><div class="image-wrapper-KvTaAi" data-id="4259:266"><img class="image-o2mr4b" data-id="5246:2651" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/image-10.png" alt="Image"><div class="arrows-o2mr4b" data-id="4259:268"><div class="frame-1-YVoI1x" data-id="4259:269"><img class="material-symbolsarrow-forward-rounded" data-id="4259:270" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/material-symbols-arrow-forward-rounded.svg" alt="material-symbols:arrow-forward-rounded"></div><div class="frame-2-YVoI1x" data-id="4259:271"><img class="material-symbolsarrow-forward-rounded" data-id="4259:272" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/material-symbols-arrow-forward-rounded-1.svg" alt="material-symbols:arrow-forward-rounded"></div></div></div><div class="grid-KvTaAi" data-id="4259:273"><img class="image-rlNyz6" data-id="4259:275" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/--6.svg" alt="image"><div class="grid-rlNyz6" data-id="4259:276"><div class="utosia-yIqwCE gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:277">(Utosia)</div><p class="exceptional-branding-yIqwCE heading-alth1" data-id="4259:278">Exceptional Branding That Elevated Our Identity.</p><p class="their-strategic-appr-yIqwCE textxlarge" data-id="4259:280">Their strategic approach completely transformed our brand. We’ve seen a huge increase in recognition and client engagement</p></div></div></div></div><footer class="footer-R3SQrl" data-id="4259:689"><div class="grid-LxLbEU" data-id="I4259:689;4259:1590"><h1 class="k-aj-o-aa2QqN antonsc-normal-white-128px" data-id="I4259:689;4259:1739">FWR<br>INC©</h1></div><div class="grid-IlGQxL" data-id="I4259:689;4259:1663"><div class="grid-6nxIIY" data-id="I4259:689;4259:298"><div class="grid-Noe4XO" data-id="I4259:689;4259:302"><div class="pages-ZUf0Tx textmeta" data-id="I4259:689;4259:303">(Pages)</div><div class="nav" data-id="I4259:689;4259:304"><a href="index"><div class="home-PV12ea heading-alth5" data-id="I4259:689;4259:305">Home</div></a><div class="service-PV12ea service-1 heading-alth5" data-id="I4259:689;4259:307">Service</div><div class="studio-PV12ea studio heading-alth5" data-id="I4259:689;4259:306">Studio</div><div class="contact-PV12ea heading-alth5" data-id="I4259:689;4259:310">Contact</div></div></div><div class="grid-hMHFaa" data-id="I4259:689;4259:311"><div class="cms-iIDeUM textmeta" data-id="I4259:689;4259:343">(CMS)</div><div class="nav" data-id="I4259:689;4259:313"><div class="work-esFAT1 heading-alth5" data-id="I4259:689;4259:314">Work</div><div class="work-single-esFAT1 heading-alth5" data-id="I4259:689;4259:315">Work Single</div><div class="blog-esFAT1 heading-alth5" data-id="I4259:689;4259:316">Blog</div><div class="blog-single-esFAT1 heading-alth5" data-id="I4259:689;4259:317">Blog Single</div></div></div><div class="grid-wxTZz2" data-id="I4259:689;4259:1989"><div class="utility-pages-H1jvxy textmeta" data-id="I4259:689;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4259:689;4259:1991"><div class="licensing-Nyp0rU heading-alth5" data-id="I4259:689;4259:1993">Licensing</div></div></div><div class="grid-kVSmga" data-id="I4259:689;4259:1870"><div class="socials-JptxVN textmeta" data-id="I4259:689;4259:1871">(Socials)</div><div class="nav" data-id="I4259:689;4259:1872"><div class="instagram-v22Qx3 heading-alth5" data-id="I4259:689;4259:1873">Instagram</div><div class="behance-v22Qx3 heading-alth5" data-id="I4259:689;4259:1874">Behance</div><div class="dribbble-v22Qx3 heading-alth5" data-id="I4259:689;4259:1875">Dribbble</div></div></div></div><div class="grid-X1q4CN" data-id="I4259:689;5267:3373"><article class="button-text-ltxZ2N button-text" data-id="I4259:689;5267:3374"><div class="button-text-4DAsfg button-text componentsbutton" data-id="I4259:689;5267:3374;2955:6381">By Gola Templates</div><div class="line-4DAsfg line" data-id="I4259:689;5267:3374;2955:6382"></div></article><article class="button-text-EL0TTC button-text" data-id="I4259:689;5267:3375"><div class="button-text-1vtPwI button-text componentsbutton" data-id="I4259:689;5267:3375;2955:6381">Back to Top</div><div class="line-1vtPwI line" data-id="I4259:689;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="service"><div class="service screen " data-id="4232:1672"><div class="section-hero-R3SQrl" data-id="4232:1729"><div class="group-5-hWxk0B" data-id="9257:13021"><a href="index"><div class="group-4-Iq2ZDW" data-id="9257:13013"><div class="frame-375-b7gnFC" data-id="9257:13012"><img class="fwrlogo-b-1-3KOXOd" data-id="9257:13011" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/69046f52f81fd1fd93b50d7a/img/fwrlogo-b-1.png" alt="fwrlogo-b 1"></div></div></a></div><div class="service-hWxk0B service-1 antonsc-normal-woodsmoke-96px" data-id="4289:506">SERVICE</div><p class="explore-our-tailored-hWxk0B heading-alth3" data-id="4232:1744">&#34;Explore our tailored services designed to elevate your brand.&#34;</p><div class="header-small-hWxk0B" data-id="9263:865"><div class="grid-iXnQvR" data-id="I9263:865;4275:587"><div class="grid-sqbMqK" data-id="I9263:865;4275:588"><a href="products"><div class="projects-DfSGgH componentsbutton" data-id="I9263:865;4275:589">Products</div></a><a href="service"><div class="services-DfSGgH componentsbutton" data-id="I9263:865;4275:590">Services</div></a><a href="about"><div class="studio-DfSGgH studio componentsbutton" data-id="I9263:865;4275:591">About</div></a><a href="contact"><div class="journal-DfSGgH componentsbutton" data-id="I9263:865;4275:592">Contact</div></a></div></div><div class="button-text-iXnQvR button-text" data-id="I9263:865;5267:2707"><a href="service-zh"><div class="button-text-2ib31c button-text componentsbutton" data-id="I9263:865;5267:2707;2830:1267">EN / ZH</div></a><div class="line-2ib31c line" data-id="I9263:865;5267:2707;2830:1268"></div></div></div></div><div class="section-service-R3SQrl" data-id="4249:689"><div class="grid-KHXajG" data-id="4267:973"><img class="image-wrapper-SVhLTb" data-id="4267:974" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f9d95e53777c04255d8532/img/image-wrapper@3x.png" alt="Image Wrapper"><img class="image-wrapper-8L7uOZ" data-id="4267:976" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f9d95e53777c04255d8532/img/image-wrapper-1@2x.png" alt="Image Wrapper"></div><div class="grid-Hw8zg0" data-id="4232:1746"><div class="brand-strategy-v2rUEl antonsc-normal-woodsmoke-96px" data-id="4232:1748">BRAND<br>STRATEGY</div><div class="grid-v2rUEl" data-id="4232:1749"><div class="grid-x81XH6" data-id="4232:1750"><p class="we-create-compelling-4v3mYN heading-alth2" data-id="4232:1762">We create compelling brand identities that resonate with your audience, helping you establish a strong presence and foster meaningful connections.</p></div><div class="grid-nPIS4c" data-id="4565:361"><div class="grid-hSNdJ2" data-id="4565:362"><p class="tea-raw-material-supply-wholesale-FK96yr heading-alth3" data-id="4565:363">Tea Raw Material Supply &amp; Wholesale</p><p class="imported-raw-tea-mat-FK96yr textdefault" data-id="4565:364">● Imported raw tea materials wholesale.<br>● Specialized manufacturing and wholesale supply of tea for chain beverage stores, <br>&nbsp;&nbsp;&nbsp;&nbsp; breakfast shops, cafés, and hotels.<br>● Tea wholesale for bubble tea shops.<br>● Tea bags designed for tea extraction machines.<br>● Customized packaging services.<br>● Pyramid (triangular) tea bags.<br>● Matcha powder.</p></div><div class="border" data-id="4565:365"></div><div class="grid-wxJSGj" data-id="4565:366"><div class="customized-tea-blending-qRioQd heading-alth3" data-id="4565:367">Customized Tea Blending</div><p class="as-the-tea-beverage-qRioQd textdefault" data-id="4565:368">As the tea beverage market continues to innovate, our company can develop customized tea products according to your needs—from product research and development, raw material sourcing, and production, to packaging.<br> We tailor unique tea blends with distinctive flavors, aromas, and textures that highlight your brand’s individuality and strengthen your product’s competitiveness.</p></div><div class="border" data-id="4565:369"></div><div class="grid-CaprMi" data-id="4565:370"><div class="tea-bag-oem-services-WUB0J7 tea-bag-oem-services heading-alth3" data-id="4565:371">Tea Bag OEM Services</div><p class="flat-rectangular-tea-WUB0J7 flat-rectangular-tea textdefault" data-id="4565:372">Flat rectangular tea bags and pyramid (triangular) tea bags.</p></div><div class="border" data-id="4565:373"></div><div class="grid-FxTOxU" data-id="4565:374"><div class="customized-private-label-packaging-aV8thE heading-alth3" data-id="4565:375">Customized Private Label Packaging</div><p class="we-provide-customize-aV8thE textdefault" data-id="4565:376">We provide customized packaging formats and labeling solutions based on each brand’s specific requirements.</p></div></div></div></div></div><div class="section-testimonials-R3SQrl" data-id="4267:756"><div class="grid-47L1Sh" data-id="4259:285"><div class="grid-YHFfxS" data-id="4259:287"><div class="testimonials-Q6DL6Q gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:288">(Testimonials)</div><div class="x01-Q6DL6Q gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:289">(01)</div></div><div class="grid-nfGIug" data-id="4259:290"><div class="tea-bag-oem-services-j1Ordz tea-bag-oem-services antonsc-normal-woodsmoke-96px" data-id="4259:291">TEA BAG OEM SERVICES</div><p class="flat-rectangular-tea-j1Ordz flat-rectangular-tea heading-alth3" data-id="4259:292">Flat rectangular tea bags and pyramid (triangular) tea bags.</p></div></div><div class="grid-tnUSJW" data-id="4259:264"><div class="image-wrapper-KvTaAi" data-id="4259:266"><img class="image-o2mr4b" data-id="5246:2651" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8e5c053777c04255d8327/img/image-10.png" alt="Image"><div class="arrows-o2mr4b" data-id="4259:268"><div class="frame-1-YVoI1x" data-id="4259:269"><img class="material-symbolsarrow-forward-rounded" data-id="4259:270" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/material-symbols-arrow-forward-rounded.svg" alt="material-symbols:arrow-forward-rounded"></div><div class="frame-2-YVoI1x" data-id="4259:271"><img class="material-symbolsarrow-forward-rounded" data-id="4259:272" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f88eec4293770e3c4f3662/img/material-symbols-arrow-forward-rounded-1.svg" alt="material-symbols:arrow-forward-rounded"></div></div></div><div class="grid-KvTaAi" data-id="4259:273"><img class="image-rlNyz6" data-id="4259:275" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/68f862729bde98cdb15bcdec/releases/68f8647e5f6b0a10ce4775b8/img/--6.svg" alt="image"><div class="grid-rlNyz6" data-id="4259:276"><div class="utosia-yIqwCE gambetta-mediumitalic-medium-woodsmoke-32px" data-id="4259:277">(Utosia)</div><p class="exceptional-branding-yIqwCE heading-alth1" data-id="4259:278">Exceptional Branding That Elevated Our Identity.</p><p class="their-strategic-appr-yIqwCE textxlarge" data-id="4259:280">Their strategic approach completely transformed our brand. We’ve seen a huge increase in recognition and client engagement</p></div></div></div></div><footer class="footer-R3SQrl" data-id="4259:689"><div class="grid-LxLbEU" data-id="I4259:689;4259:1590"><h1 class="k-aj-o-aa2QqN antonsc-normal-white-128px" data-id="I4259:689;4259:1739">FWRINC©</h1></div><div class="grid-IlGQxL" data-id="I4259:689;4259:1663"><div class="grid-6nxIIY" data-id="I4259:689;4259:298"><div class="grid-Noe4XO" data-id="I4259:689;4259:302"><div class="pages-ZUf0Tx textmeta" data-id="I4259:689;4259:303">(Pages)</div><div class="nav" data-id="I4259:689;4259:304"><a href="index"><div class="home-PV12ea heading-alth5" data-id="I4259:689;4259:305">Home</div></a><div class="service-PV12ea service-1 heading-alth5" data-id="I4259:689;4259:307">Service</div><div class="studio-PV12ea studio heading-alth5" data-id="I4259:689;4259:306">Studio</div><div class="contact-PV12ea heading-alth5" data-id="I4259:689;4259:310">Contact</div></div></div><div class="grid-hMHFaa" data-id="I4259:689;4259:311"><div class="cms-iIDeUM textmeta" data-id="I4259:689;4259:343">(CMS)</div><div class="nav" data-id="I4259:689;4259:313"><div class="work-esFAT1 heading-alth5" data-id="I4259:689;4259:314">Work</div><div class="work-single-esFAT1 heading-alth5" data-id="I4259:689;4259:315">Work Single</div><div class="blog-esFAT1 heading-alth5" data-id="I4259:689;4259:316">Blog</div><div class="blog-single-esFAT1 heading-alth5" data-id="I4259:689;4259:317">Blog Single</div></div></div><div class="grid-wxTZz2" data-id="I4259:689;4259:1989"><div class="utility-pages-H1jvxy textmeta" data-id="I4259:689;4259:1990">(Utility Pages)</div><div class="nav" data-id="I4259:689;4259:1991"><div class="licensing-Nyp0rU heading-alth5" data-id="I4259:689;4259:1993">Licensing</div></div></div><div class="grid-kVSmga" data-id="I4259:689;4259:1870"><div class="socials-JptxVN textmeta" data-id="I4259:689;4259:1871">(Socials)</div><div class="nav" data-id="I4259:689;4259:1872"><div class="instagram-v22Qx3 heading-alth5" data-id="I4259:689;4259:1873">Instagram</div><div class="behance-v22Qx3 heading-alth5" data-id="I4259:689;4259:1874">Behance</div><div class="dribbble-v22Qx3 heading-alth5" data-id="I4259:689;4259:1875">Dribbble</div></div></div></div><div class="grid-X1q4CN" data-id="I4259:689;5267:3373"><article class="button-text-ltxZ2N button-text" data-id="I4259:689;5267:3374"><div class="button-text-4DAsfg button-text componentsbutton" data-id="I4259:689;5267:3374;2955:6381">By Gola Templates</div><div class="line-4DAsfg line" data-id="I4259:689;5267:3374;2955:6382"></div></article><article class="button-text-EL0TTC button-text" data-id="I4259:689;5267:3375"><div class="button-text-1vtPwI button-text componentsbutton" data-id="I4259:689;5267:3375;2955:6381">Back to Top</div><div class="line-1vtPwI line" data-id="I4259:689;5267:3375;2955:6382"></div></article></div></div></footer></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
